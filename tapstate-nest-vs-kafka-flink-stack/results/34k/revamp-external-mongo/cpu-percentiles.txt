@@ -1,0 +1,12 @@
+cdc-1000           nestbench-driver     n= 33 p50=  81.8 p95= 132.9 max= 151.4
+cdc-1000           nestbench-mongo      n= 33 p50=   0.6 p95=   0.6 max=   0.9
+cdc-1000           nestbench-pr1026-op  n= 33 p50=  64.5 p95= 142.9 max= 200.1
+cdc-600            nestbench-driver     n= 26 p50=  85.0 p95= 154.9 max= 168.1
+cdc-600            nestbench-mongo      n= 26 p50=   0.6 p95=   0.6 max=   1.2
+cdc-600            nestbench-pr1026-op  n= 26 p50= 106.2 p95= 187.3 max= 199.5
+setup              nestbench-driver     n=  2 p50= 123.0 p95=   5.6 max= 123.0
+setup              nestbench-mongo      n=  2 p50=   0.5 p95=   0.5 max=   0.5
+setup              nestbench-pr1026-op  n=  2 p50=  80.7 p95=  78.7 max=  80.7
+snapshot           nestbench-driver     n=  8 p50=  67.0 p95=  68.4 max= 164.8
+snapshot           nestbench-mongo      n=  8 p50=   0.6 p95=   0.6 max=   0.6
+snapshot           nestbench-pr1026-op  n=  8 p50= 201.6 p95= 202.2 max= 202.6

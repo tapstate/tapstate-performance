@@ -7,6 +7,9 @@
 # The engine container is pinned like the Flink TaskManager: vCPUs 1,5, 2 CPUs, 8 GB.
 # Storage databases are tapstate_config$SUFFIX, tapstate_cache$SUFFIX and tapstate_views$SUFFIX on
 # nestbench-mongo, so several installs can share one mongod (run only one engine at a time).
+# For a MongoDB on another host, set MONGO_BASE (scheme, credentials and host, no path), MONGO_RS (its
+# replica set name) and MONGO_OPTS (extra URI options, e.g. "&authSource=admin"); see
+# rig/external-mongo-setup.sh. Storage responses can echo the URI, so they are not printed.
 # Example: install.sh nestbench-tapstate nestbench/tapstate:tierb 38183 _tierb ./creds-tierb.json \
 #            -Dtapstate.nest.store=direct
 set -eu
@@ -37,19 +40,20 @@ st() { echo '{}' | mg /api/storage/status; }
 js() { python3 -c "import sys,json;print(json.load(sys.stdin)['$1'])"; }
 S=$(st); OP=$(echo "$S" | js operationId); GEN=$(echo "$S" | js setupGeneration)
 CAND=$(python3 -c "
-import json;b='mongodb://nestbench-mongo:27017'
-c=lambda d:{'kind':'MONGODB','uri':f'{b}/{d}?replicaSet=nbrs','database':d}
+import json,os;b=os.environ.get('MONGO_BASE','mongodb://nestbench-mongo:27017');rs=os.environ.get('MONGO_RS','nbrs');o=os.environ.get('MONGO_OPTS','')
+c=lambda d:{'kind':'MONGODB','uri':f'{b}/{d}?replicaSet={rs}{o}','database':d}
 print(json.dumps({'configuration':c('tapstate_config$SFX'),'cache':c('tapstate_cache$SFX'),'master':c('tapstate_views$SFX')}))")
 STAMP=$(echo "{\"operationId\":\"$OP\",\"generation\":$GEN,\"candidate\":$CAND,\"layer\":\"CACHE\"}" | mg /api/storage/test | js testStamp)
-echo "{\"operationId\":\"$OP\",\"generation\":$GEN,\"candidate\":$CAND,\"testStamps\":{\"CACHE\":\"$STAMP\"}}" | mg /api/storage/setup/commit; echo
+echo "{\"operationId\":\"$OP\",\"generation\":$GEN,\"candidate\":$CAND,\"testStamps\":{\"CACHE\":\"$STAMP\"}}" | mg /api/storage/setup/commit >/dev/null
 for i in $(seq 60); do st | grep -q '"setupPhase":"COMPLETE"' && break; sleep 3; done
+st | grep -q '"setupPhase":"COMPLETE"' && echo "storage setup COMPLETE" || { echo "storage setup did not complete" >&2; exit 1; }
 docker stop -t 60 "$N" >/dev/null; RS=$(date -u +%FT%TZ); docker start "$N" >/dev/null; ready "$RS"
 for i in 1 2 3 4; do
   docker exec "$N" sh -c "$J installation --authorize --tapstate.installation.directory=$D --server.port=0" >/dev/null 2>&1 || true
   P=$(docker exec "$N" sh -c "sed -n 's/.*\"purpose\":\"\([A-Z_]*\)\".*/\1/p' $D/capability.json"); echo "authorize -> $P"
   [ "$P" = FIRST_ADMIN ] && break
   S=$(st); G=$(echo "$S" | js setupGeneration); BV=$(echo "$S" | js bindingVersion)
-  echo "$S" | grep -q storage.setup.activate && { echo "{\"operationId\":\"$OP\",\"generation\":$G,\"bindingVersion\":$BV}" | mg /api/storage/setup/activate; echo; }
+  echo "$S" | grep -q storage.setup.activate && { echo "{\"operationId\":\"$OP\",\"generation\":$G,\"bindingVersion\":$BV}" | mg /api/storage/setup/activate >/dev/null; }
   sleep 10
 done
 umask 077; python3 -c "import json,secrets;json.dump({'username':'nestbench-admin','password':secrets.token_urlsafe(24)},open('$CREDS','w'))"

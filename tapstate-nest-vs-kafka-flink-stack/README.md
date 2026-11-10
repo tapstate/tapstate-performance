@@ -12,7 +12,7 @@ the same hardware:
 Both systems read the same MongoDB source and write to the same MongoDB. Both get the same 2 CPU / 8 GB budget, the
 same fixtures, the same load driver and the same content check.
 
-Measured 2026-11-08 to 2026-11-09. Every number below comes from a file under [`results/`](results/).
+Measured 2026-11-08 to 2026-11-10. Every number below comes from a file under [`results/`](results/).
 
 ## Summary
 
@@ -38,14 +38,27 @@ Measured 2026-11-08 to 2026-11-09. Every number below comes from a file under [`
 | What limits it at 600/s | MongoDB CPU (170 % of 200 %) | | Flink's MongoDB sink (see [Why Flink stops near 350/s](#why-flink-stops-near-350-changes-per-second)) |
 | Content check, 10,000 sampled orders | 0 bad after snapshot and after the change load | 0 bad after both | 0 bad after snapshot; see the note below for after the change load |
 
+**34k fixture, MongoDB moved to its own host** (Tapstate NEST revamp only; Flink not rerun, see
+[MongoDB on its own host](#variant-mongodb-on-its-own-host)):
+
+| | MongoDB on the engine host (one physical core) | MongoDB on its own 8-vCPU host |
+| --- | --- | --- |
+| Initial snapshot to a complete target | 46 s | **42 s** (same document hash) |
+| Highest change rate held (events/s) | 300 (fails at 600) | **600** (fails at 1000) |
+| End-to-end lag at 600/s | not held, 28 s and growing | **1.4 s**, flat |
+| Changes applied per second at 1000/s offered | not run | about 720 |
+| CPU p50 at the highest step, engine / MongoDB | 82 % of 200 % / 140 % of 200 % (at 600/s) | 65 % of 200 % / 142 % of 800 % (at 1000/s) |
+| Content check after the change load | clean at the first check | clean at the first check |
+
 **In short:** the revamp makes Tapstate's NEST snapshot about 7x faster than `main` on the small fixture. It also raises
 the change rate Tapstate keeps up with from 25/s to 300/s. Against the Kafka + Flink stack, the revamp now matches it on
 the small fixture. On the 1M-order fixture it builds the documents 2.5x faster than Flink, keeps up with the same 300/s
 at about one tenth of the lag, and applies roughly 50 % more changes per second once both fall behind. It does that
-with one process and no Kafka tier.
+with one process and no Kafka tier. Given a MongoDB of its own, the same revamp build holds 600 changes/s on the small
+fixture. Flink has not been run against that MongoDB, so that result has no Flink counterpart yet.
 
 Read the [caveats](#caveats) before you quote these numbers. The revamp is unmerged, the Tier B runs were on two
-machines, and a few cells are not like-for-like.
+machines, the external-MongoDB run has no Flink counterpart, and a few cells are not like-for-like.
 
 ## What is compared
 
@@ -181,8 +194,55 @@ into many small commands. That is an inference from the driver's documented beha
 profiler.
 
 Tapstate's revamp sends one upsert per affected order document. At 600/s its limit is MongoDB CPU, at about 170 % of
-the 200 % available. In this rig that one `mongod` also holds the source, the target and Tapstate's own state, which is
-the next thing to separate (see [caveats](#caveats)).
+the 200 % available. In this rig that one `mongod` also holds the source, the target and Tapstate's own state. The next section
+moves it to a host of its own.
+
+## Variant: MongoDB on its own host
+
+On the main rig, `mongod` gets one physical core (2 vCPUs) and holds everything: the source, the target, the load
+driver's writes and Tapstate's configuration, change log and NEST state. At 600/s that core was Tapstate's limit. In
+this variant we moved all of it to a separate MongoDB host and kept everything else as it was. That means the same
+engine host, the same 2 CPU / 8 GB engine container, the same Tier B revamp build (`04a5ad4a` + `a39adf64`, direct
+store on), the same 34k fixture and the same harness.
+
+```mermaid
+flowchart LR
+  subgraph EH["engine host (m7i.2xlarge)"]
+    D[nestbench-driver<br/>seed, load, probes, checks<br/>vCPU 0,4]
+    T[Tapstate server<br/>2 CPU / 8 GB, vCPU 1,5]
+  end
+  subgraph MH["MongoDB host (m7i.2xlarge, 8 vCPU, 30 GiB)"]
+    M[(MongoDB 7.0.45, replica set rs0, auth<br/>WiredTiger cache 16 GB<br/>XFS on gp3 200 GB / 6,000 IOPS<br/>source + target + Tapstate config, cache, change log, NEST state)]
+  end
+  D -- "same VPC, TCP connect p50 0.77 ms" --> M
+  T -- "mongosh ping p50 1.66 ms (0.85 ms local)" --> M
+```
+
+| 34k fixture, revamp | MongoDB on the engine host ([run](results/34k/revamp-1/summary.json)) | MongoDB on its own host ([run](results/34k/revamp-external-mongo/summary.json)) |
+| --- | --- | --- |
+| Snapshot complete | 46.4 s | 42.3 s, same document hash |
+| 300/s | held, 1.4 s | not run (the run starts at 600/s) |
+| 600/s | not held: 28.0 s, +0.23 s/s, about 461/s applied | **held: 1.4 s, +0.005 s/s, max 1.5 s, drained in 3 s** |
+| 1000/s | not run | not held: 60 s, +0.84 s/s, drained in 43 s; about 720/s applied by store writes |
+| MongoDB CPU p50 (snapshot / 600 / 1000) | 43 % / 140 % / - of 200 % | 53 % / 119 % / 142 % of 800 % |
+| Engine CPU p50 (snapshot / 600 / 1000) | 203 % / 82 % / - of 200 % | 202 % / 106 % / 65 % of 200 % |
+| Content check after CDC | clean at the first check | clean at the first check (200 / 0 bad, 1.5 s) |
+
+At 1000/s neither side is out of CPU. MongoDB is at 142 % of 800 %, and the engine's CPU falls from 106 % at 600/s to
+65 % at 1000/s instead of rising. The engine is waiting, not computing. Every store call now pays a network round trip
+of about 1.7 ms, against 0.85 ms on the shared host. On top of the per-event work, the configuration and sink stores
+issue about 925 metadata commands per second (`listIndexes` about 670/s, `listCollections` about 255/s). Those
+commands do not scale with the change rate. So the next limit is per-call latency on the store path, not MongoDB
+capacity.
+
+At 1000/s the lag probe's own key was starved behind the backlog, so the usual `rate x (1 - lag growth)` estimate reads
+far too low (about 163/s). The 720/s figure is the measured write rate into the NEST state and change-log collections
+(718 and 727 writes/s), which track applied events one for one at lower rates.
+
+**This is not a like-for-like comparison with Flink.** Flink's 300/s ceiling and its sink analysis were measured with
+MongoDB on the engine host. Flink's limit there was sink round trips, with `mongod` under one core, so a faster
+MongoDB may move Flink too, or the longer round trip may slow it. Until Flink is run against the same external
+MongoDB, compare this variant only with the Tapstate row above it.
 
 ## Rig
 
@@ -241,6 +301,9 @@ tapstate-nest-vs-kafka-flink-stack/
   rig/setup-host.sh           network, MongoDB replica set, load-driver container
   rig/run-tapstate.sh         Tapstate protocol (34k or Tier B)
   rig/run-flink.sh            Flink protocol (34k or Tier B)
+  rig/external-mongo-setup.sh MongoDB 7.0 on a separate host (variant)
+  rig/run-tapstate-external.sh  Tapstate protocol against that host (variant, 34k)
+  rig/remote-mongod-cpu.sh    samples the remote mongod's CPU during a run (variant)
   tapstate/build-image.sh     builds a Tapstate server image from a public revision (main, revamp, tierb)
   tapstate/install.sh         installs and starts one Tapstate server (storage setup, first admin)
   flink/                      Compose file, Flink image with pinned connectors, Flink SQL
@@ -322,7 +385,37 @@ submits the Flink SQL job through the SQL client in the Flink container. The sna
 created, so Flink's numbers include SQL client start-up and job submission (10 to 20 s), just as Tapstate's include its
 pipeline start request.
 
-### 4. Read the results
+### 4. Optional: MongoDB on its own host
+
+You need a second host for MongoDB, in the same VPC and availability zone as the engine host. The benchmark used an
+m7i.2xlarge with a blank 200 GB gp3 data volume at 6,000 IOPS, running Ubuntu 26.04. In its security group, allow
+inbound TCP 27017 from the engine host, and ICMP if you want a ping round trip. The engine host keeps
+`nestbench-driver` from step 1. Its local `nestbench-mongo` is not used by this variant.
+
+```sh
+# on the engine host; EXT_SSH needs sudo on the MongoDB host
+export EXT_SSH=ubuntu@<mongo-host-private-ip> EXT_IP=<mongo-host-private-ip> SSH_KEY=~/.ssh/<key>
+sh rig/external-mongo-setup.sh          # formats the blank data disk, installs and configures MongoDB 7.0
+                                        # passwords go to ./extmongo-creds.json (mode 600)
+
+# check the round trip from the driver container (expect well under 2 ms)
+EP=$(python3 -c "import json;print(json.load(open('extmongo-creds.json'))['engine']['password'])")
+docker exec nestbench-driver mongosh --quiet "mongodb://nbengine:$EP@$EXT_IP:27017/?replicaSet=rs0&authSource=admin" \
+  --eval 'const s=[];for(let i=0;i<100;i++){const t=Date.now();db.runCommand({ping:1});s.push(Date.now()-t)};s.sort((a,b)=>a-b);print("p50",s[50],"ms p99",s[99],"ms")'
+
+# install a fresh Tapstate server whose storage lives on the external host, then run
+MONGO_BASE="mongodb://nbengine:$EP@$EXT_IP:27017" MONGO_RS=rs0 MONGO_OPTS="&authSource=admin" \
+  sh tapstate/install.sh ts-ext nestbench/tapstate:tierb 38186 _ext ./creds-ext.json -Dtapstate.nest.store=direct
+sh rig/run-tapstate-external.sh revamp-34k-extmongo 38186 ./creds-ext.json tapstate_cache_ext
+docker stop -t 60 ts-ext
+```
+
+`run-tapstate-external.sh` points the harness's driver and the engine's source and target connections at the
+external host. It samples the remote `mongod`'s CPU into `remote-mongod-cpu.txt` when `EXT_SSH` is set. It redacts the
+engine password from the run's log and `meta.json`. The protocol is the 34k snapshot, then CDC at 600/s for 120 s,
+then 1000/s only if 600 held, then 1500/s only if 1000 held. It stops at the first step that does not hold.
+
+### 5. Read the results
 
 Each run writes `summary.json`, plus a file per phase (`snapshot.json`, `cdc.json`), a 5-second `docker-stats.jsonl`
 and `cpu-percentiles.txt`. To compare with this README:
@@ -362,6 +455,7 @@ The fields are:
 | [revamp](results/34k/revamp-1/summary.json) | **46.4 s** | 0.4 s | 0.6 s | 1.1 s | 1.1 s | **1.4 s** | no (28.0 s, about 461/s applied) |
 | [flink-1](results/34k/flink-1/summary.json) | 43.7 s | 1.9 s | 2.0 s | 2.1 s | 2.6 s | 4.7 s | no (64.7 s, about 291/s applied) |
 | [flink-2](results/34k/flink-2/summary.json) | 70.2 s | 2.0 s | 2.0 s | 2.2 s | 1.6 s | 4.7 s | no (60.7 s, about 303/s applied) |
+| [revamp, MongoDB on its own host](results/34k/revamp-external-mongo/summary.json) | 42.3 s | - | - | - | - | - | **1.4 s**; 1000/s no (60 s, about 720/s applied) |
 
 Cells show the end-of-step lag of each step that held, or "no" with the end lag for a step that did not. Steps are
 120 s each. Plain copy of the same 34,000 rows, as a reference: about 1,400 rows/s on Tapstate `main` and about
@@ -410,9 +504,13 @@ On Tier B, Flink's snapshot is bound by its sink, just as its change rate is. Du
 - **The Flink target carried an extra index.** Before the content check, the harness creates an `ORDER_ID` index on
   Flink's target (Flink keys documents by `_id` only), so the check does not scan 1M documents per sample. On Tier B
   this index existed during the change load, so Flink maintained one more index than strictly needed.
-- **One shared MongoDB.** The source, the target, the load driver's writes and, for Tapstate, the NEST state and the
-  change log all live in one `mongod` on one physical core. That is the same for both engines. It is also Tapstate's
-  limit at 600/s, so a separate state database would likely change the Tapstate ceiling more than the Flink one.
+- **One shared MongoDB.** On the main rig, the source, the target, the load driver's writes and, for Tapstate, the
+  NEST state and the change log all live in one `mongod` on one physical core. That is the same for both engines. It
+  is also Tapstate's limit at 600/s, and moving it to its own host raised Tapstate's ceiling to 600-1000/s.
+- **The external-MongoDB run has no Flink counterpart.** Only Tapstate was run against the separate MongoDB host, once,
+  with the 34k fixture. That host also differs from the main rig in more than its size: MongoDB 7.0.45 from the
+  official packages instead of 7.0.43 in a container, authentication and a keyFile on, a 16 GB cache, and XFS on a
+  dedicated volume. Compare it with the Tapstate rows only.
 - **Discarded runs.** Several revamp runs on 2026-11-09 ran while a profiler had left `mongod`'s server-wide `slowms`
   at 0, so `mongod` logged every operation. Those runs are not used here. The 34k revamp numbers come from a clean
   rerun, and both Tier B revamp runs had profiling off and `slowms` at 100. The `main` and Flink runs were earlier and

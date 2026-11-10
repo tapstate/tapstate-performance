@@ -1,0 +1,80 @@
+{
+  "prefix": "nb_b6b1fc2692",
+  "label": "pr1035-extmongo-on1",
+  "fixture": "942",
+  "source": "nb_b6b1fc2692_source",
+  "expected": {
+    "BENCH_CUSTOMERS": 1000,
+    "BENCH_LINES": 23000,
+    "BENCH_ORDERS": 10000
+  },
+  "snapshot": {
+    "scenario": "snapshot",
+    "pipeline": "nb_b6b1fc2692_nest",
+    "rows": 34000,
+    "orders": 10000,
+    "documentHash": {
+      "documents": 10000,
+      "sha256": "6a9d1dc3d41e3ca9678a7ee2bb64ca753b6ec2253a398ab4659aa7d28a012033"
+    },
+    "secondsToAllRoots": 41.61312729000929,
+    "secondsToComplete": 42.25563690598938,
+    "secondsToVerified": 44.95578007301083,
+    "docsPerSecond": 236.65481654549586,
+    "inputRowsPerSecond": 804.6263762546859,
+    "rootsDocsPerSecond": 240.30878357947532,
+    "verify": {
+      "checked": 200,
+      "bad": 0,
+      "examples": []
+    },
+    "passed": true
+  },
+  "cdc": {
+    "scenario": "cdc",
+    "pipeline": "nb_b6b1fc2692_nest",
+    "steps": [
+      {
+        "rate": 600,
+        "achievedEventsPerSecond": 599.9366724716901,
+        "sent": 71999,
+        "seconds": 120.011,
+        "endLagSeconds": 1.402,
+        "lagGrowthSecondsPerSecond": 0.004906772434749035,
+        "maxLagSeconds": 1.459,
+        "drainSeconds": 2.991348402982112,
+        "held": true
+      },
+      {
+        "rate": 1000,
+        "achievedEventsPerSecond": 999.8333611064822,
+        "sent": 120000,
+        "seconds": 120.02,
+        "endLagSeconds": 60.038,
+        "lagGrowthSecondsPerSecond": 0.8369605065822363,
+        "maxLagSeconds": 60.038,
+        "drainSeconds": 42.89696332701715,
+        "held": false
+      }
+    ],
+    "sustainedCeiling": 600,
+    "mix": {
+      "lines": 0.8,
+      "customers": 0.0,
+      "orders": 0.2
+    },
+    "verifyAfter": {
+      "checked": 200,
+      "bad": 0,
+      "examples": [],
+      "firstCheckBad": 0,
+      "secondsToSettle": 1.5246323350002058,
+      "documentHash": {
+        "documents": 10000,
+        "sha256": "d76b6ed52986257f6fcc8cda6193570ea61ee16e73a2320e882ea5b71cb74cce"
+      }
+    },
+    "passed": true
+  },
+  "finishedUnix": 1794275190.4607692
+}
