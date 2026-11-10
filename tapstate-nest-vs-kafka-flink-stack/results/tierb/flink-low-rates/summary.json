@@ -1,0 +1,262 @@
+{
+  "prefix": "nb_64e2253f22",
+  "label": "flink-tierb-box2-2",
+  "fixture": "tierb",
+  "source": "nb_64e2253f22_source",
+  "expected": {
+    "BENCH_CUSTOMERS": 100000,
+    "BENCH_LINES": 2300000,
+    "BENCH_ORDERS": 1000000
+  },
+  "plain": {
+    "scenario": "plain",
+    "pipeline": "nb_64e2253f22_plain",
+    "rows": 3400000,
+    "seconds": 236.94212419900578,
+    "rowsPerSecond": 14349.495732318022,
+    "store": {
+      "phases": [
+        "plain"
+      ],
+      "seconds": 225.0100935809969,
+      "units": 3400000,
+      "source": {
+        "opcounters": {
+          "insert": 0,
+          "query": 11,
+          "update": 3400125,
+          "delete": 25,
+          "getmore": 121,
+          "command": 1867
+        },
+        "total": 3402149,
+        "perUnit": 1.0006320588235293,
+        "transactions": {
+          "started": 0,
+          "committed": 0,
+          "aborted": 0
+        },
+        "transactionsPerUnit": 0.0
+      }
+    }
+  },
+  "snapshot": {
+    "scenario": "snapshot",
+    "pipeline": "nb_64e2253f22_nest",
+    "rows": 3400000,
+    "orders": 1000000,
+    "documentHash": {
+      "documents": 1000000,
+      "sha256": "935bec55b522adbd195331416870826ea18afa11e28dc8f9f58f2e35d9130d7a"
+    },
+    "secondsToAllRoots": 1941.5001637340029,
+    "secondsToComplete": 5033.883818196002,
+    "secondsToVerified": 5078.842729838005,
+    "docsPerSecond": 198.65377035228656,
+    "inputRowsPerSecond": 675.4228191977743,
+    "rootsDocsPerSecond": 515.0656274356132,
+    "verify": {
+      "checked": 10000,
+      "bad": 0,
+      "examples": []
+    },
+    "passed": true,
+    "store": {
+      "phases": [
+        "snapshot",
+        "snapshot-complete"
+      ],
+      "seconds": 5020.119810773998,
+      "units": 3400000,
+      "source": {
+        "opcounters": {
+          "insert": 0,
+          "query": 50,
+          "update": 2657959,
+          "delete": 1613492,
+          "getmore": 4536,
+          "command": 35018
+        },
+        "total": 4311055,
+        "perUnit": 1.2679573529411765,
+        "transactions": {
+          "started": 0,
+          "committed": 0,
+          "aborted": 0
+        },
+        "transactionsPerUnit": 0.0
+      }
+    }
+  },
+  "snapshotVsPlain": 21.245204225349493,
+  "snapshotRootsVsPlain": 8.19398479817524,
+  "cdc": {
+    "scenario": "cdc",
+    "pipeline": "nb_64e2253f22_nest",
+    "steps": [
+      {
+        "rate": 10,
+        "achievedEventsPerSecond": 9.998333333333333,
+        "sent": 5999,
+        "seconds": 600,
+        "endLagSeconds": 3.035,
+        "lagGrowthSecondsPerSecond": 0.0003933333333333344,
+        "maxLagSeconds": 3.35,
+        "drainSeconds": 5.767788040000596,
+        "held": true,
+        "store": {
+          "phases": [
+            "cdc-10"
+          ],
+          "seconds": 605.0161160770003,
+          "units": 5999,
+          "source": {
+            "opcounters": {
+              "insert": 0,
+              "query": 118,
+              "update": 12578,
+              "delete": 5241,
+              "getmore": 5976,
+              "command": 4345
+            },
+            "total": 28258,
+            "perUnit": 4.710451741956993,
+            "transactions": {
+              "started": 0,
+              "committed": 0,
+              "aborted": 0
+            },
+            "transactionsPerUnit": 0.0
+          }
+        }
+      },
+      {
+        "rate": 25,
+        "achievedEventsPerSecond": 24.998291669513886,
+        "sent": 14999,
+        "seconds": 600.001,
+        "endLagSeconds": 2.741,
+        "lagGrowthSecondsPerSecond": -8.968080291294716e-05,
+        "maxLagSeconds": 3.207,
+        "drainSeconds": 5.688777417999518,
+        "held": true,
+        "store": {
+          "phases": [
+            "cdc-25"
+          ],
+          "seconds": 605.0189385560006,
+          "units": 14999,
+          "source": {
+            "opcounters": {
+              "insert": 0,
+              "query": 116,
+              "update": 30500,
+              "delete": 13309,
+              "getmore": 14907,
+              "command": 4343
+            },
+            "total": 63175,
+            "perUnit": 4.211947463164211,
+            "transactions": {
+              "started": 0,
+              "committed": 0,
+              "aborted": 0
+            },
+            "transactionsPerUnit": 0.0
+          }
+        }
+      },
+      {
+        "rate": 50,
+        "achievedEventsPerSecond": 49.99825000291666,
+        "sent": 29999,
+        "seconds": 600.001,
+        "endLagSeconds": 2.328,
+        "lagGrowthSecondsPerSecond": -0.00014690451706390076,
+        "maxLagSeconds": 3.091,
+        "drainSeconds": 5.447348460002104,
+        "held": true,
+        "store": {
+          "phases": [
+            "cdc-50"
+          ],
+          "seconds": 605.0146923079956,
+          "units": 29999,
+          "source": {
+            "opcounters": {
+              "insert": 0,
+              "query": 116,
+              "update": 60353,
+              "delete": 26806,
+              "getmore": 29807,
+              "command": 4344
+            },
+            "total": 121426,
+            "perUnit": 4.04766825560852,
+            "transactions": {
+              "started": 0,
+              "committed": 0,
+              "aborted": 0
+            },
+            "transactionsPerUnit": 0.0
+          }
+        }
+      },
+      {
+        "rate": 150,
+        "achievedEventsPerSecond": 149.99833333333333,
+        "sent": 89999,
+        "seconds": 600,
+        "endLagSeconds": 2.187,
+        "lagGrowthSecondsPerSecond": -0.0005677425044091707,
+        "maxLagSeconds": 4.223,
+        "drainSeconds": 2.739823695002997,
+        "held": true,
+        "store": {
+          "phases": [
+            "cdc-150"
+          ],
+          "seconds": 595.0097519400006,
+          "units": 89999,
+          "source": {
+            "opcounters": {
+              "insert": 0,
+              "query": 112,
+              "update": 179055,
+              "delete": 80092,
+              "getmore": 89181,
+              "command": 4253
+            },
+            "total": 352693,
+            "perUnit": 3.9188546539405995,
+            "transactions": {
+              "started": 0,
+              "committed": 0,
+              "aborted": 0
+            },
+            "transactionsPerUnit": 0.0
+          }
+        }
+      }
+    ],
+    "sustainedCeiling": 150,
+    "mix": {
+      "lines": 0.8,
+      "customers": 0.0,
+      "orders": 0.2
+    },
+    "verifyAfter": {
+      "checked": 10000,
+      "bad": 0,
+      "examples": [],
+      "firstCheckBad": 0,
+      "secondsToSettle": 21.389480229001492,
+      "documentHash": {
+        "documents": 1000000,
+        "sha256": "0c28963b0f2965d8d2ec100e7d182381312b0de6a5779f666a6219cdb7599bbb"
+      }
+    },
+    "passed": true
+  },
+  "finishedUnix": 1794233315.051878
+}

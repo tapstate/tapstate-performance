@@ -1,0 +1,142 @@
+{
+  "prefix": "nb_f6a84b096a",
+  "label": "tap-942-v2-2",
+  "fixture": "942",
+  "source": "nb_f6a84b096a_source",
+  "expected": {
+    "BENCH_CUSTOMERS": 1000,
+    "BENCH_LINES": 23000,
+    "BENCH_ORDERS": 10000
+  },
+  "plain": {
+    "scenario": "plain",
+    "pipeline": "nb_f6a84b096a_plain",
+    "rows": 34000,
+    "seconds": 24.24371636900105,
+    "rowsPerSecond": 1402.4252504238052
+  },
+  "snapshot": {
+    "scenario": "snapshot",
+    "pipeline": "nb_f6a84b096a_nest",
+    "rows": 34000,
+    "orders": 10000,
+    "secondsToAllRoots": 314.10450877100084,
+    "secondsToComplete": 325.39076665500033,
+    "secondsToVerified": 326.5794909590004,
+    "docsPerSecond": 30.73227953822865,
+    "inputRowsPerSecond": 104.4897504299774,
+    "rootsDocsPerSecond": 31.836537587846408,
+    "verify": {
+      "checked": 200,
+      "bad": 0,
+      "examples": []
+    },
+    "passed": true
+  },
+  "snapshotVsPlain": 13.421653747403905,
+  "snapshotRootsVsPlain": 12.95612042271815,
+  "cdc": {
+    "scenario": "cdc",
+    "pipeline": "nb_f6a84b096a_nest",
+    "steps": [
+      {
+        "rate": 10,
+        "achievedEventsPerSecond": 9.991666666666667,
+        "sent": 1199,
+        "seconds": 120,
+        "endLagSeconds": 1.093,
+        "lagGrowthSecondsPerSecond": 0.004430000000000001,
+        "maxLagSeconds": 1.168,
+        "drainSeconds": 2.7985645730004762,
+        "held": true
+      },
+      {
+        "rate": 25,
+        "achievedEventsPerSecond": 24.991666666666667,
+        "sent": 2999,
+        "seconds": 120,
+        "endLagSeconds": 1.55,
+        "lagGrowthSecondsPerSecond": 0.008943333333333336,
+        "maxLagSeconds": 3.028,
+        "drainSeconds": 2.7985650450027606,
+        "held": true
+      },
+      {
+        "rate": 50,
+        "achievedEventsPerSecond": 49.99166666666667,
+        "sent": 5999,
+        "seconds": 120,
+        "endLagSeconds": 33.71,
+        "lagGrowthSecondsPerSecond": 0.3206666666666667,
+        "maxLagSeconds": 36.157,
+        "drainSeconds": 25.231244010999944,
+        "held": false
+      },
+      {
+        "rate": 150,
+        "achievedEventsPerSecond": 149.99166666666667,
+        "sent": 17999,
+        "seconds": 120,
+        "endLagSeconds": 97.153,
+        "lagGrowthSecondsPerSecond": 0.8013566666666666,
+        "maxLagSeconds": 97.153,
+        "drainSeconds": 229.75320712800385,
+        "held": false
+      },
+      {
+        "rate": 300,
+        "achievedEventsPerSecond": 299.97166855542963,
+        "sent": 35999,
+        "seconds": 120.008,
+        "endLagSeconds": 106.501,
+        "lagGrowthSecondsPerSecond": 0.8926871541897206,
+        "maxLagSeconds": 106.501,
+        "drainSeconds": 579.9435431330057,
+        "held": false
+      },
+      {
+        "rate": 600,
+        "achievedEventsPerSecond": 599.8816834281811,
+        "sent": 71996,
+        "seconds": 120.017,
+        "endLagSeconds": 112.262,
+        "lagGrowthSecondsPerSecond": 0.9685994484114749,
+        "maxLagSeconds": 112.262,
+        "drainSeconds": null,
+        "held": false
+      }
+    ],
+    "sustainedCeiling": 25,
+    "mix": {
+      "lines": 0.8,
+      "customers": 0.0,
+      "orders": 0.2
+    },
+    "verifyAfter": {
+      "checked": 200,
+      "bad": 4,
+      "examples": [
+        {
+          "order": 5593,
+          "why": "lines"
+        },
+        {
+          "order": 7457,
+          "why": "lines"
+        },
+        {
+          "order": 7338,
+          "why": "lines"
+        },
+        {
+          "order": 1892,
+          "why": "lines"
+        }
+      ],
+      "firstCheckBad": 164,
+      "secondsToSettle": 302.07257607499923
+    },
+    "passed": false
+  },
+  "finishedUnix": 1794176933.1189299
+}

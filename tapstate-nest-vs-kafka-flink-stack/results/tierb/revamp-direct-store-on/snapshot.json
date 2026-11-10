@@ -1,0 +1,22 @@
+{
+  "scenario": "snapshot",
+  "pipeline": "nb_f1ff074c80_nest",
+  "rows": 3400000,
+  "orders": 1000000,
+  "documentHash": {
+    "documents": 1000000,
+    "sha256": "935bec55b522adbd195331416870826ea18afa11e28dc8f9f58f2e35d9130d7a"
+  },
+  "secondsToAllRoots": 2021.5424918439967,
+  "secondsToComplete": 2024.3548433490068,
+  "secondsToVerified": 2074.4339571800083,
+  "docsPerSecond": 493.9845419322051,
+  "inputRowsPerSecond": 1679.5474425694974,
+  "rootsDocsPerSecond": 494.671768728357,
+  "verify": {
+    "checked": 10000,
+    "bad": 0,
+    "examples": []
+  },
+  "passed": true
+}

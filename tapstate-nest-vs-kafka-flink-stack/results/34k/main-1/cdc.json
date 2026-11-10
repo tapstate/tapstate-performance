@@ -1,0 +1,86 @@
+{
+  "scenario": "cdc",
+  "pipeline": "nb_a973b62706_nest",
+  "steps": [
+    {
+      "rate": 10,
+      "achievedEventsPerSecond": 9.991666666666667,
+      "sent": 1199,
+      "seconds": 120,
+      "endLagSeconds": 1.201,
+      "lagGrowthSecondsPerSecond": -0.0007866666666666651,
+      "maxLagSeconds": 1.201,
+      "drainSeconds": 2.8099523399978352,
+      "held": true
+    },
+    {
+      "rate": 25,
+      "achievedEventsPerSecond": 24.991666666666667,
+      "sent": 2999,
+      "seconds": 120,
+      "endLagSeconds": 1.736,
+      "lagGrowthSecondsPerSecond": 0.004203333333333329,
+      "maxLagSeconds": 3.028,
+      "drainSeconds": 2.801104933998431,
+      "held": true
+    },
+    {
+      "rate": 50,
+      "achievedEventsPerSecond": 49.99166666666667,
+      "sent": 5999,
+      "seconds": 120,
+      "endLagSeconds": 38.794,
+      "lagGrowthSecondsPerSecond": 0.33093333333333325,
+      "maxLagSeconds": 40.262,
+      "drainSeconds": 27.998483634000877,
+      "held": false
+    },
+    {
+      "rate": 150,
+      "achievedEventsPerSecond": 149.99166666666667,
+      "sent": 17999,
+      "seconds": 120,
+      "endLagSeconds": 98.602,
+      "lagGrowthSecondsPerSecond": 0.787,
+      "maxLagSeconds": 98.602,
+      "drainSeconds": 235.4587512199978,
+      "held": false
+    },
+    {
+      "rate": 300,
+      "achievedEventsPerSecond": 299.96333883250844,
+      "sent": 36001,
+      "seconds": 120.018,
+      "endLagSeconds": 107.289,
+      "lagGrowthSecondsPerSecond": 0.8957623023213185,
+      "maxLagSeconds": 107.289,
+      "drainSeconds": 557.811941721,
+      "held": false
+    },
+    {
+      "rate": 600,
+      "achievedEventsPerSecond": 599.9400034997958,
+      "sent": 71997,
+      "seconds": 120.007,
+      "endLagSeconds": 111.681,
+      "lagGrowthSecondsPerSecond": 0.9615139116884848,
+      "maxLagSeconds": 111.681,
+      "drainSeconds": null,
+      "held": false
+    }
+  ],
+  "sustainedCeiling": 25,
+  "mix": {
+    "lines": 0.8,
+    "customers": 0.0,
+    "orders": 0.2
+  },
+  "verifyAfter": {
+    "checked": 200,
+    "bad": 0,
+    "examples": [],
+    "firstCheckBad": 164,
+    "secondsToSettle": 301.99486059000265
+  },
+  "passed": true
+}

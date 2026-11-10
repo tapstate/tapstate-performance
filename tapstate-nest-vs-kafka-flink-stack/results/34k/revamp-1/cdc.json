@@ -1,0 +1,90 @@
+{
+  "scenario": "cdc",
+  "pipeline": "nb_f28cd84b14_nest",
+  "steps": [
+    {
+      "rate": 10,
+      "achievedEventsPerSecond": 9.991666666666667,
+      "sent": 1199,
+      "seconds": 120,
+      "endLagSeconds": 0.442,
+      "lagGrowthSecondsPerSecond": -0.0019733333333333343,
+      "maxLagSeconds": 1.036,
+      "drainSeconds": 2.991975619996083,
+      "held": true
+    },
+    {
+      "rate": 25,
+      "achievedEventsPerSecond": 24.991458404513295,
+      "sent": 2999,
+      "seconds": 120.001,
+      "endLagSeconds": 0.56,
+      "lagGrowthSecondsPerSecond": -0.0007366605278289351,
+      "maxLagSeconds": 3.219,
+      "drainSeconds": 2.811165881008492,
+      "held": true
+    },
+    {
+      "rate": 50,
+      "achievedEventsPerSecond": 49.99125007291606,
+      "sent": 5999,
+      "seconds": 120.001,
+      "endLagSeconds": 1.11,
+      "lagGrowthSecondsPerSecond": 0.0011733235556370385,
+      "maxLagSeconds": 3.393,
+      "drainSeconds": 2.808977659995435,
+      "held": true
+    },
+    {
+      "rate": 150,
+      "achievedEventsPerSecond": 149.99166666666667,
+      "sent": 17999,
+      "seconds": 120,
+      "endLagSeconds": 1.062,
+      "lagGrowthSecondsPerSecond": 0.0025866666666666685,
+      "maxLagSeconds": 3.161,
+      "drainSeconds": 2.8082469570072135,
+      "held": true
+    },
+    {
+      "rate": 300,
+      "achievedEventsPerSecond": 299.97333644408155,
+      "sent": 36001,
+      "seconds": 120.014,
+      "endLagSeconds": 1.382,
+      "lagGrowthSecondsPerSecond": 0.0003032979485726646,
+      "maxLagSeconds": 3.209,
+      "drainSeconds": 2.8003887420054525,
+      "held": true
+    },
+    {
+      "rate": 600,
+      "achievedEventsPerSecond": 599.9450050412046,
+      "sent": 72000,
+      "seconds": 120.011,
+      "endLagSeconds": 27.981,
+      "lagGrowthSecondsPerSecond": 0.23094549666280592,
+      "maxLagSeconds": 27.981,
+      "drainSeconds": 11.515038063997054,
+      "held": false
+    }
+  ],
+  "sustainedCeiling": 300,
+  "mix": {
+    "lines": 0.8,
+    "customers": 0.0,
+    "orders": 0.2
+  },
+  "verifyAfter": {
+    "checked": 200,
+    "bad": 0,
+    "examples": [],
+    "firstCheckBad": 0,
+    "secondsToSettle": 1.1545206439914182,
+    "documentHash": {
+      "documents": 10000,
+      "sha256": "0c0979c6f7b3c90b8422d18ed41f84d3df0f187867e41f5270b5d3348de00120"
+    }
+  },
+  "passed": true
+}

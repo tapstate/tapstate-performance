@@ -1,0 +1,27 @@
+cdc-1000           nestbench-driver     n=163 p50=  78.4 p95= 150.3 max= 178.2
+cdc-1000           nestbench-mongo      n=163 p50= 170.7 p95= 202.5 max= 203.8
+cdc-1000           nestbench-pr1026-op  n=163 p50=  69.0 p95= 188.7 max= 201.0
+cdc-150            nestbench-driver     n=121 p50=  81.0 p95= 136.9 max= 156.3
+cdc-150            nestbench-mongo      n=121 p50=  98.8 p95= 113.4 max= 187.4
+cdc-150            nestbench-pr1026-op  n=121 p50=  63.4 p95= 164.8 max= 182.4
+cdc-300            nestbench-driver     n=121 p50=  81.8 p95= 143.6 max= 154.4
+cdc-300            nestbench-mongo      n=121 p50= 138.5 p95= 165.9 max= 193.2
+cdc-300            nestbench-pr1026-op  n=121 p50=  63.1 p95= 171.4 max= 187.9
+cdc-600            nestbench-driver     n=131 p50=  77.5 p95= 134.6 max= 173.4
+cdc-600            nestbench-mongo      n=131 p50= 168.8 p95= 201.5 max= 203.2
+cdc-600            nestbench-pr1026-op  n=131 p50=  57.9 p95= 167.6 max= 188.9
+cdc-verify         nestbench-driver     n=  9 p50= 183.5 p95= 191.0 max= 193.6
+cdc-verify         nestbench-mongo      n=  9 p50=  36.0 p95=  49.6 max=  52.0
+cdc-verify         nestbench-pr1026-op  n=  9 p50=  18.0 p95=  25.6 max=  26.4
+setup              nestbench-driver     n=  1 p50=   0.0 p95=   0.0 max=   0.0
+setup              nestbench-mongo      n=  1 p50=  29.0 p95=  29.0 max=  29.0
+setup              nestbench-pr1026-op  n=  1 p50= 156.7 p95= 156.7 max= 156.7
+snapshot           nestbench-driver     n=404 p50=  66.6 p95= 123.2 max= 141.2
+snapshot           nestbench-mongo      n=404 p50=  62.0 p95=  94.7 max= 152.5
+snapshot           nestbench-pr1026-op  n=404 p50= 201.1 p95= 203.1 max= 204.0
+snapshot-complete  nestbench-driver     n=  1 p50=  65.2 p95=  65.2 max=  65.2
+snapshot-complete  nestbench-mongo      n=  1 p50=  98.0 p95=  98.0 max=  98.0
+snapshot-complete  nestbench-pr1026-op  n=  1 p50=  41.7 p95=  41.7 max=  41.7
+snapshot-verify    nestbench-driver     n= 10 p50= 182.0 p95= 189.9 max= 193.7
+snapshot-verify    nestbench-mongo      n= 10 p50=  35.7 p95=  51.6 max= 135.0
+snapshot-verify    nestbench-pr1026-op  n= 10 p50=  26.6 p95=  27.1 max=  33.0

@@ -1,0 +1,18 @@
+{
+  "scenario": "snapshot",
+  "pipeline": "nb_a973b62706_nest",
+  "rows": 34000,
+  "orders": 10000,
+  "secondsToAllRoots": 347.221474689999,
+  "secondsToComplete": 358.52181352700063,
+  "secondsToVerified": 359.7026964859979,
+  "docsPerSecond": 27.89230563581005,
+  "inputRowsPerSecond": 94.83383916175417,
+  "rootsDocsPerSecond": 28.800062003446207,
+  "verify": {
+    "checked": 200,
+    "bad": 0,
+    "examples": []
+  },
+  "passed": true
+}

@@ -1,0 +1,18 @@
+{
+  "scenario": "snapshot",
+  "pipeline": "nb_c0e129cd3d_nest",
+  "rows": 34000,
+  "orders": 10000,
+  "secondsToAllRoots": 37.841736293001304,
+  "secondsToComplete": 43.65874259900011,
+  "secondsToVerified": 45.355292742999154,
+  "docsPerSecond": 229.0491985041508,
+  "inputRowsPerSecond": 778.7672749141127,
+  "rootsDocsPerSecond": 264.2584875749865,
+  "verify": {
+    "checked": 200,
+    "bad": 0,
+    "examples": []
+  },
+  "passed": true
+}

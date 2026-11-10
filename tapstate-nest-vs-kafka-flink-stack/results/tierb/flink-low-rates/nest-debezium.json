@@ -1,0 +1,17 @@
+{
+  "name": "nb_64e2253f22_nest",
+  "config": {
+    "connector.class": "io.debezium.connector.mongodb.MongoDbConnector",
+    "mongodb.connection.string": "mongodb://nestbench-mongo:27017/?replicaSet=nbrs",
+    "topic.prefix": "nb_64e2253f22_nest",
+    "collection.include.list": "nb_64e2253f22_source\\.BENCH_CUSTOMERS,nb_64e2253f22_source\\.BENCH_LINES,nb_64e2253f22_source\\.BENCH_ORDERS",
+    "capture.mode": "change_streams_update_full",
+    "snapshot.mode": "initial",
+    "tombstones.on.delete": "false",
+    "transforms": "unwrap,key",
+    "transforms.unwrap.type": "io.debezium.connector.mongodb.transforms.ExtractNewDocumentState",
+    "transforms.unwrap.delete.tombstone.handling.mode": "drop",
+    "transforms.key.type": "org.apache.kafka.connect.transforms.ValueToKey",
+    "transforms.key.fields": "_id"
+  }
+}

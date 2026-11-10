@@ -1,0 +1,10 @@
+{
+  "database": "nb_64e2253f22_source",
+  "fixture": "tierb",
+  "counts": {
+    "BENCH_CUSTOMERS": 100000,
+    "BENCH_LINES": 2300000,
+    "BENCH_ORDERS": 1000000
+  },
+  "seconds": 30.660498388999258
+}

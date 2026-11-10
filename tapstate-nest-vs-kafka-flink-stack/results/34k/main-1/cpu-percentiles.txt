@@ -1,0 +1,33 @@
+cdc-10             nestbench-driver     n= 25 p50=   1.4 p95=  47.8 max= 124.8
+cdc-10             nestbench-main-op    n= 25 p50= 116.3 p95= 129.8 max= 160.3
+cdc-10             nestbench-mongo      n= 25 p50= 132.2 p95= 141.9 max= 157.2
+cdc-150            nestbench-driver     n= 71 p50=  13.8 p95=  91.5 max=  94.0
+cdc-150            nestbench-main-op    n= 71 p50= 138.3 p95= 158.3 max= 164.7
+cdc-150            nestbench-mongo      n= 71 p50= 156.7 p95= 177.0 max= 184.3
+cdc-25             nestbench-driver     n= 25 p50=   2.6 p95=  48.9 max= 108.8
+cdc-25             nestbench-main-op    n= 25 p50= 153.2 p95= 160.3 max= 160.8
+cdc-25             nestbench-mongo      n= 25 p50= 172.3 p95= 176.6 max= 178.9
+cdc-300            nestbench-driver     n=136 p50=  16.9 p95=  90.3 max=  93.1
+cdc-300            nestbench-main-op    n=136 p50= 136.2 p95= 164.6 max= 176.3
+cdc-300            nestbench-mongo      n=136 p50= 156.9 p95= 177.9 max= 182.9
+cdc-50             nestbench-driver     n= 30 p50=   4.6 p95=  47.6 max=  51.3
+cdc-50             nestbench-main-op    n= 30 p50= 153.4 p95= 170.0 max= 187.4
+cdc-50             nestbench-mongo      n= 30 p50= 163.0 p95= 171.6 max= 178.5
+cdc-600            nestbench-driver     n=205 p50=  12.2 p95=  91.0 max=  93.2
+cdc-600            nestbench-main-op    n=205 p50= 136.6 p95= 163.6 max= 173.3
+cdc-600            nestbench-mongo      n=205 p50= 157.4 p95= 175.2 max= 181.6
+cdc-verify         nestbench-driver     n= 60 p50=   0.0 p95=  78.1 max=  92.8
+cdc-verify         nestbench-main-op    n= 60 p50= 128.3 p95= 138.7 max= 142.8
+cdc-verify         nestbench-mongo      n= 60 p50= 151.5 p95= 160.9 max= 174.2
+plain              nestbench-driver     n=  8 p50=   0.0 p95=  42.9 max=  45.5
+plain              nestbench-main-op    n=  8 p50= 201.9 p95= 202.5 max= 202.7
+plain              nestbench-mongo      n=  8 p50=  87.0 p95=  94.3 max=  97.3
+setup              nestbench-driver     n=  2 p50=   0.0 p95=   0.0 max=   0.0
+setup              nestbench-main-op    n=  2 p50= 164.6 p95= 144.4 max= 164.6
+setup              nestbench-mongo      n=  2 p50=  46.1 p95=  40.1 max=  46.1
+snapshot           nestbench-driver     n= 70 p50=   0.0 p95=  46.1 max=  46.7
+snapshot           nestbench-main-op    n= 70 p50= 108.0 p95= 197.9 max= 204.6
+snapshot           nestbench-mongo      n= 70 p50= 135.8 p95= 154.3 max= 159.1
+snapshot-complete  nestbench-driver     n=  2 p50=  58.0 p95=  17.7 max=  58.0
+snapshot-complete  nestbench-main-op    n=  2 p50=  85.2 p95=  83.0 max=  85.2
+snapshot-complete  nestbench-mongo      n=  2 p50= 129.5 p95= 116.5 max= 129.5
