@@ -40,6 +40,7 @@ Example:
 import argparse
 import json
 import pathlib
+import re
 import subprocess
 import threading
 import time
@@ -697,8 +698,10 @@ while (Date.now()-t0 < secs*1000) {
             if held:
                 ceiling = rate
                 # One extra step when the last listed rate held (same pipeline, same run).
-                if rate == rates[-1] and self.args.cdc_extra_if_held and self.args.cdc_extra_if_held not in rates:
-                    rates.append(self.args.cdc_extra_if_held)
+                extra = [int(x) for x in str(self.args.cdc_extra_if_held or '').split(',') if x.strip() and int(x)]
+                nxt = next((x for x in extra if x not in rates), None)
+                if rate == rates[-1] and nxt:
+                    rates.append(nxt)
             elif not self.args.cdc_continue:
                 break
         # The drain probe watches one key; a partitioned engine can still be settling other keys,
@@ -801,7 +804,7 @@ while (Date.now()-t0 < secs*1000) {
         prefix = 'nb_' + uuid.uuid4().hex[:10]
         meta = {'prefix': prefix, 'fixture': a.fixture, 'scenarios': scen, 'startedUnix': time.time(),
                 'label': a.label, 'api': a.api, 'members': self.engine_info(),
-                'stats': self.docker_stats(), 'args': {k: v for k, v in vars(a).items() if k != 'password'}}
+                'stats': self.docker_stats(), 'args': {k: (re.sub(r'//([^:/@]+):[^/]*@', r'//\1:***@', v) if isinstance(v, str) else v) for k, v in vars(a).items() if k != 'password'}}
         self.write('meta.json', meta)
         self.start_sampler()
         source_db = a.source_db or prefix + '_source'
@@ -888,7 +891,7 @@ def main():
     p.add_argument('--cdc-rates', default='150,500,1000,1500')
     p.add_argument('--cdc-step-seconds', type=int, default=600)
     p.add_argument('--cdc-stop-after-failures', type=int, default=0, help='stop stepping after this many steps that did not hold (0 = never)')
-    p.add_argument('--cdc-extra-if-held', type=int, default=0, help='add this CDC rate as a final step if the last listed step held')
+    p.add_argument('--cdc-extra-if-held', default='', help='comma list of CDC rates; each is added as a further step only if the step before it held')
     p.add_argument('--cdc-continue', action='store_true', help='keep stepping after a rate fails to hold')
     p.add_argument('--line-fraction', type=float, default=0.8)
     p.add_argument('--customer-fraction', type=float, default=0.0)
