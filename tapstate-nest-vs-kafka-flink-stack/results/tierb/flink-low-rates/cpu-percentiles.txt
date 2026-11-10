@@ -1,0 +1,50 @@
+cdc-10             nestbench-connect    n=122 p50=   0.9 p95=   4.6 max=  14.9
+cdc-10             nestbench-driver     n=122 p50=  54.8 p95= 106.6 max= 157.9
+cdc-10             nestbench-flink      n=122 p50=   2.4 p95=  99.3 max= 100.9
+cdc-10             nestbench-kafka      n=122 p50=   1.1 p95=   1.5 max=   2.8
+cdc-10             nestbench-mongo      n=122 p50=   3.3 p95=   4.3 max=  27.6
+cdc-150            nestbench-connect    n=120 p50=   3.7 p95=   4.3 max=  17.6
+cdc-150            nestbench-driver     n=120 p50=  66.8 p95= 112.7 max= 132.4
+cdc-150            nestbench-flink      n=120 p50=   7.1 p95= 103.4 max= 107.5
+cdc-150            nestbench-kafka      n=120 p50=   1.0 p95=   1.2 max=   2.9
+cdc-150            nestbench-mongo      n=120 p50=  32.0 p95=  40.8 max=  96.8
+cdc-25             nestbench-connect    n=122 p50=   1.4 p95=   1.7 max=   5.9
+cdc-25             nestbench-driver     n=122 p50=  56.6 p95= 113.9 max= 138.2
+cdc-25             nestbench-flink      n=122 p50=   3.1 p95=  99.5 max= 102.0
+cdc-25             nestbench-kafka      n=122 p50=   1.1 p95=   1.5 max=   6.8
+cdc-25             nestbench-mongo      n=122 p50=   7.2 p95=  10.3 max=  65.9
+cdc-50             nestbench-connect    n=122 p50=   1.9 p95=   2.2 max=   4.9
+cdc-50             nestbench-driver     n=122 p50=  58.2 p95= 105.8 max= 125.8
+cdc-50             nestbench-flink      n=122 p50=   4.1 p95= 100.5 max= 103.5
+cdc-50             nestbench-kafka      n=122 p50=   1.1 p95=   1.2 max=   3.4
+cdc-50             nestbench-mongo      n=122 p50=  13.1 p95=  18.1 max=  98.7
+cdc-verify         nestbench-connect    n=  9 p50=   0.5 p95=   0.6 max=   0.6
+cdc-verify         nestbench-driver     n=  9 p50= 147.1 p95= 177.8 max= 178.3
+cdc-verify         nestbench-flink      n=  9 p50=   1.8 p95=   1.9 max=  85.4
+cdc-verify         nestbench-kafka      n=  9 p50=   0.9 p95=   1.0 max=   1.0
+cdc-verify         nestbench-mongo      n=  9 p50=   9.4 p95=  29.6 max=  30.1
+plain              nestbench-connect    n= 48 p50=   1.1 p95= 180.2 max= 184.0
+plain              nestbench-driver     n= 48 p50=  53.6 p95= 102.5 max= 120.6
+plain              nestbench-flink      n= 48 p50=  38.4 p95= 120.2 max= 190.1
+plain              nestbench-kafka      n= 48 p50=   1.9 p95=  19.9 max=  50.6
+plain              nestbench-mongo      n= 48 p50= 170.2 p95= 201.0 max= 201.4
+setup              nestbench-connect    n=  8 p50=   2.5 p95=  58.1 max= 136.1
+setup              nestbench-driver     n=  8 p50=  52.6 p95=  98.1 max= 101.1
+setup              nestbench-flink      n=  8 p50=   1.5 p95= 180.5 max= 192.1
+setup              nestbench-kafka      n=  8 p50=   3.6 p95=  25.0 max=  64.5
+setup              nestbench-mongo      n=  8 p50=  86.4 p95=  91.7 max=  93.7
+snapshot           nestbench-connect    n=386 p50=   0.6 p95=   1.5 max= 184.1
+snapshot           nestbench-driver     n=386 p50=  53.6 p95=  98.3 max= 122.8
+snapshot           nestbench-flink      n=386 p50=  14.6 p95=  35.0 max= 117.4
+snapshot           nestbench-kafka      n=386 p50=   0.9 p95=   3.0 max=  22.2
+snapshot           nestbench-mongo      n=386 p50=  40.5 p95=  47.2 max=  77.9
+snapshot-complete  nestbench-connect    n=619 p50=   0.6 p95=   0.7 max=  14.3
+snapshot-complete  nestbench-driver     n=619 p50=  53.9 p95= 103.1 max= 122.8
+snapshot-complete  nestbench-flink      n=619 p50=  10.9 p95=  46.5 max= 103.0
+snapshot-complete  nestbench-kafka      n=619 p50=   0.9 p95=   1.1 max=  11.5
+snapshot-complete  nestbench-mongo      n=619 p50=  40.1 p95= 141.6 max= 155.1
+snapshot-verify    nestbench-connect    n=  9 p50=   0.6 p95=   0.7 max=   2.9
+snapshot-verify    nestbench-driver     n=  9 p50= 171.9 p95= 178.9 max= 183.7
+snapshot-verify    nestbench-flink      n=  9 p50=   1.8 p95=   1.8 max=   3.5
+snapshot-verify    nestbench-kafka      n=  9 p50=   0.9 p95=   1.0 max=   1.0
+snapshot-verify    nestbench-mongo      n=  9 p50=  26.9 p95=  30.1 max=  30.6

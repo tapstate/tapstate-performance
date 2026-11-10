@@ -1,0 +1,125 @@
+{
+  "prefix": "nb_7d41cbd8e6",
+  "label": "flink-942-v2-2",
+  "fixture": "942",
+  "source": "nb_7d41cbd8e6_source",
+  "expected": {
+    "BENCH_CUSTOMERS": 1000,
+    "BENCH_LINES": 23000,
+    "BENCH_ORDERS": 10000
+  },
+  "plain": {
+    "scenario": "plain",
+    "pipeline": "nb_7d41cbd8e6_plain",
+    "rows": 34000,
+    "seconds": 14.223708434998116,
+    "rowsPerSecond": 2390.375207378504
+  },
+  "snapshot": {
+    "scenario": "snapshot",
+    "pipeline": "nb_7d41cbd8e6_nest",
+    "rows": 34000,
+    "orders": 10000,
+    "secondsToAllRoots": 69.8300442189975,
+    "secondsToComplete": 70.24432714199793,
+    "secondsToVerified": 71.93408363799972,
+    "docsPerSecond": 142.3602503841362,
+    "inputRowsPerSecond": 484.0248513060631,
+    "rootsDocsPerSecond": 143.204835566744,
+    "verify": {
+      "checked": 200,
+      "bad": 0,
+      "examples": []
+    },
+    "passed": true
+  },
+  "snapshotVsPlain": 4.938538178212259,
+  "snapshotRootsVsPlain": 4.90941195385989,
+  "cdc": {
+    "scenario": "cdc",
+    "pipeline": "nb_7d41cbd8e6_nest",
+    "steps": [
+      {
+        "rate": 10,
+        "achievedEventsPerSecond": 9.991666666666667,
+        "sent": 1199,
+        "seconds": 120,
+        "endLagSeconds": 1.965,
+        "lagGrowthSecondsPerSecond": -0.008538333333333337,
+        "maxLagSeconds": 3.584,
+        "drainSeconds": 2.7986502169987943,
+        "held": true
+      },
+      {
+        "rate": 25,
+        "achievedEventsPerSecond": 24.991458404513295,
+        "sent": 2999,
+        "seconds": 120.001,
+        "endLagSeconds": 1.995,
+        "lagGrowthSecondsPerSecond": 0.005999950000416661,
+        "maxLagSeconds": 3.184,
+        "drainSeconds": 8.38504509699851,
+        "held": true
+      },
+      {
+        "rate": 50,
+        "achievedEventsPerSecond": 49.99166666666667,
+        "sent": 5999,
+        "seconds": 120,
+        "endLagSeconds": 2.167,
+        "lagGrowthSecondsPerSecond": -0.0034566666666666634,
+        "maxLagSeconds": 3.245,
+        "drainSeconds": 2.815336023999407,
+        "held": true
+      },
+      {
+        "rate": 150,
+        "achievedEventsPerSecond": 149.99166666666667,
+        "sent": 17999,
+        "seconds": 120,
+        "endLagSeconds": 1.621,
+        "lagGrowthSecondsPerSecond": -0.003965000000000004,
+        "maxLagSeconds": 4.131,
+        "drainSeconds": 2.798640544999216,
+        "held": true
+      },
+      {
+        "rate": 300,
+        "achievedEventsPerSecond": 299.98833411105926,
+        "sent": 36001,
+        "seconds": 120.008,
+        "endLagSeconds": 4.723,
+        "lagGrowthSecondsPerSecond": -0.012593049352265413,
+        "maxLagSeconds": 6.293,
+        "drainSeconds": 5.588322715997492,
+        "held": true
+      },
+      {
+        "rate": 600,
+        "achievedEventsPerSecond": 599.9400059994001,
+        "sent": 72000,
+        "seconds": 120.012,
+        "endLagSeconds": 60.665,
+        "lagGrowthSecondsPerSecond": 0.4952621404526214,
+        "maxLagSeconds": 60.665,
+        "drainSeconds": 92.53659232300197,
+        "held": false
+      }
+    ],
+    "sustainedCeiling": 300,
+    "mix": {
+      "lines": 0.8,
+      "customers": 0.0,
+      "orders": 0.2
+    },
+    "verifyAfter": {
+      "checked": 200,
+      "bad": 0,
+      "examples": [],
+      "firstCheckBad": 0,
+      "secondsToSettle": 2.5659936900010507
+    },
+    "passed": true
+  },
+  "finishedUnix": 1794170575.5236545
+}

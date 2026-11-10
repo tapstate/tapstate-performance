@@ -1,0 +1,95 @@
+# Debezium + Kafka + Flink comparison stack for the NEST benchmark (single node each).
+# Joins the existing `nestbench-net` network, where `nestbench-mongo` (replica set nbrs) serves
+# both the source and the target databases.
+#
+# CPU layout (see the README, "Rig"): Flink JobManager + TaskManager share one container
+# pinned to vCPUs 1,5 with 2 CPU / 8 GB (the same cap as the Tapstate engine); Kafka and
+# Kafka Connect are pinned to 3,7. Never run this stack and the Tapstate engine at the same time.
+name: nestbench-flink
+
+networks:
+  default:
+    name: nestbench-net
+    external: true
+
+volumes:
+  kafka-data: {}
+  flink-checkpoints: {}
+
+services:
+  kafka:
+    image: apache/kafka:3.9.1@sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed
+    container_name: nestbench-kafka
+    hostname: kafka
+    cpuset: "3,7"
+    mem_limit: 3g
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_NUM_PARTITIONS: 2
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+      KAFKA_HEAP_OPTS: -Xms1g -Xmx1g
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+
+  connect:
+    image: quay.io/debezium/connect:3.0.8.Final@sha256:15bf1198757acca522d3e498decbbf7a3a1e20cbf353750fdc28fe18fec4b39d
+    container_name: nestbench-connect
+    hostname: connect
+    depends_on: [kafka]
+    cpuset: "3,7"
+    mem_limit: 3g
+    ports:
+      - 127.0.0.1:8083:8083
+    environment:
+      BOOTSTRAP_SERVERS: kafka:9092
+      GROUP_ID: nestbench-connect
+      CONFIG_STORAGE_TOPIC: nestbench_connect_configs
+      OFFSET_STORAGE_TOPIC: nestbench_connect_offsets
+      STATUS_STORAGE_TOPIC: nestbench_connect_statuses
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+      KEY_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_KEY_CONVERTER_SCHEMAS_ENABLE: "false"
+      CONNECT_VALUE_CONVERTER_SCHEMAS_ENABLE: "false"
+      HEAP_OPTS: -Xms2g -Xmx2g
+
+  flink:
+    build: ./image
+    image: nestbench/flink:1.20.2-kafka3.4.0-mongodb2.0.0
+    container_name: nestbench-flink
+    hostname: flink
+    depends_on: [kafka]
+    cpuset: "1,5"
+    cpus: 2
+    mem_limit: 8g
+    ports:
+      - 127.0.0.1:8081:8081
+    environment:
+      FLINK_PROPERTIES: |
+        jobmanager.rpc.address: localhost
+        rest.address: 0.0.0.0
+        rest.bind-address: 0.0.0.0
+        jobmanager.memory.process.size: 1024m
+        taskmanager.memory.process.size: 6656m
+        taskmanager.numberOfTaskSlots: 2
+        parallelism.default: 2
+        state.backend.type: rocksdb
+        state.backend.incremental: true
+        state.checkpoints.dir: file:///opt/flink/checkpoints
+        execution.checkpointing.interval: 30s
+        execution.checkpointing.min-pause: 10s
+        table.exec.state.ttl: 0
+    volumes:
+      - flink-checkpoints:/opt/flink/checkpoints

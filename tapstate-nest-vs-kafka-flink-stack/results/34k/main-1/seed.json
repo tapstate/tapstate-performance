@@ -1,0 +1,10 @@
+{
+  "database": "nb_a973b62706_source",
+  "fixture": "942",
+  "counts": {
+    "BENCH_CUSTOMERS": 1000,
+    "BENCH_LINES": 23000,
+    "BENCH_ORDERS": 10000
+  },
+  "seconds": 0.969319321000512
+}

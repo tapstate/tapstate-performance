@@ -1,0 +1,68 @@
+{
+  "scenario": "cdc",
+  "pipeline": "nb_f1ff074c80_nest",
+  "steps": [
+    {
+      "rate": 150,
+      "achievedEventsPerSecond": 149.99808333652777,
+      "sent": 89999,
+      "seconds": 600.001,
+      "endLagSeconds": 0.773,
+      "lagGrowthSecondsPerSecond": 3.96295635803572e-05,
+      "maxLagSeconds": 1.21,
+      "drainSeconds": 2.8105109500029357,
+      "held": true
+    },
+    {
+      "rate": 300,
+      "achievedEventsPerSecond": 299.9958333680553,
+      "sent": 179999,
+      "seconds": 600.005,
+      "endLagSeconds": 0.636,
+      "lagGrowthSecondsPerSecond": 0.00037271294344152107,
+      "maxLagSeconds": 3.044,
+      "drainSeconds": 2.806063644005917,
+      "held": true
+    },
+    {
+      "rate": 600,
+      "achievedEventsPerSecond": 599.8943463639484,
+      "sent": 359981,
+      "seconds": 600.074,
+      "endLagSeconds": 69.022,
+      "lagGrowthSecondsPerSecond": 0.13922047585145658,
+      "maxLagSeconds": 126.715,
+      "drainSeconds": 51.512403528002324,
+      "held": false
+    },
+    {
+      "rate": 1000,
+      "achievedEventsPerSecond": 999.9716672805422,
+      "sent": 599996,
+      "seconds": 600.013,
+      "endLagSeconds": 274.437,
+      "lagGrowthSecondsPerSecond": 0.3928192485781165,
+      "maxLagSeconds": 274.437,
+      "drainSeconds": 208.77971149499353,
+      "held": false
+    }
+  ],
+  "sustainedCeiling": 300,
+  "mix": {
+    "lines": 0.8,
+    "customers": 0.0,
+    "orders": 0.2
+  },
+  "verifyAfter": {
+    "checked": 10000,
+    "bad": 0,
+    "examples": [],
+    "firstCheckBad": 0,
+    "secondsToSettle": 21.20490250000148,
+    "documentHash": {
+      "documents": 1000000,
+      "sha256": "3bd73566ce6a6b09468536ce204222bec5bd856bb4899fbc5b2a9e50681141d0"
+    }
+  },
+  "passed": true
+}

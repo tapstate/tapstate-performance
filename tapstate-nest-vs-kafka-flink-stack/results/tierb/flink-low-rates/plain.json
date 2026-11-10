@@ -1,0 +1,32 @@
+{
+  "scenario": "plain",
+  "pipeline": "nb_64e2253f22_plain",
+  "rows": 3400000,
+  "seconds": 236.94212419900578,
+  "rowsPerSecond": 14349.495732318022,
+  "store": {
+    "phases": [
+      "plain"
+    ],
+    "seconds": 225.0100935809969,
+    "units": 3400000,
+    "source": {
+      "opcounters": {
+        "insert": 0,
+        "query": 11,
+        "update": 3400125,
+        "delete": 25,
+        "getmore": 121,
+        "command": 1867
+      },
+      "total": 3402149,
+      "perUnit": 1.0006320588235293,
+      "transactions": {
+        "started": 0,
+        "committed": 0,
+        "aborted": 0
+      },
+      "transactionsPerUnit": 0.0
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "nb_a973b62706_nest",
+  "sources": [
+    "nb_a973b62706_nest_in"
+  ],
+  "settings": {
+    "readMode": "snapshot_and_cdc",
+    "parallelism": 1
+  },
+  "transforms": [
+    {
+      "id": "order_doc",
+      "type": "nest",
+      "execution": {
+        "parallelism": 2
+      },
+      "from": {
+        "o": "BENCH_ORDERS",
+        "l": "BENCH_LINES",
+        "c": "BENCH_CUSTOMERS"
+      },
+      "root": {
+        "from": "o",
+        "key": [
+          "ORDER_ID"
+        ],
+        "embed": [
+          {
+            "from": "l",
+            "on": {
+              "ORDER_ID": "ORDER_ID"
+            },
+            "as": "array",
+            "path": "lines",
+            "arrayKey": [
+              "LINE_NO"
+            ]
+          },
+          {
+            "from": "c",
+            "on": {
+              "_id": "CUSTOMER_ID"
+            },
+            "as": "object",
+            "path": "customer"
+          }
+        ]
+      }
+    }
+  ],
+  "serve": {
+    "from": "order_doc",
+    "sync": [
+      {
+        "id": "sink",
+        "source": "nb_a973b62706_nest_out",
+        "writeMode": "upsert",
+        "execution": {
+          "parallelism": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+{"phase": "snapshot-index", "unix": 1794230794.9620445, "seconds": 1.6663010939955711}
+{"phase": "snapshot", "unix": 1794230816.4686532, "bad": 0, "checked": 10000}
+{"phase": "cdc", "unix": 1794233293.0154407, "t": 21.38932040000509, "bad": 0, "checked": 10000}

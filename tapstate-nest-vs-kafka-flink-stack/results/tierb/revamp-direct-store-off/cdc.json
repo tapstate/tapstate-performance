@@ -1,0 +1,46 @@
+{
+  "scenario": "cdc",
+  "pipeline": "nb_a5458018e4_nest",
+  "steps": [
+    {
+      "rate": 150,
+      "achievedEventsPerSecond": 149.99808333652777,
+      "sent": 89999,
+      "seconds": 600.001,
+      "endLagSeconds": 57.622,
+      "lagGrowthSecondsPerSecond": 0.383528822866424,
+      "maxLagSeconds": 11699.886,
+      "drainSeconds": 39.79283929600206,
+      "held": false
+    },
+    {
+      "rate": 300,
+      "achievedEventsPerSecond": 299.9948333936104,
+      "sent": 179999,
+      "seconds": 600.007,
+      "endLagSeconds": 555.756,
+      "lagGrowthSecondsPerSecond": 0.9972296134499242,
+      "maxLagSeconds": 555.756,
+      "drainSeconds": 534.391134436999,
+      "held": false
+    }
+  ],
+  "sustainedCeiling": null,
+  "mix": {
+    "lines": 0.8,
+    "customers": 0.0,
+    "orders": 0.2
+  },
+  "verifyAfter": {
+    "checked": 10000,
+    "bad": 0,
+    "examples": [],
+    "firstCheckBad": 1,
+    "secondsToSettle": 47.37418832399999,
+    "documentHash": {
+      "documents": 1000000,
+      "sha256": "cab691222d17f93e4a038da24b1dcbedd022c4b1987049820f43cc4028cddc22"
+    }
+  },
+  "passed": true
+}
