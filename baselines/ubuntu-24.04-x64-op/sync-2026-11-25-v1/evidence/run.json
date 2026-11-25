@@ -1,0 +1,137 @@
+{
+  "attempt": 1,
+  "batch_conditions": {
+    "0": {
+      "available_disk": "88G",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "cpu_count": "4",
+      "digest": "sha256:02143ad04bd4c4cb28f33da8715d5ec10a286619973c27c23bd7bced24ef2d36",
+      "id": 14994289369,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15701",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-0",
+      "runner_image": "ubuntu24 20261116.133.1"
+    },
+    "1": {
+      "available_disk": "88G",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "cpu_count": "4",
+      "digest": "sha256:b56189e179f7d26a6ddd324377308d1ab44eaa665bd9689c44cef6f079292b08",
+      "id": 14995190655,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15701",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-1",
+      "runner_image": "ubuntu24 20261116.133.1"
+    },
+    "2": {
+      "available_disk": "88G",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "cpu_count": "4",
+      "digest": "sha256:6e155147aa5f4d90666faf8917934298c877a665d0d81e0597183cb10e69c149",
+      "id": 14995823030,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15701",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-2",
+      "runner_image": "ubuntu24 20261116.133.1"
+    },
+    "3": {
+      "available_disk": "88G",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "cpu_count": "4",
+      "digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+      "id": 14995252340,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15701",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-3",
+      "runner_image": "ubuntu24 20261116.133.1"
+    },
+    "4": {
+      "available_disk": "85G",
+      "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+      "cpu_count": "4",
+      "digest": "sha256:8a44df3afade73fe8e40c05c8b4c3c9ec13ee018dc01db13afbc8e67923e2d7b",
+      "id": 14991989626,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15982",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-4",
+      "runner_image": "ubuntu24 20261116.376.1"
+    },
+    "5": {
+      "available_disk": "88G",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "cpu_count": "4",
+      "digest": "sha256:30e4209274314829495dbc71bd99bd448f2df828b80a2f1680ca9e14fa60e66e",
+      "id": 14990693245,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15701",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-5",
+      "runner_image": "ubuntu24 20261116.133.1"
+    },
+    "6": {
+      "available_disk": "88G",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "cpu_count": "4",
+      "digest": "sha256:dfd90ef64cb4f63e9af6cfc4220f6f62eb51c16d9b04e0385d7d1ec34100c1f0",
+      "id": 14993109011,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15701",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-6",
+      "runner_image": "ubuntu24 20261116.133.1"
+    },
+    "7": {
+      "available_disk": "88G",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "cpu_count": "4",
+      "digest": "sha256:fe56ac8c78269b807513593f173a2e5cae8e4053242a621565f6c036510f2f0d",
+      "id": 14993917963,
+      "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "memory_mib": "15701",
+      "mongo_images": [
+        "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+      ],
+      "name": "performance-batch-1-7",
+      "runner_image": "ubuntu24 20261116.133.1"
+    }
+  },
+  "case_statuses": {
+    "completed": 45,
+    "failed": 9,
+    "not-run": 9,
+    "timed-out": 1
+  },
+  "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+  "maintainer": "ply0011",
+  "manifest_file_sha256": "1786f431f265846cf6cdf670beff8daa9df6c97372dbfb583d0b6760a9aeceda",
+  "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+  "planned_repeats": 192,
+  "repeats": {
+    "completed": 140,
+    "measurement-incomplete": 22,
+    "not-run": 27,
+    "timed-out": 3
+  },
+  "run": "https://github.com/tapstate/tapstate/actions/runs/45544961925",
+  "scope": "all",
+  "started_at": "2026-11-25T04:10:35Z"
+}

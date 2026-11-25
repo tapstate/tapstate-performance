@@ -1,0 +1,549 @@
+{
+  "arms": {
+    "single": {
+      "correctness": "evidence-consistent",
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795585664192,
+      "gaps": [],
+      "input_tables": {
+        "parents": {
+          "arrayLengths": {
+            "4": 10000
+          },
+          "bsonBytes": {
+            "count": 10000,
+            "max": 19232,
+            "mean": 16121.9306,
+            "min": 12770,
+            "p95": 17440
+          },
+          "bsonSha256": "9ef486396b395c36c0cf17ec21200c58730ece299c5fa192c7c41fc0fdcbf777",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 10000
+            },
+            "b0": {
+              "BOOLEAN": 9505,
+              "NULL": 495
+            },
+            "b1": {
+              "BOOLEAN": 9493,
+              "NULL": 507
+            },
+            "b2": {
+              "BOOLEAN": 9512,
+              "NULL": 488
+            },
+            "b3": {
+              "BOOLEAN": 9466,
+              "NULL": 534
+            },
+            "b4": {
+              "BOOLEAN": 9489,
+              "NULL": 511
+            },
+            "b5": {
+              "BOOLEAN": 9482,
+              "NULL": 518
+            },
+            "b6": {
+              "BOOLEAN": 9508,
+              "NULL": 492
+            },
+            "b7": {
+              "BOOLEAN": 9492,
+              "NULL": 508
+            },
+            "b8": {
+              "BOOLEAN": 9503,
+              "NULL": 497
+            },
+            "b9": {
+              "BOOLEAN": 9485,
+              "NULL": 515
+            },
+            "d0": {
+              "DECIMAL128": 9472,
+              "NULL": 528
+            },
+            "d1": {
+              "DECIMAL128": 9490,
+              "NULL": 510
+            },
+            "d2": {
+              "DECIMAL128": 9530,
+              "NULL": 470
+            },
+            "d3": {
+              "DECIMAL128": 9515,
+              "NULL": 485
+            },
+            "d4": {
+              "DECIMAL128": 9520,
+              "NULL": 480
+            },
+            "d5": {
+              "DECIMAL128": 9500,
+              "NULL": 500
+            },
+            "d6": {
+              "DECIMAL128": 9515,
+              "NULL": 485
+            },
+            "d7": {
+              "DECIMAL128": 9472,
+              "NULL": 528
+            },
+            "d8": {
+              "DECIMAL128": 9502,
+              "NULL": 498
+            },
+            "d9": {
+              "DECIMAL128": 9479,
+              "NULL": 521
+            },
+            "i0": {
+              "INT32": 9500,
+              "NULL": 500
+            },
+            "i1": {
+              "INT32": 9520,
+              "NULL": 480
+            },
+            "i10": {
+              "INT32": 9499,
+              "NULL": 501
+            },
+            "i11": {
+              "INT32": 9509,
+              "NULL": 491
+            },
+            "i12": {
+              "INT32": 9501,
+              "NULL": 499
+            },
+            "i13": {
+              "INT32": 9539,
+              "NULL": 461
+            },
+            "i14": {
+              "INT32": 9473,
+              "NULL": 527
+            },
+            "i15": {
+              "INT32": 9514,
+              "NULL": 486
+            },
+            "i16": {
+              "INT32": 9522,
+              "NULL": 478
+            },
+            "i17": {
+              "INT32": 9506,
+              "NULL": 494
+            },
+            "i18": {
+              "INT32": 9500,
+              "NULL": 500
+            },
+            "i2": {
+              "INT32": 9504,
+              "NULL": 496
+            },
+            "i3": {
+              "INT32": 9437,
+              "NULL": 563
+            },
+            "i4": {
+              "INT32": 9500,
+              "NULL": 500
+            },
+            "i5": {
+              "INT32": 9477,
+              "NULL": 523
+            },
+            "i6": {
+              "INT32": 9473,
+              "NULL": 527
+            },
+            "i7": {
+              "INT32": 9505,
+              "NULL": 495
+            },
+            "i8": {
+              "INT32": 9515,
+              "NULL": 485
+            },
+            "i9": {
+              "INT32": 9495,
+              "NULL": 505
+            },
+            "items": {
+              "ARRAY": 10000
+            },
+            "s0": {
+              "NULL": 504,
+              "STRING": 9496
+            },
+            "s1": {
+              "NULL": 499,
+              "STRING": 9501
+            },
+            "s10": {
+              "NULL": 476,
+              "STRING": 9524
+            },
+            "s11": {
+              "NULL": 482,
+              "STRING": 9518
+            },
+            "s12": {
+              "NULL": 479,
+              "STRING": 9521
+            },
+            "s13": {
+              "NULL": 504,
+              "STRING": 9496
+            },
+            "s14": {
+              "NULL": 494,
+              "STRING": 9506
+            },
+            "s15": {
+              "NULL": 506,
+              "STRING": 9494
+            },
+            "s16": {
+              "NULL": 509,
+              "STRING": 9491
+            },
+            "s17": {
+              "NULL": 484,
+              "STRING": 9516
+            },
+            "s18": {
+              "NULL": 501,
+              "STRING": 9499
+            },
+            "s19": {
+              "NULL": 496,
+              "STRING": 9504
+            },
+            "s2": {
+              "NULL": 511,
+              "STRING": 9489
+            },
+            "s20": {
+              "NULL": 502,
+              "STRING": 9498
+            },
+            "s21": {
+              "NULL": 538,
+              "STRING": 9462
+            },
+            "s22": {
+              "NULL": 476,
+              "STRING": 9524
+            },
+            "s23": {
+              "NULL": 513,
+              "STRING": 9487
+            },
+            "s24": {
+              "NULL": 462,
+              "STRING": 9538
+            },
+            "s25": {
+              "NULL": 460,
+              "STRING": 9540
+            },
+            "s26": {
+              "NULL": 491,
+              "STRING": 9509
+            },
+            "s27": {
+              "NULL": 544,
+              "STRING": 9456
+            },
+            "s28": {
+              "NULL": 505,
+              "STRING": 9495
+            },
+            "s29": {
+              "NULL": 510,
+              "STRING": 9490
+            },
+            "s3": {
+              "NULL": 532,
+              "STRING": 9468
+            },
+            "s30": {
+              "NULL": 496,
+              "STRING": 9504
+            },
+            "s31": {
+              "NULL": 534,
+              "STRING": 9466
+            },
+            "s32": {
+              "NULL": 528,
+              "STRING": 9472
+            },
+            "s33": {
+              "NULL": 460,
+              "STRING": 9540
+            },
+            "s34": {
+              "NULL": 488,
+              "STRING": 9512
+            },
+            "s35": {
+              "NULL": 504,
+              "STRING": 9496
+            },
+            "s36": {
+              "NULL": 508,
+              "STRING": 9492
+            },
+            "s37": {
+              "NULL": 515,
+              "STRING": 9485
+            },
+            "s38": {
+              "NULL": 478,
+              "STRING": 9522
+            },
+            "s39": {
+              "NULL": 495,
+              "STRING": 9505
+            },
+            "s4": {
+              "NULL": 494,
+              "STRING": 9506
+            },
+            "s40": {
+              "NULL": 553,
+              "STRING": 9447
+            },
+            "s41": {
+              "NULL": 513,
+              "STRING": 9487
+            },
+            "s42": {
+              "NULL": 483,
+              "STRING": 9517
+            },
+            "s43": {
+              "NULL": 481,
+              "STRING": 9519
+            },
+            "s44": {
+              "NULL": 508,
+              "STRING": 9492
+            },
+            "s45": {
+              "NULL": 491,
+              "STRING": 9509
+            },
+            "s46": {
+              "NULL": 494,
+              "STRING": 9506
+            },
+            "s47": {
+              "NULL": 553,
+              "STRING": 9447
+            },
+            "s48": {
+              "NULL": 516,
+              "STRING": 9484
+            },
+            "s5": {
+              "NULL": 500,
+              "STRING": 9500
+            },
+            "s6": {
+              "NULL": 502,
+              "STRING": 9498
+            },
+            "s7": {
+              "NULL": 506,
+              "STRING": 9494
+            },
+            "s8": {
+              "NULL": 514,
+              "STRING": 9486
+            },
+            "s9": {
+              "NULL": 536,
+              "STRING": 9464
+            },
+            "t0": {
+              "DATE_TIME": 9526,
+              "NULL": 474
+            },
+            "t1": {
+              "DATE_TIME": 9509,
+              "NULL": 491
+            },
+            "t2": {
+              "DATE_TIME": 9554,
+              "NULL": 446
+            },
+            "t3": {
+              "DATE_TIME": 9516,
+              "NULL": 484
+            },
+            "t4": {
+              "DATE_TIME": 9476,
+              "NULL": 524
+            },
+            "t5": {
+              "DATE_TIME": 9531,
+              "NULL": 469
+            },
+            "t6": {
+              "DATE_TIME": 9503,
+              "NULL": 497
+            },
+            "t7": {
+              "DATE_TIME": 9487,
+              "NULL": 513
+            },
+            "t8": {
+              "DATE_TIME": 9509,
+              "NULL": 491
+            },
+            "t9": {
+              "DATE_TIME": 9519,
+              "NULL": 481
+            }
+          },
+          "falseValues": 47409,
+          "fields": 100,
+          "firstKey": 1,
+          "lastKey": 10000,
+          "logicalBytes": {
+            "count": 10000,
+            "max": 19439,
+            "mean": 16358.1353,
+            "min": 13040,
+            "p95": 17664
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 49079,
+          "nullableValues": 980000,
+          "rowWidthWithinTolerance": true,
+          "rows": 10000,
+          "stringLengths": {
+            "count": 465372,
+            "max": 483,
+            "mean": 322.1822434525498,
+            "min": 161,
+            "p95": 467
+          },
+          "trueValues": 47526
+        }
+      },
+      "measurement_status": "bounded-observation",
+      "memory": {},
+      "phase_nanos": {
+        "cleanup": 201902493,
+        "completion_observed": 25027549169,
+        "prepare": 4340503256,
+        "readback": 2148846596,
+        "startup": 12305115939
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "completion": {
+            "availability": "bounded-observation",
+            "reason": "monotonic observed upper bound including telemetry publication and polling",
+            "unit": "ns",
+            "value": 25027549169
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": false,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "parents": 322
+          },
+          "write_concern": "majority"
+        },
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "mongo_topology": "shared replica set",
+        "op_alive_before_teardown": true,
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_exit_code": 0
+      },
+      "source_phases": {},
+      "started_epoch_ms": 1795585618971,
+      "target": {
+        "confirmed_output_units": 40000,
+        "input_units": 10000,
+        "target_collections": [
+          "parents"
+        ],
+        "target_collections_expected": [
+          "parents"
+        ],
+        "target_readback_rows": 40000
+      }
+    }
+  },
+  "case_id": "unwind.snapshot.basic.large",
+  "case_version": 1,
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "original": {
+    "artifact_digest": "sha256:6e155147aa5f4d90666faf8917934298c877a665d0d81e0597183cb10e69c149",
+    "artifact_id": 14995823030,
+    "batch": 2,
+    "result_path": "run/unwind.snapshot.basic.large/2/result.json"
+  },
+  "repeat": 2,
+  "runner": {
+    "available_disk": "88G",
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "cpu_count": "4",
+    "digest": "sha256:6e155147aa5f4d90666faf8917934298c877a665d0d81e0597183cb10e69c149",
+    "id": 14995823030,
+    "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+    "memory_mib": "15701",
+    "mongo_images": [
+      "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+    ],
+    "name": "performance-batch-1-2",
+    "runner_image": "ubuntu24 20261116.133.1"
+  },
+  "workload": {
+    "backlog_events": 30000,
+    "measurement_seconds": 300,
+    "mix": null,
+    "rate": 100,
+    "repeats": 3,
+    "rows": 10000,
+    "scale": "formal",
+    "timeout_seconds": 600,
+    "warmup_seconds": 30,
+    "workload_sha256": "eebbbc77eecc232e93fc54f1a0b5618f59eab37cbeb7c272eddd896e0b8dda16",
+    "workload_version": 1
+  }
+}

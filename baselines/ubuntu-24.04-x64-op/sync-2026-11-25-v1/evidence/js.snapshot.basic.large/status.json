@@ -1,0 +1,69 @@
+{
+  "case_id": "js.snapshot.basic.large",
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "repeats": [
+    {
+      "diagnostic": {
+        "category": "maven-resolution-rate-limited",
+        "http_status": 429,
+        "observed_in": "build.log",
+        "stage": "build",
+        "workflow_job": 138972371876
+      },
+      "evidence": {
+        "artifact_digest": "sha256:30e4209274314829495dbc71bd99bd448f2df828b80a2f1680ca9e14fa60e66e",
+        "artifact_id": 14990693245,
+        "batch": 5
+      },
+      "last_stage": "batch",
+      "raw_status": "missing",
+      "reason": "Build failed before the runner started; see build.log",
+      "repeat": 1,
+      "status": "not-run"
+    },
+    {
+      "diagnostic": {
+        "category": "maven-resolution-rate-limited",
+        "http_status": 429,
+        "observed_in": "build.log",
+        "stage": "build",
+        "workflow_job": 138972371876
+      },
+      "evidence": {
+        "artifact_digest": "sha256:30e4209274314829495dbc71bd99bd448f2df828b80a2f1680ca9e14fa60e66e",
+        "artifact_id": 14990693245,
+        "batch": 5
+      },
+      "last_stage": "batch",
+      "raw_status": "missing",
+      "reason": "Build failed before the runner started; see build.log",
+      "repeat": 2,
+      "status": "not-run"
+    },
+    {
+      "diagnostic": {
+        "category": "maven-resolution-rate-limited",
+        "http_status": 429,
+        "observed_in": "build.log",
+        "stage": "build",
+        "workflow_job": 138972371876
+      },
+      "evidence": {
+        "artifact_digest": "sha256:30e4209274314829495dbc71bd99bd448f2df828b80a2f1680ca9e14fa60e66e",
+        "artifact_id": 14990693245,
+        "batch": 5
+      },
+      "last_stage": "batch",
+      "raw_status": "missing",
+      "reason": "Build failed before the runner started; see build.log",
+      "repeat": 3,
+      "status": "not-run"
+    }
+  ]
+}

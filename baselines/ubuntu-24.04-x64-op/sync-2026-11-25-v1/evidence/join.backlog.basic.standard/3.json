@@ -1,0 +1,377 @@
+{
+  "arms": {
+    "single": {
+      "completion_evidence_gap": "end-to-end per-stream target acknowledgment not bound to the source tail",
+      "correctness": "evidence-consistent",
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795584761058,
+      "gaps": [],
+      "input_tables": {
+        "dimensions": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 1000,
+            "max": 1284,
+            "mean": 993.984,
+            "min": 673,
+            "p95": 1141
+          },
+          "bsonSha256": "fa4356feed982b21e0d0540c67fe5d60cecc1954e8190ca533af58db066b5d2a",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 1000
+            },
+            "b0": {
+              "BOOLEAN": 949,
+              "NULL": 51
+            },
+            "b1": {
+              "BOOLEAN": 942,
+              "NULL": 58
+            },
+            "d0": {
+              "DECIMAL128": 956,
+              "NULL": 44
+            },
+            "d1": {
+              "DECIMAL128": 958,
+              "NULL": 42
+            },
+            "i0": {
+              "INT32": 948,
+              "NULL": 52
+            },
+            "i1": {
+              "INT32": 953,
+              "NULL": 47
+            },
+            "s0": {
+              "NULL": 47,
+              "STRING": 953
+            },
+            "s1": {
+              "NULL": 46,
+              "STRING": 954
+            },
+            "s2": {
+              "NULL": 62,
+              "STRING": 938
+            },
+            "s3": {
+              "NULL": 56,
+              "STRING": 944
+            },
+            "s4": {
+              "NULL": 51,
+              "STRING": 949
+            },
+            "s5": {
+              "NULL": 45,
+              "STRING": 955
+            },
+            "s6": {
+              "NULL": 53,
+              "STRING": 947
+            },
+            "s7": {
+              "NULL": 48,
+              "STRING": 952
+            },
+            "s8": {
+              "NULL": 54,
+              "STRING": 946
+            },
+            "s9": {
+              "NULL": 49,
+              "STRING": 951
+            },
+            "score": {
+              "INT32": 1000
+            },
+            "t0": {
+              "DATE_TIME": 954,
+              "NULL": 46
+            },
+            "t1": {
+              "DATE_TIME": 948,
+              "NULL": 52
+            }
+          },
+          "falseValues": 937,
+          "fields": 20,
+          "firstKey": 1,
+          "lastKey": 1000,
+          "logicalBytes": {
+            "count": 1000,
+            "max": 1322,
+            "mean": 1035.177,
+            "min": 724,
+            "p95": 1180
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 903,
+          "nullableValues": 18000,
+          "rowWidthWithinTolerance": true,
+          "rows": 1000,
+          "stringLengths": {
+            "count": 9489,
+            "max": 124,
+            "mean": 83.2757930235009,
+            "min": 42,
+            "p95": 121
+          },
+          "trueValues": 954
+        },
+        "facts": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 10000,
+            "max": 1285,
+            "mean": 984.5785,
+            "min": 575,
+            "p95": 1128
+          },
+          "bsonSha256": "934477a4403d648497e9504cb7d12937b68bc87f52dfa503eca0e38a30ebb0e9",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 10000
+            },
+            "b0": {
+              "BOOLEAN": 9497,
+              "NULL": 503
+            },
+            "b1": {
+              "BOOLEAN": 9499,
+              "NULL": 501
+            },
+            "d0": {
+              "DECIMAL128": 9485,
+              "NULL": 515
+            },
+            "d1": {
+              "DECIMAL128": 9484,
+              "NULL": 516
+            },
+            "dimension_id": {
+              "INT64": 10000
+            },
+            "i0": {
+              "INT32": 9502,
+              "NULL": 498
+            },
+            "i1": {
+              "INT32": 9489,
+              "NULL": 511
+            },
+            "payload": {
+              "STRING": 10000
+            },
+            "s0": {
+              "NULL": 500,
+              "STRING": 9500
+            },
+            "s1": {
+              "NULL": 498,
+              "STRING": 9502
+            },
+            "s2": {
+              "NULL": 526,
+              "STRING": 9474
+            },
+            "s3": {
+              "NULL": 492,
+              "STRING": 9508
+            },
+            "s4": {
+              "NULL": 537,
+              "STRING": 9463
+            },
+            "s5": {
+              "NULL": 520,
+              "STRING": 9480
+            },
+            "s6": {
+              "NULL": 496,
+              "STRING": 9504
+            },
+            "s7": {
+              "NULL": 480,
+              "STRING": 9520
+            },
+            "s8": {
+              "NULL": 483,
+              "STRING": 9517
+            },
+            "t0": {
+              "DATE_TIME": 9505,
+              "NULL": 495
+            },
+            "t1": {
+              "DATE_TIME": 9467,
+              "NULL": 533
+            }
+          },
+          "falseValues": 9484,
+          "fields": 20,
+          "firstKey": 1099511627777,
+          "lastKey": 1099511637776,
+          "logicalBytes": {
+            "count": 10000,
+            "max": 1326,
+            "mean": 1028.2842,
+            "min": 662,
+            "p95": 1168
+          },
+          "matchedReferences": 9000,
+          "missingReferences": 1000,
+          "nullValues": 8604,
+          "nullableValues": 170000,
+          "rowWidthWithinTolerance": true,
+          "rows": 10000,
+          "stringLengths": {
+            "count": 95468,
+            "max": 120,
+            "mean": 80.1127602966439,
+            "min": 40,
+            "p95": 117
+          },
+          "trueValues": 9512
+        }
+      },
+      "measurement_status": "insufficient-source-end-evidence",
+      "memory": {},
+      "phase_nanos": {
+        "catch_up_observed": 171091113565,
+        "cleanup": 200306434,
+        "initial_state": 80502731523,
+        "prepare": 949324383,
+        "prewrite": 12799727256,
+        "readback": 89932502,
+        "startup": 12606429568
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "completion": {
+            "availability": "unavailable",
+            "reason": "insufficient-source-end-evidence",
+            "unit": "ns"
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": true,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "dimensions": 83,
+            "facts": 80
+          },
+          "write_concern": "majority"
+        },
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "mongo_topology": "shared replica set",
+        "op_alive_before_teardown": true,
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_exit_code": 0
+      },
+      "source_phases": {
+        "source_batch": {
+          "complete": true,
+          "expected_events": 30000,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 1500,
+                "inserts": 24000,
+                "updates": 4500
+              },
+              "clock_sequence_sha256": "4c2b6f4fc8c72b84e2d665949969a36af31c58728fdcdbb97e0719986b8aeb16",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 1500,
+                "inserts": 24000,
+                "updates": 4500
+              },
+              "planned": {
+                "deletes": 1500,
+                "inserts": 24000,
+                "updates": 4500
+              },
+              "sequence_sha256": "c83d667e5a847092c5c7760e7a2cd05a4f238b9fc9d66b3746ca758fa82c30ae",
+              "submitted": 30000
+            }
+          },
+          "write_nanos": 12060562823
+        }
+      },
+      "started_epoch_ms": 1795584474725,
+      "target": {
+        "source_captured_changes": {
+          "facts": 30000
+        },
+        "target_collections": [
+          "facts"
+        ],
+        "target_collections_expected": [
+          "facts"
+        ],
+        "target_readback_rows": 29265,
+        "target_settled_units": 25918
+      }
+    }
+  },
+  "case_id": "join.backlog.basic.standard",
+  "case_version": 1,
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "original": {
+    "artifact_digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+    "artifact_id": 14995252340,
+    "batch": 3,
+    "result_path": "run/join.backlog.basic.standard/3/result.json"
+  },
+  "repeat": 3,
+  "runner": {
+    "available_disk": "88G",
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "cpu_count": "4",
+    "digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+    "id": 14995252340,
+    "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+    "memory_mib": "15701",
+    "mongo_images": [
+      "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+    ],
+    "name": "performance-batch-1-3",
+    "runner_image": "ubuntu24 20261116.133.1"
+  },
+  "workload": {
+    "backlog_events": 30000,
+    "measurement_seconds": 300,
+    "mix": null,
+    "rate": 100,
+    "repeats": 3,
+    "rows": 10000,
+    "scale": "formal",
+    "timeout_seconds": 600,
+    "warmup_seconds": 30,
+    "workload_sha256": "52fdcd91aa93211a7e74509913e90fd8b0bd4893c4048508c2b5954936932171",
+    "workload_version": 1
+  }
+}

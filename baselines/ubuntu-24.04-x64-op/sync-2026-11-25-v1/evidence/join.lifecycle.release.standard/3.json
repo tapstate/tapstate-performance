@@ -1,0 +1,1055 @@
+{
+  "arms": {
+    "single": {
+      "correctness": "evidence-consistent",
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795583320108,
+      "gaps": [],
+      "input_tables": {
+        "dimensions": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 1000,
+            "max": 1284,
+            "mean": 993.984,
+            "min": 673,
+            "p95": 1141
+          },
+          "bsonSha256": "fa4356feed982b21e0d0540c67fe5d60cecc1954e8190ca533af58db066b5d2a",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 1000
+            },
+            "b0": {
+              "BOOLEAN": 949,
+              "NULL": 51
+            },
+            "b1": {
+              "BOOLEAN": 942,
+              "NULL": 58
+            },
+            "d0": {
+              "DECIMAL128": 956,
+              "NULL": 44
+            },
+            "d1": {
+              "DECIMAL128": 958,
+              "NULL": 42
+            },
+            "i0": {
+              "INT32": 948,
+              "NULL": 52
+            },
+            "i1": {
+              "INT32": 953,
+              "NULL": 47
+            },
+            "s0": {
+              "NULL": 47,
+              "STRING": 953
+            },
+            "s1": {
+              "NULL": 46,
+              "STRING": 954
+            },
+            "s2": {
+              "NULL": 62,
+              "STRING": 938
+            },
+            "s3": {
+              "NULL": 56,
+              "STRING": 944
+            },
+            "s4": {
+              "NULL": 51,
+              "STRING": 949
+            },
+            "s5": {
+              "NULL": 45,
+              "STRING": 955
+            },
+            "s6": {
+              "NULL": 53,
+              "STRING": 947
+            },
+            "s7": {
+              "NULL": 48,
+              "STRING": 952
+            },
+            "s8": {
+              "NULL": 54,
+              "STRING": 946
+            },
+            "s9": {
+              "NULL": 49,
+              "STRING": 951
+            },
+            "score": {
+              "INT32": 1000
+            },
+            "t0": {
+              "DATE_TIME": 954,
+              "NULL": 46
+            },
+            "t1": {
+              "DATE_TIME": 948,
+              "NULL": 52
+            }
+          },
+          "falseValues": 937,
+          "fields": 20,
+          "firstKey": 1,
+          "lastKey": 1000,
+          "logicalBytes": {
+            "count": 1000,
+            "max": 1322,
+            "mean": 1035.177,
+            "min": 724,
+            "p95": 1180
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 903,
+          "nullableValues": 18000,
+          "rowWidthWithinTolerance": true,
+          "rows": 1000,
+          "stringLengths": {
+            "count": 9489,
+            "max": 124,
+            "mean": 83.2757930235009,
+            "min": 42,
+            "p95": 121
+          },
+          "trueValues": 954
+        },
+        "facts": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 10000,
+            "max": 1285,
+            "mean": 984.5785,
+            "min": 575,
+            "p95": 1128
+          },
+          "bsonSha256": "934477a4403d648497e9504cb7d12937b68bc87f52dfa503eca0e38a30ebb0e9",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 10000
+            },
+            "b0": {
+              "BOOLEAN": 9497,
+              "NULL": 503
+            },
+            "b1": {
+              "BOOLEAN": 9499,
+              "NULL": 501
+            },
+            "d0": {
+              "DECIMAL128": 9485,
+              "NULL": 515
+            },
+            "d1": {
+              "DECIMAL128": 9484,
+              "NULL": 516
+            },
+            "dimension_id": {
+              "INT64": 10000
+            },
+            "i0": {
+              "INT32": 9502,
+              "NULL": 498
+            },
+            "i1": {
+              "INT32": 9489,
+              "NULL": 511
+            },
+            "payload": {
+              "STRING": 10000
+            },
+            "s0": {
+              "NULL": 500,
+              "STRING": 9500
+            },
+            "s1": {
+              "NULL": 498,
+              "STRING": 9502
+            },
+            "s2": {
+              "NULL": 526,
+              "STRING": 9474
+            },
+            "s3": {
+              "NULL": 492,
+              "STRING": 9508
+            },
+            "s4": {
+              "NULL": 537,
+              "STRING": 9463
+            },
+            "s5": {
+              "NULL": 520,
+              "STRING": 9480
+            },
+            "s6": {
+              "NULL": 496,
+              "STRING": 9504
+            },
+            "s7": {
+              "NULL": 480,
+              "STRING": 9520
+            },
+            "s8": {
+              "NULL": 483,
+              "STRING": 9517
+            },
+            "t0": {
+              "DATE_TIME": 9505,
+              "NULL": 495
+            },
+            "t1": {
+              "DATE_TIME": 9467,
+              "NULL": 533
+            }
+          },
+          "falseValues": 9484,
+          "fields": 20,
+          "firstKey": 1099511627777,
+          "lastKey": 1099511637776,
+          "logicalBytes": {
+            "count": 10000,
+            "max": 1326,
+            "mean": 1028.2842,
+            "min": 662,
+            "p95": 1168
+          },
+          "matchedReferences": 9000,
+          "missingReferences": 1000,
+          "nullValues": 8604,
+          "nullableValues": 170000,
+          "rowWidthWithinTolerance": true,
+          "rows": 10000,
+          "stringLengths": {
+            "count": 95468,
+            "max": 120,
+            "mean": 80.1127602966439,
+            "min": 40,
+            "p95": 117
+          },
+          "trueValues": 9512
+        }
+      },
+      "latency_eligibility": "unavailable without event-level target correlation",
+      "lifecycle_cycles": [
+        {
+          "cycle": 1,
+          "durable_positions_after_restart": {
+            "facts": "opaque-v1:391c14170d676a10190d968454f53adb71904347a50dd52f1ca58a966ab43538"
+          },
+          "durable_positions_before_stop": {
+            "facts": "opaque-v1:391c14170d676a10190d968454f53adb71904347a50dd52f1ca58a966ab43538"
+          },
+          "durable_state": "retained",
+          "idle_seconds": 2,
+          "queue_release": "unavailable from runtime read face",
+          "snapshot_rows_after_restart": {
+            "dimensions": 0,
+            "facts": 0
+          },
+          "state": "STOPPED",
+          "target_changes_while_idle": 0,
+          "target_readback": "verified"
+        },
+        {
+          "cycle": 2,
+          "durable_positions_after_restart": {
+            "facts": "opaque-v1:9b7a90833ef6fee8a78e5ecfdf2a1fc52f397fb0af87e976cc7ee17f9db20443"
+          },
+          "durable_positions_before_stop": {
+            "facts": "opaque-v1:9b7a90833ef6fee8a78e5ecfdf2a1fc52f397fb0af87e976cc7ee17f9db20443"
+          },
+          "durable_state": "retained",
+          "idle_seconds": 2,
+          "queue_release": "unavailable from runtime read face",
+          "snapshot_rows_after_restart": {
+            "dimensions": 0,
+            "facts": 0
+          },
+          "state": "STOPPED",
+          "target_changes_while_idle": 0,
+          "target_readback": "verified"
+        },
+        {
+          "cycle": 3,
+          "durable_positions_before_stop": {
+            "facts": "opaque-v1:70afc48bcc0202f05aed8a9d6843cb4dfe20c62cab3cc3c382343c1088891721"
+          },
+          "durable_state": "restart-not-observed",
+          "idle_seconds": 2,
+          "queue_release": "unavailable from runtime read face",
+          "state": "STOPPED",
+          "target_changes_while_idle": 0,
+          "target_readback": "verified"
+        }
+      ],
+      "measurement_status": "insufficient-event-correlation",
+      "memory": {
+        "external_oom_attribution": "unavailable",
+        "gc_member": "run/join.lifecycle.release.standard/3/gc.log",
+        "op_heap_limit_mib": 768,
+        "rss_member": "run/join.lifecycle.release.standard/3/op-resource.jsonl",
+        "scope": "OP process",
+        "windows": {
+          "lifecycle-cycle-1/drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583093909,
+            "median_kib": 716016.0,
+            "peak_bytes": 733413376,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 10,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583088865
+          },
+          "lifecycle-cycle-1/idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583099212,
+            "median_kib": 720660.0,
+            "peak_bytes": 738013184,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 5,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583097132
+          },
+          "lifecycle-cycle-1/measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583088865,
+            "median_kib": 713758.0,
+            "peak_bytes": 738758656,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 120,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583028761
+          },
+          "lifecycle-cycle-1/readback": {
+            "availability": "unavailable",
+            "coverage": 0.0,
+            "ended_epoch_ms": 1795583093934,
+            "median_kib": null,
+            "peak_bytes": null,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 0,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583093909
+          },
+          "lifecycle-cycle-1/stop": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583097132,
+            "median_kib": 721962.0,
+            "peak_bytes": 739336192,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 6,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583093934
+          },
+          "lifecycle-cycle-1/warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583028761,
+            "median_kib": 707516.0,
+            "peak_bytes": 730288128,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 68,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582994805
+          },
+          "lifecycle-cycle-2/drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583203894,
+            "median_kib": 752294.0,
+            "peak_bytes": 770555904,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 10,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583198804
+          },
+          "lifecycle-cycle-2/idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583209209,
+            "median_kib": 739666.0,
+            "peak_bytes": 757497856,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 4,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583207116
+          },
+          "lifecycle-cycle-2/measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583198804,
+            "median_kib": 737440.0,
+            "peak_bytes": 770215936,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 121,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583138700
+          },
+          "lifecycle-cycle-2/readback": {
+            "availability": "unavailable",
+            "coverage": 0.0,
+            "ended_epoch_ms": 1795583203927,
+            "median_kib": null,
+            "peak_bytes": null,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 0,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583203894
+          },
+          "lifecycle-cycle-2/start": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583103827,
+            "median_kib": 722064.0,
+            "peak_bytes": 746975232,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 9,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583099212
+          },
+          "lifecycle-cycle-2/stop": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583207116,
+            "median_kib": 740786.0,
+            "peak_bytes": 758599680,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 6,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583203927
+          },
+          "lifecycle-cycle-2/warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583138700,
+            "median_kib": 734592.0,
+            "peak_bytes": 758079488,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 69,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583103827
+          },
+          "lifecycle-cycle-3/drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583313891,
+            "median_kib": 804456.0,
+            "peak_bytes": 823791616,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 10,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583308853
+          },
+          "lifecycle-cycle-3/idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583319166,
+            "median_kib": 802198.0,
+            "peak_bytes": 821452800,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 4,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583317073
+          },
+          "lifecycle-cycle-3/measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583308853,
+            "median_kib": 804396.0,
+            "peak_bytes": 824242176,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 121,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583248748
+          },
+          "lifecycle-cycle-3/readback": {
+            "availability": "unavailable",
+            "coverage": 0.0,
+            "ended_epoch_ms": 1795583313914,
+            "median_kib": null,
+            "peak_bytes": null,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 0,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583313891
+          },
+          "lifecycle-cycle-3/start": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583214808,
+            "median_kib": 732204.0,
+            "peak_bytes": 807387136,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 12,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583209209
+          },
+          "lifecycle-cycle-3/stop": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583317073,
+            "median_kib": 803554.0,
+            "peak_bytes": 823832576,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 6,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583313914
+          },
+          "lifecycle-cycle-3/warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795583248748,
+            "median_kib": 803872.0,
+            "peak_bytes": 823914496,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 67,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795583214808
+          },
+          "load": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582994805,
+            "median_kib": 696136.0,
+            "peak_bytes": 725061632,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 161,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582914166
+          },
+          "startup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582914166,
+            "median_kib": 536864.0,
+            "peak_bytes": 565104640,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 5,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582912050
+          }
+        }
+      },
+      "phase_nanos": {
+        "cleanup": 201472832,
+        "initial_state": 80568508199,
+        "lifecycle-cycle-1/ack_wait_with_readback": 4920850092,
+        "lifecycle-cycle-1/readback": 31810390,
+        "lifecycle-cycle-2/ack_wait_with_readback": 4947683959,
+        "lifecycle-cycle-2/readback": 25040446,
+        "lifecycle-cycle-3/ack_wait_with_readback": 4901021529,
+        "lifecycle-cycle-3/readback": 27634819,
+        "prepare": 944618775,
+        "startup": 12627715256
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "completion": {
+            "availability": "unavailable",
+            "reason": "insufficient-event-correlation",
+            "unit": "ns"
+          },
+          "lifecycle-cycle-1/drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 716224
+          },
+          "lifecycle-cycle-1/idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 720716
+          },
+          "lifecycle-cycle-1/measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 721444
+          },
+          "lifecycle-cycle-1/readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "lifecycle-cycle-1/stop.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 722008
+          },
+          "lifecycle-cycle-1/warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 713172
+          },
+          "lifecycle-cycle-2/drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 752496
+          },
+          "lifecycle-cycle-2/idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 739744
+          },
+          "lifecycle-cycle-2/measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 752164
+          },
+          "lifecycle-cycle-2/readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "lifecycle-cycle-2/start.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 729468
+          },
+          "lifecycle-cycle-2/stop.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 740820
+          },
+          "lifecycle-cycle-2/warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 740312
+          },
+          "lifecycle-cycle-3/drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 804484
+          },
+          "lifecycle-cycle-3/idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 802200
+          },
+          "lifecycle-cycle-3/measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 804924
+          },
+          "lifecycle-cycle-3/readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "lifecycle-cycle-3/start.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 788464
+          },
+          "lifecycle-cycle-3/stop.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 804524
+          },
+          "lifecycle-cycle-3/warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 804604
+          },
+          "load.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 708068
+          },
+          "startup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 551860
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": true,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "dimensions": 83,
+            "facts": 80
+          },
+          "write_concern": "majority"
+        },
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "mongo_topology": "shared replica set",
+        "op_alive_before_teardown": true,
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_exit_code": 0
+      },
+      "source_phases": {
+        "cycle-1/measurement": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "5d9781b5e0b5866101bef97a7966839d41b86f0660f052a95f41ce59f7bece12",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "be13c4b7ed5b991d389e279bb636aad6c1083aa258afa3652ca8396018143768",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000097203
+        },
+        "cycle-1/warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "166192dead81453e460e7683ec47835dafbb87e14279fcd5fb3f74b345c32e02",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "8096b5d1bf07f1e790a1d11e30e7882c9ec448052526f8a9a413c2b8e211081f",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000084547
+        },
+        "cycle-2/measurement": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "0787f436e4703438ca0df3ead9f07753c9819f50de2c753d338163f3d759baf6",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "dc39fb56484438df0f39587f8c444c52be36f0f48d79ef29c1eb3b460b496376",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000076676
+        },
+        "cycle-2/warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "5e756777e0ced9fb51b18c98a9a4e2fda40abe8252ed49edd150f9d43e5445cd",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "1b45062e1cb9c221cd122d1f839f8a5d89897c4dea9077f4e3181e7cef1b00d3",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000073221
+        },
+        "cycle-3/measurement": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "a8fb3890e8ee52fc643b363a6e50fa7d7a9e893cec403ad1f688beb6116eb714",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "78540c9d48ebbb7304e5c90290e69192a0f04ca5d78ae47318bd77d1a71294c7",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000071621
+        },
+        "cycle-3/warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "d1dade0e405fd5b0140b4214aeb7dd3ed555f601926a49cf15a2d2ec0609acce",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "1144329770eb66f7209baf53b01ade8a33418cf0b731402f80a30cd9f0aa945b",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000074535
+        },
+        "source_window": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "a8fb3890e8ee52fc643b363a6e50fa7d7a9e893cec403ad1f688beb6116eb714",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "78540c9d48ebbb7304e5c90290e69192a0f04ca5d78ae47318bd77d1a71294c7",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000071621
+        },
+        "warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "d1dade0e405fd5b0140b4214aeb7dd3ed555f601926a49cf15a2d2ec0609acce",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "1144329770eb66f7209baf53b01ade8a33418cf0b731402f80a30cd9f0aa945b",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000074535
+        }
+      },
+      "started_epoch_ms": 1795582900582,
+      "target": {
+        "source_captured_changes": {
+          "facts": 1800
+        },
+        "target_collections": [
+          "facts"
+        ],
+        "target_collections_expected": [
+          "facts"
+        ],
+        "target_readback_rows": 9000,
+        "target_settled_delta": 1653
+      }
+    }
+  },
+  "attachments": {
+    "single": {
+      "gc_member": {
+        "gzip_sha256": "c3e46437db1c21910425c846d2ef164e23348f81713bc34a660b36f3e14b9cac",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.lifecycle.release.standard/3/single-gc.log.gz",
+        "raw_sha256": "d0b93329ca6b79f7c3f56bb2f0d092752e20b18cd521549409e56bd0fb2a4d57",
+        "uncompressed_bytes": 50746
+      },
+      "rss_member": {
+        "gzip_sha256": "cb25cc9e9feea138260d346df2940ae3155487ffbcbeaf6ec2981287a5b6526d",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.lifecycle.release.standard/3/single-op-resource.jsonl.gz",
+        "raw_sha256": "57443edeb2c79f8fb63a698769c9f0c402b8ed09d16caf1cdb2ecec0742f58cb",
+        "uncompressed_bytes": 135938
+      }
+    }
+  },
+  "case_id": "join.lifecycle.release.standard",
+  "case_version": 2,
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "original": {
+    "artifact_digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+    "artifact_id": 14995252340,
+    "batch": 3,
+    "result_path": "run/join.lifecycle.release.standard/3/result.json"
+  },
+  "repeat": 3,
+  "runner": {
+    "available_disk": "88G",
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "cpu_count": "4",
+    "digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+    "id": 14995252340,
+    "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+    "memory_mib": "15701",
+    "mongo_images": [
+      "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+    ],
+    "name": "performance-batch-1-3",
+    "runner_image": "ubuntu24 20261116.133.1"
+  },
+  "workload": {
+    "backlog_events": 30000,
+    "measurement_seconds": 60,
+    "mix": null,
+    "rate": 30,
+    "repeats": 3,
+    "rows": 10000,
+    "scale": "formal",
+    "timeout_seconds": 600,
+    "warmup_seconds": 30,
+    "workload_sha256": "8f2e93d5c7f2b9bab37462662c6ac74d01e416677f8e210cf91c4d758c081f52",
+    "workload_version": 1
+  }
+}

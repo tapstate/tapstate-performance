@@ -1,0 +1,72 @@
+{
+  "case_id": "unwind.live.basic.standard",
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "repeats": [
+    {
+      "evidence": {
+        "artifact_digest": "sha256:fe56ac8c78269b807513593f173a2e5cae8e4053242a621565f6c036510f2f0d",
+        "artifact_id": 14993917963,
+        "batch": 7,
+        "result_path": "run/unwind.live.basic.standard/1/result.json"
+      },
+      "last_stage": "live",
+      "qualification_gaps": {
+        "single": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/parents: planned/submitted/acknowledged/observed counts differ"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: The operator live source window was incomplete",
+      "repeat": 1,
+      "status": "measurement-incomplete"
+    },
+    {
+      "evidence": {
+        "artifact_digest": "sha256:fe56ac8c78269b807513593f173a2e5cae8e4053242a621565f6c036510f2f0d",
+        "artifact_id": 14993917963,
+        "batch": 7,
+        "result_path": "run/unwind.live.basic.standard/2/result.json"
+      },
+      "last_stage": "live",
+      "qualification_gaps": {
+        "single": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/parents: planned/submitted/acknowledged/observed counts differ"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: The operator live source window was incomplete",
+      "repeat": 2,
+      "status": "measurement-incomplete"
+    },
+    {
+      "evidence": {
+        "artifact_digest": "sha256:fe56ac8c78269b807513593f173a2e5cae8e4053242a621565f6c036510f2f0d",
+        "artifact_id": 14993917963,
+        "batch": 7,
+        "result_path": "run/unwind.live.basic.standard/3/result.json"
+      },
+      "last_stage": "live",
+      "qualification_gaps": {
+        "single": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/parents: planned/submitted/acknowledged/observed counts differ"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: The operator live source window was incomplete",
+      "repeat": 3,
+      "status": "measurement-incomplete"
+    }
+  ]
+}

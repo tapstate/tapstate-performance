@@ -1,0 +1,988 @@
+{
+  "arms": {
+    "single": {
+      "correctness": "evidence-consistent",
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795582131627,
+      "gaps": [],
+      "input_tables": {
+        "left": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 5000,
+            "max": 18912,
+            "mean": 16211.3008,
+            "min": 13160,
+            "p95": 17514
+          },
+          "bsonSha256": "7b2d5498c6af82a9e31aa4dd664ebb15eba17710da70439d3e2b3f94f1675712",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 5000
+            },
+            "b0": {
+              "BOOLEAN": 4748,
+              "NULL": 252
+            },
+            "b1": {
+              "BOOLEAN": 4762,
+              "NULL": 238
+            },
+            "b2": {
+              "BOOLEAN": 4745,
+              "NULL": 255
+            },
+            "b3": {
+              "BOOLEAN": 4748,
+              "NULL": 252
+            },
+            "b4": {
+              "BOOLEAN": 4737,
+              "NULL": 263
+            },
+            "b5": {
+              "BOOLEAN": 4755,
+              "NULL": 245
+            },
+            "b6": {
+              "BOOLEAN": 4753,
+              "NULL": 247
+            },
+            "b7": {
+              "BOOLEAN": 4783,
+              "NULL": 217
+            },
+            "b8": {
+              "BOOLEAN": 4730,
+              "NULL": 270
+            },
+            "b9": {
+              "BOOLEAN": 4750,
+              "NULL": 250
+            },
+            "d0": {
+              "DECIMAL128": 4750,
+              "NULL": 250
+            },
+            "d1": {
+              "DECIMAL128": 4769,
+              "NULL": 231
+            },
+            "d2": {
+              "DECIMAL128": 4741,
+              "NULL": 259
+            },
+            "d3": {
+              "DECIMAL128": 4763,
+              "NULL": 237
+            },
+            "d4": {
+              "DECIMAL128": 4775,
+              "NULL": 225
+            },
+            "d5": {
+              "DECIMAL128": 4746,
+              "NULL": 254
+            },
+            "d6": {
+              "DECIMAL128": 4740,
+              "NULL": 260
+            },
+            "d7": {
+              "DECIMAL128": 4760,
+              "NULL": 240
+            },
+            "d8": {
+              "DECIMAL128": 4738,
+              "NULL": 262
+            },
+            "d9": {
+              "DECIMAL128": 4727,
+              "NULL": 273
+            },
+            "i0": {
+              "INT32": 4752,
+              "NULL": 248
+            },
+            "i1": {
+              "INT32": 4741,
+              "NULL": 259
+            },
+            "i10": {
+              "INT32": 4779,
+              "NULL": 221
+            },
+            "i11": {
+              "INT32": 4771,
+              "NULL": 229
+            },
+            "i12": {
+              "INT32": 4767,
+              "NULL": 233
+            },
+            "i13": {
+              "INT32": 4746,
+              "NULL": 254
+            },
+            "i14": {
+              "INT32": 4755,
+              "NULL": 245
+            },
+            "i15": {
+              "INT32": 4758,
+              "NULL": 242
+            },
+            "i16": {
+              "INT32": 4747,
+              "NULL": 253
+            },
+            "i17": {
+              "INT32": 4735,
+              "NULL": 265
+            },
+            "i18": {
+              "INT32": 4718,
+              "NULL": 282
+            },
+            "i2": {
+              "INT32": 4708,
+              "NULL": 292
+            },
+            "i3": {
+              "INT32": 4735,
+              "NULL": 265
+            },
+            "i4": {
+              "INT32": 4731,
+              "NULL": 269
+            },
+            "i5": {
+              "INT32": 4740,
+              "NULL": 260
+            },
+            "i6": {
+              "INT32": 4733,
+              "NULL": 267
+            },
+            "i7": {
+              "INT32": 4726,
+              "NULL": 274
+            },
+            "i8": {
+              "INT32": 4723,
+              "NULL": 277
+            },
+            "i9": {
+              "INT32": 4747,
+              "NULL": 253
+            },
+            "s0": {
+              "NULL": 229,
+              "STRING": 4771
+            },
+            "s1": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s10": {
+              "NULL": 281,
+              "STRING": 4719
+            },
+            "s11": {
+              "NULL": 258,
+              "STRING": 4742
+            },
+            "s12": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s13": {
+              "NULL": 241,
+              "STRING": 4759
+            },
+            "s14": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s15": {
+              "NULL": 271,
+              "STRING": 4729
+            },
+            "s16": {
+              "NULL": 237,
+              "STRING": 4763
+            },
+            "s17": {
+              "NULL": 233,
+              "STRING": 4767
+            },
+            "s18": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s19": {
+              "NULL": 232,
+              "STRING": 4768
+            },
+            "s2": {
+              "NULL": 262,
+              "STRING": 4738
+            },
+            "s20": {
+              "NULL": 250,
+              "STRING": 4750
+            },
+            "s21": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s22": {
+              "NULL": 228,
+              "STRING": 4772
+            },
+            "s23": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s24": {
+              "NULL": 223,
+              "STRING": 4777
+            },
+            "s25": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s26": {
+              "NULL": 261,
+              "STRING": 4739
+            },
+            "s27": {
+              "NULL": 251,
+              "STRING": 4749
+            },
+            "s28": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s29": {
+              "NULL": 244,
+              "STRING": 4756
+            },
+            "s3": {
+              "NULL": 242,
+              "STRING": 4758
+            },
+            "s30": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s31": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s32": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s33": {
+              "NULL": 236,
+              "STRING": 4764
+            },
+            "s34": {
+              "NULL": 243,
+              "STRING": 4757
+            },
+            "s35": {
+              "NULL": 223,
+              "STRING": 4777
+            },
+            "s36": {
+              "NULL": 263,
+              "STRING": 4737
+            },
+            "s37": {
+              "NULL": 246,
+              "STRING": 4754
+            },
+            "s38": {
+              "NULL": 269,
+              "STRING": 4731
+            },
+            "s39": {
+              "NULL": 267,
+              "STRING": 4733
+            },
+            "s4": {
+              "NULL": 246,
+              "STRING": 4754
+            },
+            "s40": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s41": {
+              "NULL": 272,
+              "STRING": 4728
+            },
+            "s42": {
+              "NULL": 245,
+              "STRING": 4755
+            },
+            "s43": {
+              "NULL": 262,
+              "STRING": 4738
+            },
+            "s44": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s45": {
+              "NULL": 248,
+              "STRING": 4752
+            },
+            "s46": {
+              "NULL": 239,
+              "STRING": 4761
+            },
+            "s47": {
+              "NULL": 276,
+              "STRING": 4724
+            },
+            "s48": {
+              "NULL": 233,
+              "STRING": 4767
+            },
+            "s49": {
+              "NULL": 269,
+              "STRING": 4731
+            },
+            "s5": {
+              "NULL": 259,
+              "STRING": 4741
+            },
+            "s6": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s7": {
+              "NULL": 232,
+              "STRING": 4768
+            },
+            "s8": {
+              "NULL": 242,
+              "STRING": 4758
+            },
+            "s9": {
+              "NULL": 250,
+              "STRING": 4750
+            },
+            "t0": {
+              "DATE_TIME": 4749,
+              "NULL": 251
+            },
+            "t1": {
+              "DATE_TIME": 4783,
+              "NULL": 217
+            },
+            "t2": {
+              "DATE_TIME": 4731,
+              "NULL": 269
+            },
+            "t3": {
+              "DATE_TIME": 4740,
+              "NULL": 260
+            },
+            "t4": {
+              "DATE_TIME": 4776,
+              "NULL": 224
+            },
+            "t5": {
+              "DATE_TIME": 4759,
+              "NULL": 241
+            },
+            "t6": {
+              "DATE_TIME": 4742,
+              "NULL": 258
+            },
+            "t7": {
+              "DATE_TIME": 4723,
+              "NULL": 277
+            },
+            "t8": {
+              "DATE_TIME": 4735,
+              "NULL": 265
+            },
+            "t9": {
+              "DATE_TIME": 4749,
+              "NULL": 251
+            }
+          },
+          "falseValues": 23785,
+          "fields": 100,
+          "firstKey": 1,
+          "lastKey": 5000,
+          "logicalBytes": {
+            "count": 5000,
+            "max": 19164,
+            "mean": 16464.9996,
+            "min": 13439,
+            "p95": 17757
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 24960,
+          "nullableValues": 495000,
+          "rowWidthWithinTolerance": true,
+          "rows": 5000,
+          "stringLengths": {
+            "count": 237421,
+            "max": 480,
+            "mean": 320.1334338579991,
+            "min": 160,
+            "p95": 465
+          },
+          "trueValues": 23726
+        },
+        "right": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 5000,
+            "max": 18704,
+            "mean": 16206.0912,
+            "min": 12662,
+            "p95": 17522
+          },
+          "bsonSha256": "3ec231bee5869cd365e26f54bd8b5cf917396c2e2ef9c0dbacc92ddce2468b9b",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 5000
+            },
+            "b0": {
+              "BOOLEAN": 4744,
+              "NULL": 256
+            },
+            "b1": {
+              "BOOLEAN": 4713,
+              "NULL": 287
+            },
+            "b2": {
+              "BOOLEAN": 4778,
+              "NULL": 222
+            },
+            "b3": {
+              "BOOLEAN": 4768,
+              "NULL": 232
+            },
+            "b4": {
+              "BOOLEAN": 4760,
+              "NULL": 240
+            },
+            "b5": {
+              "BOOLEAN": 4760,
+              "NULL": 240
+            },
+            "b6": {
+              "BOOLEAN": 4742,
+              "NULL": 258
+            },
+            "b7": {
+              "BOOLEAN": 4733,
+              "NULL": 267
+            },
+            "b8": {
+              "BOOLEAN": 4736,
+              "NULL": 264
+            },
+            "b9": {
+              "BOOLEAN": 4766,
+              "NULL": 234
+            },
+            "d0": {
+              "DECIMAL128": 4749,
+              "NULL": 251
+            },
+            "d1": {
+              "DECIMAL128": 4742,
+              "NULL": 258
+            },
+            "d2": {
+              "DECIMAL128": 4746,
+              "NULL": 254
+            },
+            "d3": {
+              "DECIMAL128": 4770,
+              "NULL": 230
+            },
+            "d4": {
+              "DECIMAL128": 4725,
+              "NULL": 275
+            },
+            "d5": {
+              "DECIMAL128": 4733,
+              "NULL": 267
+            },
+            "d6": {
+              "DECIMAL128": 4767,
+              "NULL": 233
+            },
+            "d7": {
+              "DECIMAL128": 4720,
+              "NULL": 280
+            },
+            "d8": {
+              "DECIMAL128": 4769,
+              "NULL": 231
+            },
+            "d9": {
+              "DECIMAL128": 4755,
+              "NULL": 245
+            },
+            "i0": {
+              "INT32": 4708,
+              "NULL": 292
+            },
+            "i1": {
+              "INT32": 4768,
+              "NULL": 232
+            },
+            "i10": {
+              "INT32": 4743,
+              "NULL": 257
+            },
+            "i11": {
+              "INT32": 4752,
+              "NULL": 248
+            },
+            "i12": {
+              "INT32": 4760,
+              "NULL": 240
+            },
+            "i13": {
+              "INT32": 4734,
+              "NULL": 266
+            },
+            "i14": {
+              "INT32": 4729,
+              "NULL": 271
+            },
+            "i15": {
+              "INT32": 4739,
+              "NULL": 261
+            },
+            "i16": {
+              "INT32": 4746,
+              "NULL": 254
+            },
+            "i17": {
+              "INT32": 4730,
+              "NULL": 270
+            },
+            "i18": {
+              "INT32": 4743,
+              "NULL": 257
+            },
+            "i2": {
+              "INT32": 4742,
+              "NULL": 258
+            },
+            "i3": {
+              "INT32": 4746,
+              "NULL": 254
+            },
+            "i4": {
+              "INT32": 4760,
+              "NULL": 240
+            },
+            "i5": {
+              "INT32": 4732,
+              "NULL": 268
+            },
+            "i6": {
+              "INT32": 4733,
+              "NULL": 267
+            },
+            "i7": {
+              "INT32": 4749,
+              "NULL": 251
+            },
+            "i8": {
+              "INT32": 4765,
+              "NULL": 235
+            },
+            "i9": {
+              "INT32": 4761,
+              "NULL": 239
+            },
+            "s0": {
+              "NULL": 250,
+              "STRING": 4750
+            },
+            "s1": {
+              "NULL": 243,
+              "STRING": 4757
+            },
+            "s10": {
+              "NULL": 280,
+              "STRING": 4720
+            },
+            "s11": {
+              "NULL": 238,
+              "STRING": 4762
+            },
+            "s12": {
+              "NULL": 251,
+              "STRING": 4749
+            },
+            "s13": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s14": {
+              "NULL": 256,
+              "STRING": 4744
+            },
+            "s15": {
+              "NULL": 248,
+              "STRING": 4752
+            },
+            "s16": {
+              "NULL": 271,
+              "STRING": 4729
+            },
+            "s17": {
+              "NULL": 247,
+              "STRING": 4753
+            },
+            "s18": {
+              "NULL": 234,
+              "STRING": 4766
+            },
+            "s19": {
+              "NULL": 269,
+              "STRING": 4731
+            },
+            "s2": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s20": {
+              "NULL": 252,
+              "STRING": 4748
+            },
+            "s21": {
+              "NULL": 279,
+              "STRING": 4721
+            },
+            "s22": {
+              "NULL": 256,
+              "STRING": 4744
+            },
+            "s23": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s24": {
+              "NULL": 225,
+              "STRING": 4775
+            },
+            "s25": {
+              "NULL": 222,
+              "STRING": 4778
+            },
+            "s26": {
+              "NULL": 251,
+              "STRING": 4749
+            },
+            "s27": {
+              "NULL": 259,
+              "STRING": 4741
+            },
+            "s28": {
+              "NULL": 251,
+              "STRING": 4749
+            },
+            "s29": {
+              "NULL": 282,
+              "STRING": 4718
+            },
+            "s3": {
+              "NULL": 270,
+              "STRING": 4730
+            },
+            "s30": {
+              "NULL": 274,
+              "STRING": 4726
+            },
+            "s31": {
+              "NULL": 265,
+              "STRING": 4735
+            },
+            "s32": {
+              "NULL": 249,
+              "STRING": 4751
+            },
+            "s33": {
+              "NULL": 282,
+              "STRING": 4718
+            },
+            "s34": {
+              "NULL": 281,
+              "STRING": 4719
+            },
+            "s35": {
+              "NULL": 242,
+              "STRING": 4758
+            },
+            "s36": {
+              "NULL": 231,
+              "STRING": 4769
+            },
+            "s37": {
+              "NULL": 228,
+              "STRING": 4772
+            },
+            "s38": {
+              "NULL": 241,
+              "STRING": 4759
+            },
+            "s39": {
+              "NULL": 260,
+              "STRING": 4740
+            },
+            "s4": {
+              "NULL": 247,
+              "STRING": 4753
+            },
+            "s40": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s41": {
+              "NULL": 245,
+              "STRING": 4755
+            },
+            "s42": {
+              "NULL": 243,
+              "STRING": 4757
+            },
+            "s43": {
+              "NULL": 242,
+              "STRING": 4758
+            },
+            "s44": {
+              "NULL": 256,
+              "STRING": 4744
+            },
+            "s45": {
+              "NULL": 227,
+              "STRING": 4773
+            },
+            "s46": {
+              "NULL": 249,
+              "STRING": 4751
+            },
+            "s47": {
+              "NULL": 227,
+              "STRING": 4773
+            },
+            "s48": {
+              "NULL": 228,
+              "STRING": 4772
+            },
+            "s49": {
+              "NULL": 233,
+              "STRING": 4767
+            },
+            "s5": {
+              "NULL": 270,
+              "STRING": 4730
+            },
+            "s6": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s7": {
+              "NULL": 261,
+              "STRING": 4739
+            },
+            "s8": {
+              "NULL": 243,
+              "STRING": 4757
+            },
+            "s9": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "t0": {
+              "DATE_TIME": 4748,
+              "NULL": 252
+            },
+            "t1": {
+              "DATE_TIME": 4746,
+              "NULL": 254
+            },
+            "t2": {
+              "DATE_TIME": 4730,
+              "NULL": 270
+            },
+            "t3": {
+              "DATE_TIME": 4750,
+              "NULL": 250
+            },
+            "t4": {
+              "DATE_TIME": 4771,
+              "NULL": 229
+            },
+            "t5": {
+              "DATE_TIME": 4758,
+              "NULL": 242
+            },
+            "t6": {
+              "DATE_TIME": 4755,
+              "NULL": 245
+            },
+            "t7": {
+              "DATE_TIME": 4738,
+              "NULL": 262
+            },
+            "t8": {
+              "DATE_TIME": 4742,
+              "NULL": 258
+            },
+            "t9": {
+              "DATE_TIME": 4743,
+              "NULL": 257
+            }
+          },
+          "falseValues": 23661,
+          "fields": 100,
+          "firstKey": 1099511627777,
+          "lastKey": 1099511632776,
+          "logicalBytes": {
+            "count": 5000,
+            "max": 18950,
+            "mean": 16469.0718,
+            "min": 12948,
+            "p95": 17773
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 25004,
+          "nullableValues": 495000,
+          "rowWidthWithinTolerance": true,
+          "rows": 5000,
+          "stringLengths": {
+            "count": 237399,
+            "max": 480,
+            "mean": 320.0558426952093,
+            "min": 160,
+            "p95": 465
+          },
+          "trueValues": 23839
+        }
+      },
+      "measurement_status": "bounded-observation",
+      "memory": {},
+      "phase_nanos": {
+        "cleanup": 202849008,
+        "completion_observed": 10767790156,
+        "prepare": 5932874094,
+        "readback": 554347417,
+        "startup": 12650496956
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "completion": {
+            "availability": "bounded-observation",
+            "reason": "monotonic observed upper bound including telemetry publication and polling",
+            "unit": "ns",
+            "value": 10767790156
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": false,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "left": 320,
+            "right": 320
+          },
+          "write_concern": "majority"
+        },
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "mongo_topology": "shared replica set",
+        "op_alive_before_teardown": true,
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_exit_code": 0
+      },
+      "source_phases": {},
+      "started_epoch_ms": 1795582100500,
+      "target": {
+        "confirmed_output_units": 10000,
+        "input_units": 10000,
+        "target_collections": [
+          "left",
+          "right"
+        ],
+        "target_collections_expected": [
+          "left",
+          "right"
+        ],
+        "target_readback_rows": 10000
+      }
+    }
+  },
+  "case_id": "union.snapshot.basic.large",
+  "case_version": 1,
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "original": {
+    "artifact_digest": "sha256:dfd90ef64cb4f63e9af6cfc4220f6f62eb51c16d9b04e0385d7d1ec34100c1f0",
+    "artifact_id": 14993109011,
+    "batch": 6,
+    "result_path": "run/union.snapshot.basic.large/3/result.json"
+  },
+  "repeat": 3,
+  "runner": {
+    "available_disk": "88G",
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "cpu_count": "4",
+    "digest": "sha256:dfd90ef64cb4f63e9af6cfc4220f6f62eb51c16d9b04e0385d7d1ec34100c1f0",
+    "id": 14993109011,
+    "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+    "memory_mib": "15701",
+    "mongo_images": [
+      "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+    ],
+    "name": "performance-batch-1-6",
+    "runner_image": "ubuntu24 20261116.133.1"
+  },
+  "workload": {
+    "backlog_events": 30000,
+    "measurement_seconds": 300,
+    "mix": null,
+    "rate": 100,
+    "repeats": 3,
+    "rows": 10000,
+    "scale": "formal",
+    "timeout_seconds": 600,
+    "warmup_seconds": 30,
+    "workload_sha256": "bec53022c446eb61fd8f20ea09a3177e7fc7a2d6434818fc804224e0ed01dceb",
+    "workload_version": 1
+  }
+}
