@@ -1,4 +1,5 @@
 from copy import deepcopy
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -6,6 +7,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import baselines
+import verify_baseline
 
 
 class BaselinesTest(unittest.TestCase):
@@ -48,3 +50,25 @@ class BaselinesTest(unittest.TestCase):
                 group["samples"][0]["value"] = -1
             with self.subTest(fault=fault), self.assertRaisesRegex(ValueError, "Wrong unit|Negative observation"):
                 baselines.materialize(initial)
+
+    def test_remote_verification_binds_exact_data_commit_and_bytes(self):
+        initial = deepcopy(self.fixture["initial"])
+        initial["kind"] = "accepted"
+        payload = baselines.encoded(initial)
+        commit = "b" * 40
+        expected_path = f"baselines/{initial['environment']}/{initial['version']}/baseline.json"
+        requested = []
+
+        def fetch(url):
+            requested.append(url)
+            return payload
+
+        receipt = verify_baseline.verify(payload, commit, fetch=fetch)
+        self.assertEqual([f"{verify_baseline.RAW}/{commit}/{expected_path}"], requested)
+        self.assertEqual(commit, receipt["commit"])
+        self.assertEqual(expected_path, receipt["path"])
+        self.assertEqual(hashlib.sha256(payload).hexdigest(), receipt["sha256"])
+        with self.assertRaisesRegex(ValueError, "Remote baseline bytes differ"):
+            verify_baseline.verify(payload, commit, fetch=lambda _: payload + b" ")
+        with self.assertRaisesRegex(ValueError, "full data commit SHA"):
+            verify_baseline.verify(payload, "main", fetch=self.fail)
