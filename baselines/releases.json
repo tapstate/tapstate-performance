@@ -1,0 +1,16 @@
+{
+  "active": {
+    "ubuntu-24.04-x64-op": "sync-2026-11-25-v1"
+  },
+  "schema_version": 1,
+  "versions": {
+    "sync-2026-11-25-v1": {
+      "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+      "commit": "f33a9f5a80625fa85baba7880b2d12bbb8a95b1f",
+      "environment": "ubuntu-24.04-x64-op",
+      "id": "tapstate-sync",
+      "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/baseline.json",
+      "sha256": "672fbc892dc88d194dce52211aeb45b2fdccabc097c581e811a638ca08db9b0a"
+    }
+  }
+}
