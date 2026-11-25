@@ -21,8 +21,13 @@ def measurement_references(case):
         return ()
     if case["status"] != "completed":
         raise ValueError(f"Unrecognized case status for {case['case_id']}")
+    current = case["current"]
+    if type(case["case_version"]) is not int or case["case_version"] < 1:
+        raise ValueError(f"Invalid case version for {case['case_id']}")
+    if current["conditions"]["case_version"] != case["case_version"]:
+        raise ValueError(f"Current measurement case version mismatch for {case['case_id']}")
     first = case["first"]
-    return (case["current"],) if first == "current" else (case["current"], first)
+    return (current,) if first == "current" else (current, first)
 
 
 def measurement_groups(reference):
