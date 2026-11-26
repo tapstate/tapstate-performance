@@ -1,0 +1,108 @@
+{
+  "arms": {
+    "single": {
+      "correctness": "evidence-consistent",
+      "dummy_observer": {
+        "acknowledged": 100000,
+        "member": "run/copy.snapshot.dummy-baseline.standard/1/dummy-content.tsv",
+        "rows": 100000,
+        "sha256": "6e49d99989d046984b79625a88862b68d9acdc2a35488cbc44c29513f9a1e66e"
+      },
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795582320940,
+      "gaps": [],
+      "measurement_status": "bounded-observation",
+      "memory": {},
+      "phase_nanos": {
+        "completion_observed": 10395909782,
+        "content_witness": 19768684500,
+        "startup": 15268815351
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "completion": {
+            "availability": "bounded-observation",
+            "reason": "monotonic observed upper bound including telemetry publication and polling",
+            "unit": "ns",
+            "value": 10395909782
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "fb8bb372cd1fedc0ec43e27dd839b91feee36a70a89adfaae6b6fd788c3352f3",
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9"
+      },
+      "snapshot_landing": {
+        "landedTables": 1,
+        "observedAt": "2026-11-25T04:51:38.816Z",
+        "phase": "COMPLETED",
+        "readMode": "snapshot_only",
+        "runKey": "execution:perf_copy:1:2026-11-25T04:51:35.034580063Z",
+        "tables": {
+          "dummy_orders": {
+            "rowsRead": 100000,
+            "rowsTotalEstimate": 100000,
+            "stage": "LANDED"
+          }
+        },
+        "totalTables": 1
+      },
+      "source_phases": {},
+      "started_epoch_ms": 1795582273634,
+      "target": {
+        "confirmed_output_units": 100000,
+        "input_units": 100000
+      }
+    }
+  },
+  "case_id": "copy.snapshot.dummy-baseline.standard",
+  "case_version": 1,
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "original": {
+    "artifact_digest": "sha256:8a44df3afade73fe8e40c05c8b4c3c9ec13ee018dc01db13afbc8e67923e2d7b",
+    "artifact_id": 14991989626,
+    "batch": 4,
+    "result_path": "run/copy.snapshot.dummy-baseline.standard/1/result.json"
+  },
+  "repeat": 1,
+  "runner": {
+    "available_disk": "85G",
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "cpu_count": "4",
+    "digest": "sha256:8a44df3afade73fe8e40c05c8b4c3c9ec13ee018dc01db13afbc8e67923e2d7b",
+    "id": 14991989626,
+    "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+    "memory_mib": "15982",
+    "mongo_images": [
+      "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+    ],
+    "name": "performance-batch-1-4",
+    "runner_image": "ubuntu24 20261116.376.1"
+  },
+  "workload": {
+    "backlog_events": 30000,
+    "measurement_seconds": 300,
+    "mix": null,
+    "rate": 100,
+    "repeats": 3,
+    "rows": 100000,
+    "scale": "formal",
+    "timeout_seconds": 600,
+    "warmup_seconds": 30,
+    "workload_sha256": "b3aa2dded550a7796d06bb13c2ec0b6d2bbd595870c7fd1c096e71d2d8ab6abe",
+    "workload_version": 1
+  }
+}

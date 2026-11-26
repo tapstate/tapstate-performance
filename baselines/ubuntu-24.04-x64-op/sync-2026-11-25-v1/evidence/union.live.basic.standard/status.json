@@ -1,0 +1,70 @@
+{
+  "case_id": "union.live.basic.standard",
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "repeats": [
+    {
+      "evidence": {
+        "artifact_digest": "sha256:6e155147aa5f4d90666faf8917934298c877a665d0d81e0597183cb10e69c149",
+        "artifact_id": 14995823030,
+        "batch": 2,
+        "result_path": "run/union.live.basic.standard/1/result.json"
+      },
+      "last_stage": "live",
+      "qualification_gaps": {
+        "single": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/right: planned/submitted/acknowledged/observed counts differ"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: The operator live source window was incomplete",
+      "repeat": 1,
+      "status": "measurement-incomplete"
+    },
+    {
+      "evidence": {
+        "artifact_digest": "sha256:6e155147aa5f4d90666faf8917934298c877a665d0d81e0597183cb10e69c149",
+        "artifact_id": 14995823030,
+        "batch": 2,
+        "result_path": "run/union.live.basic.standard/2/result.json"
+      },
+      "last_stage": "readback",
+      "raw_status": "completed",
+      "reason": null,
+      "repeat": 2,
+      "status": "completed"
+    },
+    {
+      "evidence": {
+        "artifact_digest": "sha256:6e155147aa5f4d90666faf8917934298c877a665d0d81e0597183cb10e69c149",
+        "artifact_id": 14995823030,
+        "batch": 2,
+        "result_path": "run/union.live.basic.standard/3/result.json"
+      },
+      "last_stage": "live",
+      "qualification_gaps": {
+        "single": [
+          "Run arm did not finish",
+          "warmup: source window did not complete",
+          "warmup/right: planned/submitted/acknowledged/observed counts differ",
+          "source_window: source window did not complete",
+          "source_window/left: planned/submitted/acknowledged/observed counts differ",
+          "source_window/left: ordered source history boundary or digest missing",
+          "source_window/right: planned/submitted/acknowledged/observed counts differ",
+          "source_window/right: ordered source history boundary or digest missing"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: The operator live source window was incomplete",
+      "repeat": 3,
+      "status": "measurement-incomplete"
+    }
+  ]
+}

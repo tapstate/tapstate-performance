@@ -1,0 +1,90 @@
+{
+  "case_id": "copy.live.slow-target.large",
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "repeats": [
+    {
+      "evidence": {
+        "artifact_digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+        "artifact_id": 14995252340,
+        "batch": 3,
+        "result_path": "run/copy.live.slow-target.large/1/result.json"
+      },
+      "last_stage": "paired-operator",
+      "qualification_gaps": {
+        "limited": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/records: planned/submitted/acknowledged/observed counts differ"
+        ],
+        "unlimited": [
+          "Run arm did not finish",
+          "warmup: source window did not complete",
+          "warmup/records: planned/submitted/acknowledged/observed counts differ",
+          "source_window: source window did not complete",
+          "source_window/records: planned/submitted/acknowledged/observed counts differ",
+          "source_window/records: ordered source history boundary or digest missing"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: unlimited at live Live source window was incomplete\nlimited at live Live source window was incomplete",
+      "repeat": 1,
+      "status": "measurement-incomplete"
+    },
+    {
+      "evidence": {
+        "artifact_digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+        "artifact_id": 14995252340,
+        "batch": 3,
+        "result_path": "run/copy.live.slow-target.large/2/result.json"
+      },
+      "last_stage": "paired-operator",
+      "qualification_gaps": {
+        "limited": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/records: planned/submitted/acknowledged/observed counts differ"
+        ],
+        "unlimited": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/records: planned/submitted/acknowledged/observed counts differ"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: unlimited at live Live source window was incomplete\nlimited at live Live source window was incomplete",
+      "repeat": 2,
+      "status": "measurement-incomplete"
+    },
+    {
+      "evidence": {
+        "artifact_digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+        "artifact_id": 14995252340,
+        "batch": 3,
+        "result_path": "run/copy.live.slow-target.large/3/result.json"
+      },
+      "last_stage": "paired-operator",
+      "qualification_gaps": {
+        "limited": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/records: planned/submitted/acknowledged/observed counts differ"
+        ],
+        "unlimited": [
+          "Run arm did not finish",
+          "source_window: source window did not complete",
+          "source_window/records: planned/submitted/acknowledged/observed counts differ"
+        ]
+      },
+      "raw_status": "measurement-incomplete",
+      "reason": "io.tapstate.e2e.BenchmarkRunIT$Unverified: unlimited at live Live source window was incomplete\nlimited at live Live source window was incomplete",
+      "repeat": 3,
+      "status": "measurement-incomplete"
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "acceptance": {
+    "accepted_on": "2026-11-25",
+    "reviewer": "ply0011",
+    "scope": "snapshot RSS comparison rules and arm-specific budgets in this record"
+  },
+  "cases": {
+    "copy.snapshot.basic.wide": {
+      "single": {
+        "budget_bytes": 1393557504,
+        "largest_observation_bytes": 1160605696,
+        "margin_bytes": 232951808,
+        "original": {
+          "conditions": {
+            "case_version": 2,
+            "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+            "cpu": "Intel(R) Xeon(R) 6975P-C",
+            "cpu_count": "4",
+            "database_conditions": {
+              "batch_size": 32,
+              "mongo_version": "7.0.48",
+              "pre_images": false,
+              "replica_set": "docker-rs",
+              "string_base_lengths": {
+                "records": 145
+              },
+              "write_concern": "majority"
+            },
+            "definition_sha256": "e08a8d1429b514eab6ce7d01d8c35ea77e3841744c2ae632e3fbf9a6b75f1590",
+            "gc": "G1",
+            "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+            "mongo_images": [
+              "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+            ],
+            "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+            "op_heap_limit_mib": 768,
+            "op_runtime": {
+              "arch": "amd64",
+              "cpu_count": 4,
+              "jdk": "21.0.13+9-LTS",
+              "os": "Linux"
+            },
+            "runner_image": "ubuntu24 20261116.133.1",
+            "runner_memory_mib": "15701",
+            "topology": "shared replica set",
+            "workload": {
+              "backlog_events": 30000,
+              "measurement_seconds": 300,
+              "mix": null,
+              "rate": 100,
+              "repeats": 3,
+              "rows": 25000,
+              "scale": "formal",
+              "timeout_seconds": 600,
+              "warmup_seconds": 30,
+              "workload_sha256": "de1cacf261d94e3839148b5bcaf0ad7601b877136867c98a97accd3ec42db2db",
+              "workload_version": 1
+            }
+          },
+          "max": 1160105984,
+          "median": 1148751872,
+          "min": 1133006848,
+          "range": 27099136,
+          "samples": [
+            1160105984,
+            1148751872,
+            1133006848
+          ],
+          "source": "procfs process status"
+        },
+        "reruns": {
+          "45569006685": {
+            "conditions": {
+              "case_version": 2,
+              "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+              "cpu": "AMD EPYC 9V74 80-Core Processor",
+              "cpu_count": "4",
+              "database_conditions": {
+                "batch_size": 32,
+                "mongo_version": "7.0.48",
+                "pre_images": false,
+                "replica_set": "docker-rs",
+                "string_base_lengths": {
+                  "records": 145
+                },
+                "write_concern": "majority"
+              },
+              "definition_sha256": "e08a8d1429b514eab6ce7d01d8c35ea77e3841744c2ae632e3fbf9a6b75f1590",
+              "gc": "G1",
+              "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+              "mongo_images": [
+                "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+              ],
+              "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+              "op_heap_limit_mib": 768,
+              "op_runtime": {
+                "arch": "amd64",
+                "cpu_count": 4,
+                "jdk": "21.0.13+9-LTS",
+                "os": "Linux"
+              },
+              "runner_image": "ubuntu24 20261116.376.1",
+              "runner_memory_mib": "15983",
+              "topology": "shared replica set",
+              "workload": {
+                "backlog_events": 30000,
+                "measurement_seconds": 300,
+                "mix": null,
+                "rate": 100,
+                "repeats": 3,
+                "rows": 25000,
+                "scale": "formal",
+                "timeout_seconds": 600,
+                "warmup_seconds": 30,
+                "workload_sha256": "de1cacf261d94e3839148b5bcaf0ad7601b877136867c98a97accd3ec42db2db",
+                "workload_version": 1
+              }
+            },
+            "max": 1160605696,
+            "median": 1156517888,
+            "min": 1155784704,
+            "range": 4820992,
+            "samples": [
+              1156517888,
+              1160605696,
+              1155784704
+            ],
+            "source": "procfs process status"
+          },
+          "45574329199": {
+            "conditions": {
+              "case_version": 2,
+              "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+              "cpu": "AMD EPYC 9V45 96-Core Processor",
+              "cpu_count": "4",
+              "database_conditions": {
+                "batch_size": 32,
+                "mongo_version": "7.0.48",
+                "pre_images": false,
+                "replica_set": "docker-rs",
+                "string_base_lengths": {
+                  "records": 145
+                },
+                "write_concern": "majority"
+              },
+              "definition_sha256": "e08a8d1429b514eab6ce7d01d8c35ea77e3841744c2ae632e3fbf9a6b75f1590",
+              "gc": "G1",
+              "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+              "mongo_images": [
+                "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+              ],
+              "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+              "op_heap_limit_mib": 768,
+              "op_runtime": {
+                "arch": "amd64",
+                "cpu_count": 4,
+                "jdk": "21.0.13+9-LTS",
+                "os": "Linux"
+              },
+              "runner_image": "ubuntu24 20261116.376.1",
+              "runner_memory_mib": "15983",
+              "topology": "shared replica set",
+              "workload": {
+                "backlog_events": 30000,
+                "measurement_seconds": 300,
+                "mix": null,
+                "rate": 100,
+                "repeats": 3,
+                "rows": 25000,
+                "scale": "formal",
+                "timeout_seconds": 600,
+                "warmup_seconds": 30,
+                "workload_sha256": "de1cacf261d94e3839148b5bcaf0ad7601b877136867c98a97accd3ec42db2db",
+                "workload_version": 1
+              }
+            },
+            "max": 1154236416,
+            "median": 1153241088,
+            "min": 1143894016,
+            "range": 10342400,
+            "samples": [
+              1143894016,
+              1153241088,
+              1154236416
+            ],
+            "source": "procfs process status"
+          }
+        },
+        "variation_bytes": 27099136
+      }
+    },
+    "nest.snapshot.fanout.wide": {
+      "high-fanout": {
+        "budget_bytes": 1426063360,
+        "largest_observation_bytes": 1187647488,
+        "margin_bytes": 238415872,
+        "original": {
+          "conditions": {
+            "case_version": 2,
+            "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+            "cpu": "Intel(R) Xeon(R) 6975P-C",
+            "cpu_count": "4",
+            "database_conditions": {
+              "batch_size": 32,
+              "mongo_version": "7.0.48",
+              "pre_images": false,
+              "replica_set": "docker-rs",
+              "string_base_lengths": {
+                "children": 146,
+                "roots": 147
+              },
+              "write_concern": "majority"
+            },
+            "definition_sha256": "d0d05f0dd61c87f519cde4c4fc0aca336116dbbd88d6396f9c5f9c02e644b9dc",
+            "gc": "G1",
+            "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+            "mongo_images": [
+              "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+            ],
+            "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+            "op_heap_limit_mib": 768,
+            "op_runtime": {
+              "arch": "amd64",
+              "cpu_count": 4,
+              "jdk": "21.0.13+9-LTS",
+              "os": "Linux"
+            },
+            "runner_image": "ubuntu24 20261116.133.1",
+            "runner_memory_mib": "15701",
+            "topology": "shared replica set",
+            "workload": {
+              "backlog_events": 30000,
+              "measurement_seconds": 300,
+              "mix": null,
+              "rate": 100,
+              "repeats": 3,
+              "rows": 10000,
+              "scale": "formal",
+              "timeout_seconds": 600,
+              "warmup_seconds": 30,
+              "workload_sha256": "046fc5497df13a309bdf398bf76ac022ade7904a622d1133665e6dca966fead5",
+              "workload_version": 1
+            }
+          },
+          "max": 1187647488,
+          "median": 1185787904,
+          "min": 1178656768,
+          "range": 8990720,
+          "samples": [
+            1185787904,
+            1178656768,
+            1187647488
+          ],
+          "source": "procfs process status"
+        },
+        "reruns": {
+          "45569006685": {
+            "conditions": {
+              "case_version": 2,
+              "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+              "cpu": "AMD EPYC 7763 64-Core Processor",
+              "cpu_count": "4",
+              "database_conditions": {
+                "batch_size": 32,
+                "mongo_version": "7.0.48",
+                "pre_images": false,
+                "replica_set": "docker-rs",
+                "string_base_lengths": {
+                  "children": 146,
+                  "roots": 147
+                },
+                "write_concern": "majority"
+              },
+              "definition_sha256": "d0d05f0dd61c87f519cde4c4fc0aca336116dbbd88d6396f9c5f9c02e644b9dc",
+              "gc": "G1",
+              "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+              "mongo_images": [
+                "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+              ],
+              "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+              "op_heap_limit_mib": 768,
+              "op_runtime": {
+                "arch": "amd64",
+                "cpu_count": 4,
+                "jdk": "21.0.13+9-LTS",
+                "os": "Linux"
+              },
+              "runner_image": "ubuntu24 20261116.376.1",
+              "runner_memory_mib": "15983",
+              "topology": "shared replica set",
+              "workload": {
+                "backlog_events": 30000,
+                "measurement_seconds": 300,
+                "mix": null,
+                "rate": 100,
+                "repeats": 3,
+                "rows": 10000,
+                "scale": "formal",
+                "timeout_seconds": 600,
+                "warmup_seconds": 30,
+                "workload_sha256": "046fc5497df13a309bdf398bf76ac022ade7904a622d1133665e6dca966fead5",
+                "workload_version": 1
+              }
+            },
+            "max": 1186648064,
+            "median": 1184473088,
+            "min": 1183772672,
+            "range": 2875392,
+            "samples": [
+              1183772672,
+              1186648064,
+              1184473088
+            ],
+            "source": "procfs process status"
+          }
+        },
+        "variation_bytes": 8990720
+      },
+      "ordinary": {
+        "budget_bytes": 1132462080,
+        "largest_observation_bytes": 943144960,
+        "margin_bytes": 189317120,
+        "original": {
+          "conditions": {
+            "case_version": 2,
+            "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+            "cpu": "Intel(R) Xeon(R) 6975P-C",
+            "cpu_count": "4",
+            "database_conditions": {
+              "batch_size": 32,
+              "mongo_version": "7.0.48",
+              "pre_images": false,
+              "replica_set": "docker-rs",
+              "string_base_lengths": {
+                "children": 146,
+                "roots": 147
+              },
+              "write_concern": "majority"
+            },
+            "definition_sha256": "d0d05f0dd61c87f519cde4c4fc0aca336116dbbd88d6396f9c5f9c02e644b9dc",
+            "gc": "G1",
+            "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+            "mongo_images": [
+              "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+            ],
+            "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+            "op_heap_limit_mib": 768,
+            "op_runtime": {
+              "arch": "amd64",
+              "cpu_count": 4,
+              "jdk": "21.0.13+9-LTS",
+              "os": "Linux"
+            },
+            "runner_image": "ubuntu24 20261116.133.1",
+            "runner_memory_mib": "15701",
+            "topology": "shared replica set",
+            "workload": {
+              "backlog_events": 30000,
+              "measurement_seconds": 300,
+              "mix": null,
+              "rate": 100,
+              "repeats": 3,
+              "rows": 10000,
+              "scale": "formal",
+              "timeout_seconds": 600,
+              "warmup_seconds": 30,
+              "workload_sha256": "046fc5497df13a309bdf398bf76ac022ade7904a622d1133665e6dca966fead5",
+              "workload_version": 1
+            }
+          },
+          "max": 943144960,
+          "median": 911511552,
+          "min": 900870144,
+          "range": 42274816,
+          "samples": [
+            900870144,
+            943144960,
+            911511552
+          ],
+          "source": "procfs process status"
+        },
+        "reruns": {
+          "45569006685": {
+            "conditions": {
+              "case_version": 2,
+              "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+              "cpu": "AMD EPYC 7763 64-Core Processor",
+              "cpu_count": "4",
+              "database_conditions": {
+                "batch_size": 32,
+                "mongo_version": "7.0.48",
+                "pre_images": false,
+                "replica_set": "docker-rs",
+                "string_base_lengths": {
+                  "children": 146,
+                  "roots": 147
+                },
+                "write_concern": "majority"
+              },
+              "definition_sha256": "d0d05f0dd61c87f519cde4c4fc0aca336116dbbd88d6396f9c5f9c02e644b9dc",
+              "gc": "G1",
+              "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+              "mongo_images": [
+                "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+              ],
+              "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+              "op_heap_limit_mib": 768,
+              "op_runtime": {
+                "arch": "amd64",
+                "cpu_count": 4,
+                "jdk": "21.0.13+9-LTS",
+                "os": "Linux"
+              },
+              "runner_image": "ubuntu24 20261116.376.1",
+              "runner_memory_mib": "15983",
+              "topology": "shared replica set",
+              "workload": {
+                "backlog_events": 30000,
+                "measurement_seconds": 300,
+                "mix": null,
+                "rate": 100,
+                "repeats": 3,
+                "rows": 10000,
+                "scale": "formal",
+                "timeout_seconds": 600,
+                "warmup_seconds": 30,
+                "workload_sha256": "046fc5497df13a309bdf398bf76ac022ade7904a622d1133665e6dca966fead5",
+                "workload_version": 1
+              }
+            },
+            "max": 926154752,
+            "median": 911532032,
+            "min": 905396224,
+            "range": 20758528,
+            "samples": [
+              926154752,
+              905396224,
+              911532032
+            ],
+            "source": "procfs process status"
+          }
+        },
+        "variation_bytes": 42274816
+      }
+    }
+  },
+  "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+  "comparison_rules": {
+    "cases": {
+      "copy.snapshot.basic.wide": {
+        "snapshot.rss_peak_bytes": {
+          "baseline_noise": 27099136,
+          "minimum_absolute": 27262976,
+          "minimum_repeats": 3,
+          "observe_ratio": 0.1,
+          "suspect_ratio": 0.2,
+          "worse": "higher"
+        }
+      },
+      "nest.snapshot.fanout.wide": {
+        "snapshot.rss_peak_bytes": {
+          "baseline_noise": 42274816,
+          "minimum_absolute": 42991616,
+          "minimum_repeats": 3,
+          "observe_ratio": 0.1,
+          "suspect_ratio": 0.2,
+          "worse": "higher"
+        }
+      }
+    },
+    "version": 1
+  },
+  "environment": "ubuntu-24.04-x64-op",
+  "first_run": {
+    "attempt": 1,
+    "run_id": 45544961925
+  },
+  "join_retention": {
+    "original": {
+      "conditions": {
+        "case_version": 2,
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "cpu": "Intel(R) Xeon(R) 6975P-C",
+        "cpu_count": "4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": true,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "dimensions": 83,
+            "facts": 80
+          },
+          "write_concern": "majority"
+        },
+        "definition_sha256": "8367e8938813d6fee25b732ef07071fd04432a5f28e064b6a226dede79437752",
+        "gc": "G1",
+        "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+        "mongo_images": [
+          "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+        ],
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_heap_limit_mib": 768,
+        "op_runtime": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "runner_image": "ubuntu24 20261116.133.1",
+        "runner_memory_mib": "15701",
+        "topology": "shared replica set",
+        "workload": {
+          "backlog_events": 30000,
+          "measurement_seconds": 60,
+          "mix": null,
+          "rate": 30,
+          "repeats": 3,
+          "rows": 10000,
+          "scale": "formal",
+          "timeout_seconds": 600,
+          "warmup_seconds": 30,
+          "workload_sha256": "8f2e93d5c7f2b9bab37462662c6ac74d01e416677f8e210cf91c4d758c081f52",
+          "workload_version": 1
+        }
+      },
+      "max": 83494912.0,
+      "median": 31803392.0,
+      "min": 26998784.0,
+      "range": 56496128.0,
+      "samples": [
+        26998784.0,
+        31803392.0,
+        83494912.0
+      ],
+      "source": "procfs process status"
+    },
+    "reason": "The first run has large within-run retention variation and the rerun has a different median",
+    "rerun": {
+      "conditions": {
+        "case_version": 2,
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+        "cpu_count": "4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": true,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "dimensions": 83,
+            "facts": 80
+          },
+          "write_concern": "majority"
+        },
+        "definition_sha256": "8367e8938813d6fee25b732ef07071fd04432a5f28e064b6a226dede79437752",
+        "gc": "G1",
+        "jdk": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+        "mongo_images": [
+          "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+        ],
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_heap_limit_mib": 768,
+        "op_runtime": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "runner_image": "ubuntu24 20261116.376.1",
+        "runner_memory_mib": "15982",
+        "topology": "shared replica set",
+        "workload": {
+          "backlog_events": 30000,
+          "measurement_seconds": 60,
+          "mix": null,
+          "rate": 30,
+          "repeats": 3,
+          "rows": 10000,
+          "scale": "formal",
+          "timeout_seconds": 600,
+          "warmup_seconds": 30,
+          "workload_sha256": "8f2e93d5c7f2b9bab37462662c6ac74d01e416677f8e210cf91c4d758c081f52",
+          "workload_version": 1
+        }
+      },
+      "max": 47906816.0,
+      "median": 45309952.0,
+      "min": 13725696.0,
+      "range": 34181120.0,
+      "samples": [
+        47906816.0,
+        45309952.0,
+        13725696.0
+      ],
+      "source": "procfs process status"
+    },
+    "status": "observation-only"
+  },
+  "memory_limits": {
+    "copy.snapshot.basic.wide": {
+      "single": {
+        "snapshot.rss_peak_bytes": [
+          {
+            "budget_version": 1,
+            "conditions": {
+              "database_conditions": {
+                "batch_size": 32,
+                "mongo_version": "7.0.48",
+                "pre_images": false,
+                "replica_set": "docker-rs",
+                "string_base_lengths": {
+                  "records": 145
+                },
+                "write_concern": "majority"
+              },
+              "effective_input_rows": {
+                "records": 25000
+              },
+              "mongo_topology": "shared replica set",
+              "op_heap_limit_mib": 768,
+              "sampling_interval_ms": 500
+            },
+            "limit": 1393557504,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "unit": "B",
+            "window_ref": "snapshot"
+          }
+        ]
+      }
+    },
+    "nest.snapshot.fanout.wide": {
+      "high-fanout": {
+        "snapshot.rss_peak_bytes": [
+          {
+            "budget_version": 1,
+            "conditions": {
+              "database_conditions": {
+                "batch_size": 32,
+                "mongo_version": "7.0.48",
+                "pre_images": false,
+                "replica_set": "docker-rs",
+                "string_base_lengths": {
+                  "children": 146,
+                  "roots": 147
+                },
+                "write_concern": "majority"
+              },
+              "effective_input_rows": {
+                "children": 40000,
+                "roots": 2500
+              },
+              "mongo_topology": "shared replica set",
+              "op_heap_limit_mib": 768,
+              "sampling_interval_ms": 500
+            },
+            "limit": 1426063360,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "unit": "B",
+            "window_ref": "snapshot"
+          }
+        ]
+      },
+      "ordinary": {
+        "snapshot.rss_peak_bytes": [
+          {
+            "budget_version": 1,
+            "conditions": {
+              "database_conditions": {
+                "batch_size": 32,
+                "mongo_version": "7.0.48",
+                "pre_images": false,
+                "replica_set": "docker-rs",
+                "string_base_lengths": {
+                  "children": 146,
+                  "roots": 147
+                },
+                "write_concern": "majority"
+              },
+              "effective_input_rows": {
+                "children": 10000,
+                "roots": 2500
+              },
+              "mongo_topology": "shared replica set",
+              "op_heap_limit_mib": 768,
+              "sampling_interval_ms": 500
+            },
+            "limit": 1132462080,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "unit": "B",
+            "window_ref": "snapshot"
+          }
+        ]
+      }
+    }
+  },
+  "metric": "snapshot.rss_peak_bytes",
+  "replay": {
+    "controlled_fixture": {
+      "1": "evidence-insufficient",
+      "2": "exceeded",
+      "3": "within-budget"
+    },
+    "cross_runner_comparisons": {
+      "45569006685": {
+        "incompatible": 6,
+        "result-unavailable": 3
+      },
+      "45574329199": {
+        "incompatible": 3
+      }
+    },
+    "evaluated_reader_sha": "022cbe1ffc652150f50ec4073dca190c212e5d80",
+    "fixture_baseline_sha256": "06acf4fc793223d4fbe455671253b6c59385eb08d72dcfb32391eed9769329e1",
+    "normal_cases": [
+      "copy.snapshot.basic.wide",
+      "nest.snapshot.fanout.wide"
+    ],
+    "original_repeats": 192,
+    "within_budget_checks": 9
+  },
+  "status": "accepted"
+}

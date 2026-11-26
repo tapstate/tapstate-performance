@@ -1,0 +1,1055 @@
+{
+  "arms": {
+    "single": {
+      "correctness": "evidence-consistent",
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795582481052,
+      "gaps": [],
+      "input_tables": {
+        "dimensions": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 1000,
+            "max": 1284,
+            "mean": 993.984,
+            "min": 673,
+            "p95": 1141
+          },
+          "bsonSha256": "fa4356feed982b21e0d0540c67fe5d60cecc1954e8190ca533af58db066b5d2a",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 1000
+            },
+            "b0": {
+              "BOOLEAN": 949,
+              "NULL": 51
+            },
+            "b1": {
+              "BOOLEAN": 942,
+              "NULL": 58
+            },
+            "d0": {
+              "DECIMAL128": 956,
+              "NULL": 44
+            },
+            "d1": {
+              "DECIMAL128": 958,
+              "NULL": 42
+            },
+            "i0": {
+              "INT32": 948,
+              "NULL": 52
+            },
+            "i1": {
+              "INT32": 953,
+              "NULL": 47
+            },
+            "s0": {
+              "NULL": 47,
+              "STRING": 953
+            },
+            "s1": {
+              "NULL": 46,
+              "STRING": 954
+            },
+            "s2": {
+              "NULL": 62,
+              "STRING": 938
+            },
+            "s3": {
+              "NULL": 56,
+              "STRING": 944
+            },
+            "s4": {
+              "NULL": 51,
+              "STRING": 949
+            },
+            "s5": {
+              "NULL": 45,
+              "STRING": 955
+            },
+            "s6": {
+              "NULL": 53,
+              "STRING": 947
+            },
+            "s7": {
+              "NULL": 48,
+              "STRING": 952
+            },
+            "s8": {
+              "NULL": 54,
+              "STRING": 946
+            },
+            "s9": {
+              "NULL": 49,
+              "STRING": 951
+            },
+            "score": {
+              "INT32": 1000
+            },
+            "t0": {
+              "DATE_TIME": 954,
+              "NULL": 46
+            },
+            "t1": {
+              "DATE_TIME": 948,
+              "NULL": 52
+            }
+          },
+          "falseValues": 937,
+          "fields": 20,
+          "firstKey": 1,
+          "lastKey": 1000,
+          "logicalBytes": {
+            "count": 1000,
+            "max": 1322,
+            "mean": 1035.177,
+            "min": 724,
+            "p95": 1180
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 903,
+          "nullableValues": 18000,
+          "rowWidthWithinTolerance": true,
+          "rows": 1000,
+          "stringLengths": {
+            "count": 9489,
+            "max": 124,
+            "mean": 83.2757930235009,
+            "min": 42,
+            "p95": 121
+          },
+          "trueValues": 954
+        },
+        "facts": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 10000,
+            "max": 1285,
+            "mean": 984.5785,
+            "min": 575,
+            "p95": 1128
+          },
+          "bsonSha256": "934477a4403d648497e9504cb7d12937b68bc87f52dfa503eca0e38a30ebb0e9",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 10000
+            },
+            "b0": {
+              "BOOLEAN": 9497,
+              "NULL": 503
+            },
+            "b1": {
+              "BOOLEAN": 9499,
+              "NULL": 501
+            },
+            "d0": {
+              "DECIMAL128": 9485,
+              "NULL": 515
+            },
+            "d1": {
+              "DECIMAL128": 9484,
+              "NULL": 516
+            },
+            "dimension_id": {
+              "INT64": 10000
+            },
+            "i0": {
+              "INT32": 9502,
+              "NULL": 498
+            },
+            "i1": {
+              "INT32": 9489,
+              "NULL": 511
+            },
+            "payload": {
+              "STRING": 10000
+            },
+            "s0": {
+              "NULL": 500,
+              "STRING": 9500
+            },
+            "s1": {
+              "NULL": 498,
+              "STRING": 9502
+            },
+            "s2": {
+              "NULL": 526,
+              "STRING": 9474
+            },
+            "s3": {
+              "NULL": 492,
+              "STRING": 9508
+            },
+            "s4": {
+              "NULL": 537,
+              "STRING": 9463
+            },
+            "s5": {
+              "NULL": 520,
+              "STRING": 9480
+            },
+            "s6": {
+              "NULL": 496,
+              "STRING": 9504
+            },
+            "s7": {
+              "NULL": 480,
+              "STRING": 9520
+            },
+            "s8": {
+              "NULL": 483,
+              "STRING": 9517
+            },
+            "t0": {
+              "DATE_TIME": 9505,
+              "NULL": 495
+            },
+            "t1": {
+              "DATE_TIME": 9467,
+              "NULL": 533
+            }
+          },
+          "falseValues": 9484,
+          "fields": 20,
+          "firstKey": 1099511627777,
+          "lastKey": 1099511637776,
+          "logicalBytes": {
+            "count": 10000,
+            "max": 1326,
+            "mean": 1028.2842,
+            "min": 662,
+            "p95": 1168
+          },
+          "matchedReferences": 9000,
+          "missingReferences": 1000,
+          "nullValues": 8604,
+          "nullableValues": 170000,
+          "rowWidthWithinTolerance": true,
+          "rows": 10000,
+          "stringLengths": {
+            "count": 95468,
+            "max": 120,
+            "mean": 80.1127602966439,
+            "min": 40,
+            "p95": 117
+          },
+          "trueValues": 9512
+        }
+      },
+      "latency_eligibility": "unavailable without event-level target correlation",
+      "lifecycle_cycles": [
+        {
+          "cycle": 1,
+          "durable_positions_after_restart": {
+            "facts": "opaque-v1:cacde70346fc3c579d78534ea708900802c54cca8055b27978173f1ff0711866"
+          },
+          "durable_positions_before_stop": {
+            "facts": "opaque-v1:cacde70346fc3c579d78534ea708900802c54cca8055b27978173f1ff0711866"
+          },
+          "durable_state": "retained",
+          "idle_seconds": 2,
+          "queue_release": "unavailable from runtime read face",
+          "snapshot_rows_after_restart": {
+            "dimensions": 0,
+            "facts": 0
+          },
+          "state": "STOPPED",
+          "target_changes_while_idle": 0,
+          "target_readback": "verified"
+        },
+        {
+          "cycle": 2,
+          "durable_positions_after_restart": {
+            "facts": "opaque-v1:065fd702c93a6e84a8299751a4c4f62ffd631dc8fb89d888550529f6116e7f27"
+          },
+          "durable_positions_before_stop": {
+            "facts": "opaque-v1:065fd702c93a6e84a8299751a4c4f62ffd631dc8fb89d888550529f6116e7f27"
+          },
+          "durable_state": "retained",
+          "idle_seconds": 2,
+          "queue_release": "unavailable from runtime read face",
+          "snapshot_rows_after_restart": {
+            "dimensions": 0,
+            "facts": 0
+          },
+          "state": "STOPPED",
+          "target_changes_while_idle": 0,
+          "target_readback": "verified"
+        },
+        {
+          "cycle": 3,
+          "durable_positions_before_stop": {
+            "facts": "opaque-v1:4266c0bae0667e3779ebf0e0c9d2bc6a98d0e9a3b866bcea1c827006118bbe42"
+          },
+          "durable_state": "restart-not-observed",
+          "idle_seconds": 2,
+          "queue_release": "unavailable from runtime read face",
+          "state": "STOPPED",
+          "target_changes_while_idle": 0,
+          "target_readback": "verified"
+        }
+      ],
+      "measurement_status": "insufficient-event-correlation",
+      "memory": {
+        "external_oom_attribution": "unavailable",
+        "gc_member": "run/join.lifecycle.release.standard/1/gc.log",
+        "op_heap_limit_mib": 768,
+        "rss_member": "run/join.lifecycle.release.standard/1/op-resource.jsonl",
+        "scope": "OP process",
+        "windows": {
+          "lifecycle-cycle-1/drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582254708,
+            "median_kib": 698134.0,
+            "peak_bytes": 715137024,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 10,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582249790
+          },
+          "lifecycle-cycle-1/idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582260066,
+            "median_kib": 696702.0,
+            "peak_bytes": 713433088,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 4,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582257966
+          },
+          "lifecycle-cycle-1/measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582249790,
+            "median_kib": 695986.0,
+            "peak_bytes": 714678272,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 120,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582189686
+          },
+          "lifecycle-cycle-1/readback": {
+            "availability": "unavailable",
+            "coverage": 0.0,
+            "ended_epoch_ms": 1795582254733,
+            "median_kib": null,
+            "peak_bytes": null,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 0,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582254708
+          },
+          "lifecycle-cycle-1/stop": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582257966,
+            "median_kib": 697920.0,
+            "peak_bytes": 715235328,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 7,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582254733
+          },
+          "lifecycle-cycle-1/warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582189686,
+            "median_kib": 688420.0,
+            "peak_bytes": 727908352,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 68,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582155688
+          },
+          "lifecycle-cycle-2/drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582364738,
+            "median_kib": 718904.0,
+            "peak_bytes": 736251904,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 10,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582359873
+          },
+          "lifecycle-cycle-2/idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582370298,
+            "median_kib": 717162.0,
+            "peak_bytes": 734380032,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 4,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582368202
+          },
+          "lifecycle-cycle-2/measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582359873,
+            "median_kib": 716956.0,
+            "peak_bytes": 735993856,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 120,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582299768
+          },
+          "lifecycle-cycle-2/readback": {
+            "availability": "unavailable",
+            "coverage": 0.0,
+            "ended_epoch_ms": 1795582364764,
+            "median_kib": null,
+            "peak_bytes": null,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 0,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582364738
+          },
+          "lifecycle-cycle-2/start": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582265799,
+            "median_kib": 702432.0,
+            "peak_bytes": 723927040,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 11,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582260066
+          },
+          "lifecycle-cycle-2/stop": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582368202,
+            "median_kib": 718340.0,
+            "peak_bytes": 736350208,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 7,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582364764
+          },
+          "lifecycle-cycle-2/warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582299768,
+            "median_kib": 713402.0,
+            "peak_bytes": 732938240,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 68,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582265799
+          },
+          "lifecycle-cycle-3/drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582474809,
+            "median_kib": 724972.0,
+            "peak_bytes": 742445056,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 10,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582469753
+          },
+          "lifecycle-cycle-3/idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582480091,
+            "median_kib": 723068.0,
+            "peak_bytes": 740458496,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 5,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582478007
+          },
+          "lifecycle-cycle-3/measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582469753,
+            "median_kib": 730608.0,
+            "peak_bytes": 751927296,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 120,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582409647
+          },
+          "lifecycle-cycle-3/readback": {
+            "availability": "unavailable",
+            "coverage": 0.0,
+            "ended_epoch_ms": 1795582474846,
+            "median_kib": null,
+            "peak_bytes": null,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 0,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582474809
+          },
+          "lifecycle-cycle-3/start": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582375696,
+            "median_kib": 720112.0,
+            "peak_bytes": 743464960,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 11,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582370298
+          },
+          "lifecycle-cycle-3/stop": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582478007,
+            "median_kib": 724318.0,
+            "peak_bytes": 742449152,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 6,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582474846
+          },
+          "lifecycle-cycle-3/warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582409647,
+            "median_kib": 729846.0,
+            "peak_bytes": 748105728,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 68,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582375696
+          },
+          "load": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582155688,
+            "median_kib": 681026.0,
+            "peak_bytes": 707514368,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 160,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582075258
+          },
+          "startup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582075258,
+            "median_kib": 439336.0,
+            "peak_bytes": 482496512,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 5,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582073113
+          }
+        }
+      },
+      "phase_nanos": {
+        "cleanup": 202681933,
+        "initial_state": 80312829226,
+        "lifecycle-cycle-1/ack_wait_with_readback": 4773187200,
+        "lifecycle-cycle-1/readback": 34089462,
+        "lifecycle-cycle-2/ack_wait_with_readback": 4720965450,
+        "lifecycle-cycle-2/readback": 28401848,
+        "lifecycle-cycle-3/ack_wait_with_readback": 4929982528,
+        "lifecycle-cycle-3/readback": 32748776,
+        "prepare": 1095973397,
+        "startup": 12707288717
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "completion": {
+            "availability": "unavailable",
+            "reason": "insufficient-event-correlation",
+            "unit": "ns"
+          },
+          "lifecycle-cycle-1/drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 698376
+          },
+          "lifecycle-cycle-1/idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 696712
+          },
+          "lifecycle-cycle-1/measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 697928
+          },
+          "lifecycle-cycle-1/readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "lifecycle-cycle-1/stop.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 698472
+          },
+          "lifecycle-cycle-1/warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 710848
+          },
+          "lifecycle-cycle-2/drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 718996
+          },
+          "lifecycle-cycle-2/idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 717168
+          },
+          "lifecycle-cycle-2/measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 718744
+          },
+          "lifecycle-cycle-2/readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "lifecycle-cycle-2/start.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 706960
+          },
+          "lifecycle-cycle-2/stop.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 719092
+          },
+          "lifecycle-cycle-2/warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 715760
+          },
+          "lifecycle-cycle-3/drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 725044
+          },
+          "lifecycle-cycle-3/idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 723104
+          },
+          "lifecycle-cycle-3/measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 734304
+          },
+          "lifecycle-cycle-3/readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "lifecycle-cycle-3/start.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 726040
+          },
+          "lifecycle-cycle-3/stop.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 725048
+          },
+          "lifecycle-cycle-3/warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 730572
+          },
+          "load.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 690932
+          },
+          "startup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 471188
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": true,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "dimensions": 83,
+            "facts": 80
+          },
+          "write_concern": "majority"
+        },
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "mongo_topology": "shared replica set",
+        "op_alive_before_teardown": true,
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_exit_code": 0
+      },
+      "source_phases": {
+        "cycle-1/measurement": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "57a9ce250ef3fbddb99f42a6f34f139643ad719090bfb7f7e46e8b49089b7783",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "be13c4b7ed5b991d389e279bb636aad6c1083aa258afa3652ca8396018143768",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000089338
+        },
+        "cycle-1/warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "69371791d58903cfc62367deb55acdbabe6b938376da52fdf7e5e0eb1a9d76bf",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "8096b5d1bf07f1e790a1d11e30e7882c9ec448052526f8a9a413c2b8e211081f",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000083436
+        },
+        "cycle-2/measurement": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "c774ef0231e8fa6ce185753c91b98d3efb7dceb8cd9386b3ed672e06962cfe2f",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "dc39fb56484438df0f39587f8c444c52be36f0f48d79ef29c1eb3b460b496376",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000046859
+        },
+        "cycle-2/warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "dfcacfbf3f0eef93159b282835080f1e74f80434340e20baadfe4f37a12c250b",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "1b45062e1cb9c221cd122d1f839f8a5d89897c4dea9077f4e3181e7cef1b00d3",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000089022
+        },
+        "cycle-3/measurement": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "b07137487b922e65600698f04921dc8a8490b6b3d68e7096370fe1aac2d921fa",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "78540c9d48ebbb7304e5c90290e69192a0f04ca5d78ae47318bd77d1a71294c7",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000069925
+        },
+        "cycle-3/warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "f5e31e3e4559c51dc1d54a229a0646d9c5ac9316222ea353d23db4f8aad64ede",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "1144329770eb66f7209baf53b01ade8a33418cf0b731402f80a30cd9f0aa945b",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000087543
+        },
+        "source_window": {
+          "complete": true,
+          "expected_events": 1800,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "clock_sequence_sha256": "b07137487b922e65600698f04921dc8a8490b6b3d68e7096370fe1aac2d921fa",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 1800
+              },
+              "sequence_sha256": "78540c9d48ebbb7304e5c90290e69192a0f04ca5d78ae47318bd77d1a71294c7",
+              "submitted": 1800
+            }
+          },
+          "write_nanos": 60000069925
+        },
+        "warmup": {
+          "complete": true,
+          "expected_events": 900,
+          "streams": {
+            "facts": {
+              "acknowledged": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "clock_sequence_sha256": "f5e31e3e4559c51dc1d54a229a0646d9c5ac9316222ea353d23db4f8aad64ede",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "planned": {
+                "deletes": 0,
+                "inserts": 0,
+                "updates": 900
+              },
+              "sequence_sha256": "1144329770eb66f7209baf53b01ade8a33418cf0b731402f80a30cd9f0aa945b",
+              "submitted": 900
+            }
+          },
+          "write_nanos": 30000087543
+        }
+      },
+      "started_epoch_ms": 1795582061441,
+      "target": {
+        "source_captured_changes": {
+          "facts": 1800
+        },
+        "target_collections": [
+          "facts"
+        ],
+        "target_collections_expected": [
+          "facts"
+        ],
+        "target_readback_rows": 9000,
+        "target_settled_delta": 1653
+      }
+    }
+  },
+  "attachments": {
+    "single": {
+      "gc_member": {
+        "gzip_sha256": "67a2ba17c313e4f4003a93f018bd56e3089f45ffb13b1fb261c7cd0ce1404a90",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.lifecycle.release.standard/1/single-gc.log.gz",
+        "raw_sha256": "fb3c76d7c3d82f39096dba404168656d350bcc87174d7ed552a6e2df68ac1c25",
+        "uncompressed_bytes": 50236
+      },
+      "rss_member": {
+        "gzip_sha256": "ba79821000b909eb33f09cadc252137a47ce47e244e491510d5a6e7bfc137d3e",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.lifecycle.release.standard/1/single-op-resource.jsonl.gz",
+        "raw_sha256": "43c82a6bdc6b64946dbf4f5243c3f17a81565765475ceeebc056e6a96fe373e0",
+        "uncompressed_bytes": 135938
+      }
+    }
+  },
+  "case_id": "join.lifecycle.release.standard",
+  "case_version": 2,
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "original": {
+    "artifact_digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+    "artifact_id": 14995252340,
+    "batch": 3,
+    "result_path": "run/join.lifecycle.release.standard/1/result.json"
+  },
+  "repeat": 1,
+  "runner": {
+    "available_disk": "88G",
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "cpu_count": "4",
+    "digest": "sha256:a7f7988a8a8473489bff30daabb36fffac22919d3f907829ce898ee365268775",
+    "id": 14995252340,
+    "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+    "memory_mib": "15701",
+    "mongo_images": [
+      "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+    ],
+    "name": "performance-batch-1-3",
+    "runner_image": "ubuntu24 20261116.133.1"
+  },
+  "workload": {
+    "backlog_events": 30000,
+    "measurement_seconds": 60,
+    "mix": null,
+    "rate": 30,
+    "repeats": 3,
+    "rows": 10000,
+    "scale": "formal",
+    "timeout_seconds": 600,
+    "warmup_seconds": 30,
+    "workload_sha256": "8f2e93d5c7f2b9bab37462662c6ac74d01e416677f8e210cf91c4d758c081f52",
+    "workload_version": 1
+  }
+}

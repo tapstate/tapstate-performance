@@ -1,0 +1,1539 @@
+{
+  "arms": {
+    "hot": {
+      "correctness": "evidence-consistent",
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795582945483,
+      "gaps": [],
+      "input_tables": {
+        "dimensions": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 5000,
+            "max": 4805,
+            "mean": 3947.145,
+            "min": 2969,
+            "p95": 4365
+          },
+          "bsonSha256": "b063086652e8ea567b0dc35a09f4a409534ce8f8de00a001b865e12a93fe79e7",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 5000
+            },
+            "b0": {
+              "BOOLEAN": 4735,
+              "NULL": 265
+            },
+            "b1": {
+              "BOOLEAN": 4762,
+              "NULL": 238
+            },
+            "b2": {
+              "BOOLEAN": 4717,
+              "NULL": 283
+            },
+            "b3": {
+              "BOOLEAN": 4710,
+              "NULL": 290
+            },
+            "b4": {
+              "BOOLEAN": 4759,
+              "NULL": 241
+            },
+            "d0": {
+              "DECIMAL128": 4783,
+              "NULL": 217
+            },
+            "d1": {
+              "DECIMAL128": 4763,
+              "NULL": 237
+            },
+            "d2": {
+              "DECIMAL128": 4766,
+              "NULL": 234
+            },
+            "d3": {
+              "DECIMAL128": 4738,
+              "NULL": 262
+            },
+            "d4": {
+              "DECIMAL128": 4729,
+              "NULL": 271
+            },
+            "i0": {
+              "INT32": 4757,
+              "NULL": 243
+            },
+            "i1": {
+              "INT32": 4753,
+              "NULL": 247
+            },
+            "i2": {
+              "INT32": 4731,
+              "NULL": 269
+            },
+            "i3": {
+              "INT32": 4742,
+              "NULL": 258
+            },
+            "i4": {
+              "INT32": 4739,
+              "NULL": 261
+            },
+            "i5": {
+              "INT32": 4745,
+              "NULL": 255
+            },
+            "i6": {
+              "INT32": 4752,
+              "NULL": 248
+            },
+            "i7": {
+              "INT32": 4727,
+              "NULL": 273
+            },
+            "s0": {
+              "NULL": 234,
+              "STRING": 4766
+            },
+            "s1": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s10": {
+              "NULL": 232,
+              "STRING": 4768
+            },
+            "s11": {
+              "NULL": 239,
+              "STRING": 4761
+            },
+            "s12": {
+              "NULL": 249,
+              "STRING": 4751
+            },
+            "s13": {
+              "NULL": 245,
+              "STRING": 4755
+            },
+            "s14": {
+              "NULL": 250,
+              "STRING": 4750
+            },
+            "s15": {
+              "NULL": 260,
+              "STRING": 4740
+            },
+            "s16": {
+              "NULL": 240,
+              "STRING": 4760
+            },
+            "s17": {
+              "NULL": 244,
+              "STRING": 4756
+            },
+            "s18": {
+              "NULL": 245,
+              "STRING": 4755
+            },
+            "s19": {
+              "NULL": 238,
+              "STRING": 4762
+            },
+            "s2": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s20": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s21": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s22": {
+              "NULL": 238,
+              "STRING": 4762
+            },
+            "s23": {
+              "NULL": 262,
+              "STRING": 4738
+            },
+            "s24": {
+              "NULL": 222,
+              "STRING": 4778
+            },
+            "s3": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s4": {
+              "NULL": 250,
+              "STRING": 4750
+            },
+            "s5": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s6": {
+              "NULL": 259,
+              "STRING": 4741
+            },
+            "s7": {
+              "NULL": 260,
+              "STRING": 4740
+            },
+            "s8": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s9": {
+              "NULL": 267,
+              "STRING": 4733
+            },
+            "score": {
+              "INT32": 5000
+            },
+            "t0": {
+              "DATE_TIME": 4745,
+              "NULL": 255
+            },
+            "t1": {
+              "DATE_TIME": 4732,
+              "NULL": 268
+            },
+            "t2": {
+              "DATE_TIME": 4758,
+              "NULL": 242
+            },
+            "t3": {
+              "DATE_TIME": 4769,
+              "NULL": 231
+            },
+            "t4": {
+              "DATE_TIME": 4728,
+              "NULL": 272
+            }
+          },
+          "falseValues": 11677,
+          "fields": 50,
+          "firstKey": 1,
+          "lastKey": 5000,
+          "logicalBytes": {
+            "count": 5000,
+            "max": 4919,
+            "mean": 4068.4266,
+            "min": 3136,
+            "p95": 4479
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 12105,
+          "nullableValues": 240000,
+          "rowWidthWithinTolerance": true,
+          "rows": 5000,
+          "stringLengths": {
+            "count": 118755,
+            "max": 217,
+            "mean": 144.97211064797273,
+            "min": 73,
+            "p95": 210
+          },
+          "trueValues": 12006
+        },
+        "facts": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 50000,
+            "max": 5025,
+            "mean": 3969.77982,
+            "min": 2838,
+            "p95": 4387
+          },
+          "bsonSha256": "9f0f49feeb2b5fae0b130488dcf659e6192f90a4bd87b8129b89efafac64e806",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 50000
+            },
+            "b0": {
+              "BOOLEAN": 47520,
+              "NULL": 2480
+            },
+            "b1": {
+              "BOOLEAN": 47523,
+              "NULL": 2477
+            },
+            "b2": {
+              "BOOLEAN": 47489,
+              "NULL": 2511
+            },
+            "b3": {
+              "BOOLEAN": 47536,
+              "NULL": 2464
+            },
+            "b4": {
+              "BOOLEAN": 47546,
+              "NULL": 2454
+            },
+            "d0": {
+              "DECIMAL128": 47576,
+              "NULL": 2424
+            },
+            "d1": {
+              "DECIMAL128": 47535,
+              "NULL": 2465
+            },
+            "d2": {
+              "DECIMAL128": 47504,
+              "NULL": 2496
+            },
+            "d3": {
+              "DECIMAL128": 47522,
+              "NULL": 2478
+            },
+            "d4": {
+              "DECIMAL128": 47632,
+              "NULL": 2368
+            },
+            "dimension_id": {
+              "INT64": 50000
+            },
+            "i0": {
+              "INT32": 47583,
+              "NULL": 2417
+            },
+            "i1": {
+              "INT32": 47539,
+              "NULL": 2461
+            },
+            "i2": {
+              "INT32": 47467,
+              "NULL": 2533
+            },
+            "i3": {
+              "INT32": 47505,
+              "NULL": 2495
+            },
+            "i4": {
+              "INT32": 47447,
+              "NULL": 2553
+            },
+            "i5": {
+              "INT32": 47448,
+              "NULL": 2552
+            },
+            "i6": {
+              "INT32": 47566,
+              "NULL": 2434
+            },
+            "i7": {
+              "INT32": 47504,
+              "NULL": 2496
+            },
+            "payload": {
+              "STRING": 50000
+            },
+            "s0": {
+              "NULL": 2465,
+              "STRING": 47535
+            },
+            "s1": {
+              "NULL": 2544,
+              "STRING": 47456
+            },
+            "s10": {
+              "NULL": 2502,
+              "STRING": 47498
+            },
+            "s11": {
+              "NULL": 2478,
+              "STRING": 47522
+            },
+            "s12": {
+              "NULL": 2518,
+              "STRING": 47482
+            },
+            "s13": {
+              "NULL": 2498,
+              "STRING": 47502
+            },
+            "s14": {
+              "NULL": 2583,
+              "STRING": 47417
+            },
+            "s15": {
+              "NULL": 2482,
+              "STRING": 47518
+            },
+            "s16": {
+              "NULL": 2510,
+              "STRING": 47490
+            },
+            "s17": {
+              "NULL": 2536,
+              "STRING": 47464
+            },
+            "s18": {
+              "NULL": 2552,
+              "STRING": 47448
+            },
+            "s19": {
+              "NULL": 2568,
+              "STRING": 47432
+            },
+            "s2": {
+              "NULL": 2486,
+              "STRING": 47514
+            },
+            "s20": {
+              "NULL": 2480,
+              "STRING": 47520
+            },
+            "s21": {
+              "NULL": 2484,
+              "STRING": 47516
+            },
+            "s22": {
+              "NULL": 2510,
+              "STRING": 47490
+            },
+            "s23": {
+              "NULL": 2475,
+              "STRING": 47525
+            },
+            "s3": {
+              "NULL": 2509,
+              "STRING": 47491
+            },
+            "s4": {
+              "NULL": 2532,
+              "STRING": 47468
+            },
+            "s5": {
+              "NULL": 2583,
+              "STRING": 47417
+            },
+            "s6": {
+              "NULL": 2483,
+              "STRING": 47517
+            },
+            "s7": {
+              "NULL": 2450,
+              "STRING": 47550
+            },
+            "s8": {
+              "NULL": 2473,
+              "STRING": 47527
+            },
+            "s9": {
+              "NULL": 2508,
+              "STRING": 47492
+            },
+            "t0": {
+              "DATE_TIME": 47467,
+              "NULL": 2533
+            },
+            "t1": {
+              "DATE_TIME": 47478,
+              "NULL": 2522
+            },
+            "t2": {
+              "DATE_TIME": 47571,
+              "NULL": 2429
+            },
+            "t3": {
+              "DATE_TIME": 47547,
+              "NULL": 2453
+            },
+            "t4": {
+              "DATE_TIME": 47455,
+              "NULL": 2545
+            }
+          },
+          "falseValues": 119246,
+          "fields": 50,
+          "firstKey": 1099511627777,
+          "lastKey": 1099511677776,
+          "logicalBytes": {
+            "count": 50000,
+            "max": 5142,
+            "mean": 4093.62482,
+            "min": 2984,
+            "p95": 4505
+          },
+          "matchedReferences": 45000,
+          "missingReferences": 5000,
+          "nullValues": 117249,
+          "nullableValues": 2350000,
+          "rowWidthWithinTolerance": true,
+          "rows": 50000,
+          "stringLengths": {
+            "count": 1189791,
+            "max": 217,
+            "mean": 145.00676001079182,
+            "min": 73,
+            "p95": 210
+          },
+          "trueValues": 118368
+        }
+      },
+      "measurement_status": "insufficient-event-correlation",
+      "memory": {
+        "external_oom_attribution": "unavailable",
+        "gc_member": "run/join.live.hot-update.wide/2/hot/gc.log",
+        "op_heap_limit_mib": 768,
+        "rss_member": "run/join.live.hot-update.wide/2/hot/op-resource.jsonl",
+        "scope": "OP process",
+        "windows": {
+          "drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582939925,
+            "median_kib": 1114608.0,
+            "peak_bytes": 1141563392,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 12,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582933854
+          },
+          "idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582942122,
+            "median_kib": 1114808.0,
+            "peak_bytes": 1141563392,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 4,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582940120
+          },
+          "load": {
+            "availability": "measured",
+            "coverage": 0.9986111111111111,
+            "ended_epoch_ms": 1795582599848,
+            "median_kib": 1197256.0,
+            "peak_bytes": 1234448384,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 719,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582239609
+          },
+          "measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582933854,
+            "median_kib": 1113232.0,
+            "peak_bytes": 1172090880,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 600,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582633747
+          },
+          "readback": {
+            "availability": "unavailable",
+            "coverage": 0.0,
+            "ended_epoch_ms": 1795582940120,
+            "median_kib": null,
+            "peak_bytes": null,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 0,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582939925
+          },
+          "startup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582239609,
+            "median_kib": 435596.0,
+            "peak_bytes": 452288512,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 5,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582237361
+          },
+          "warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582633747,
+            "median_kib": 1203518.0,
+            "peak_bytes": 1245708288,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 68,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582599848
+          }
+        }
+      },
+      "phase_nanos": {
+        "ack_wait_with_readback": 5903625605,
+        "cleanup": 201261888,
+        "initial_state": 359452959748,
+        "prepare": 7005820598,
+        "readback": 194591225,
+        "startup": 12529528987
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1114808
+          },
+          "endpoint_p95": {
+            "availability": "unavailable",
+            "reason": "insufficient-event-correlation",
+            "unit": "ns"
+          },
+          "idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1114808
+          },
+          "load.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1205516
+          },
+          "measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1144620
+          },
+          "readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "startup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 441688
+          },
+          "warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1216512
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": true,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "dimensions": 145,
+            "facts": 145
+          },
+          "write_concern": "majority"
+        },
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "mongo_topology": "shared replica set",
+        "op_alive_before_teardown": true,
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_exit_code": 0
+      },
+      "source_phases": {
+        "source_window": {
+          "complete": true,
+          "expected_events": 1500,
+          "streams": {
+            "dimensions": {
+              "acknowledged": {
+                "deletes": 450,
+                "inserts": 0,
+                "updates": 1050
+              },
+              "clock_sequence_sha256": "db740c859bad2a2234191fdadaf706a76637ea8f4fa684d93eef8dfbb59dc207",
+              "error": null,
+              "hot_key_selections": 1032,
+              "observed": {
+                "deletes": 450,
+                "inserts": 0,
+                "updates": 1050
+              },
+              "planned": {
+                "deletes": 450,
+                "inserts": 0,
+                "updates": 1050
+              },
+              "sequence_sha256": "d5785e762b394a451bdc22df12c6e44022a7ba70c3d49beef1857b055ff7d52c",
+              "submitted": 1500
+            }
+          },
+          "write_nanos": 300000085568
+        },
+        "warmup": {
+          "complete": true,
+          "expected_events": 150,
+          "streams": {
+            "dimensions": {
+              "acknowledged": {
+                "deletes": 45,
+                "inserts": 0,
+                "updates": 105
+              },
+              "clock_sequence_sha256": "519808a3b87b19f445fec30818cb6f9e7ed08236f0aa46cc02d1bf09669b3aa9",
+              "error": null,
+              "hot_key_selections": 103,
+              "observed": {
+                "deletes": 45,
+                "inserts": 0,
+                "updates": 105
+              },
+              "planned": {
+                "deletes": 45,
+                "inserts": 0,
+                "updates": 105
+              },
+              "sequence_sha256": "db268e7eb867f7ae5bda6065fbd0015570fee66a86aa8fe24dcc5175111b8752",
+              "submitted": 150
+            }
+          },
+          "write_nanos": 30000086084
+        }
+      },
+      "started_epoch_ms": 1795582220060,
+      "target": {
+        "source_captured_changes": {
+          "dimensions": 1500
+        },
+        "target_collections": [
+          "facts"
+        ],
+        "target_collections_expected": [
+          "facts"
+        ],
+        "target_readback_rows": 40555,
+        "target_settled_delta": 13335
+      }
+    },
+    "uniform": {
+      "correctness": "evidence-consistent",
+      "execution_status": "completed",
+      "finished_epoch_ms": 1795582219935,
+      "gaps": [],
+      "input_tables": {
+        "dimensions": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 5000,
+            "max": 4805,
+            "mean": 3947.145,
+            "min": 2969,
+            "p95": 4365
+          },
+          "bsonSha256": "b063086652e8ea567b0dc35a09f4a409534ce8f8de00a001b865e12a93fe79e7",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 5000
+            },
+            "b0": {
+              "BOOLEAN": 4735,
+              "NULL": 265
+            },
+            "b1": {
+              "BOOLEAN": 4762,
+              "NULL": 238
+            },
+            "b2": {
+              "BOOLEAN": 4717,
+              "NULL": 283
+            },
+            "b3": {
+              "BOOLEAN": 4710,
+              "NULL": 290
+            },
+            "b4": {
+              "BOOLEAN": 4759,
+              "NULL": 241
+            },
+            "d0": {
+              "DECIMAL128": 4783,
+              "NULL": 217
+            },
+            "d1": {
+              "DECIMAL128": 4763,
+              "NULL": 237
+            },
+            "d2": {
+              "DECIMAL128": 4766,
+              "NULL": 234
+            },
+            "d3": {
+              "DECIMAL128": 4738,
+              "NULL": 262
+            },
+            "d4": {
+              "DECIMAL128": 4729,
+              "NULL": 271
+            },
+            "i0": {
+              "INT32": 4757,
+              "NULL": 243
+            },
+            "i1": {
+              "INT32": 4753,
+              "NULL": 247
+            },
+            "i2": {
+              "INT32": 4731,
+              "NULL": 269
+            },
+            "i3": {
+              "INT32": 4742,
+              "NULL": 258
+            },
+            "i4": {
+              "INT32": 4739,
+              "NULL": 261
+            },
+            "i5": {
+              "INT32": 4745,
+              "NULL": 255
+            },
+            "i6": {
+              "INT32": 4752,
+              "NULL": 248
+            },
+            "i7": {
+              "INT32": 4727,
+              "NULL": 273
+            },
+            "s0": {
+              "NULL": 234,
+              "STRING": 4766
+            },
+            "s1": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s10": {
+              "NULL": 232,
+              "STRING": 4768
+            },
+            "s11": {
+              "NULL": 239,
+              "STRING": 4761
+            },
+            "s12": {
+              "NULL": 249,
+              "STRING": 4751
+            },
+            "s13": {
+              "NULL": 245,
+              "STRING": 4755
+            },
+            "s14": {
+              "NULL": 250,
+              "STRING": 4750
+            },
+            "s15": {
+              "NULL": 260,
+              "STRING": 4740
+            },
+            "s16": {
+              "NULL": 240,
+              "STRING": 4760
+            },
+            "s17": {
+              "NULL": 244,
+              "STRING": 4756
+            },
+            "s18": {
+              "NULL": 245,
+              "STRING": 4755
+            },
+            "s19": {
+              "NULL": 238,
+              "STRING": 4762
+            },
+            "s2": {
+              "NULL": 255,
+              "STRING": 4745
+            },
+            "s20": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s21": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s22": {
+              "NULL": 238,
+              "STRING": 4762
+            },
+            "s23": {
+              "NULL": 262,
+              "STRING": 4738
+            },
+            "s24": {
+              "NULL": 222,
+              "STRING": 4778
+            },
+            "s3": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s4": {
+              "NULL": 250,
+              "STRING": 4750
+            },
+            "s5": {
+              "NULL": 257,
+              "STRING": 4743
+            },
+            "s6": {
+              "NULL": 259,
+              "STRING": 4741
+            },
+            "s7": {
+              "NULL": 260,
+              "STRING": 4740
+            },
+            "s8": {
+              "NULL": 264,
+              "STRING": 4736
+            },
+            "s9": {
+              "NULL": 267,
+              "STRING": 4733
+            },
+            "score": {
+              "INT32": 5000
+            },
+            "t0": {
+              "DATE_TIME": 4745,
+              "NULL": 255
+            },
+            "t1": {
+              "DATE_TIME": 4732,
+              "NULL": 268
+            },
+            "t2": {
+              "DATE_TIME": 4758,
+              "NULL": 242
+            },
+            "t3": {
+              "DATE_TIME": 4769,
+              "NULL": 231
+            },
+            "t4": {
+              "DATE_TIME": 4728,
+              "NULL": 272
+            }
+          },
+          "falseValues": 11677,
+          "fields": 50,
+          "firstKey": 1,
+          "lastKey": 5000,
+          "logicalBytes": {
+            "count": 5000,
+            "max": 4919,
+            "mean": 4068.4266,
+            "min": 3136,
+            "p95": 4479
+          },
+          "matchedReferences": 0,
+          "missingReferences": 0,
+          "nullValues": 12105,
+          "nullableValues": 240000,
+          "rowWidthWithinTolerance": true,
+          "rows": 5000,
+          "stringLengths": {
+            "count": 118755,
+            "max": 217,
+            "mean": 144.97211064797273,
+            "min": 73,
+            "p95": 210
+          },
+          "trueValues": 12006
+        },
+        "facts": {
+          "arrayLengths": {},
+          "bsonBytes": {
+            "count": 50000,
+            "max": 5025,
+            "mean": 3969.77982,
+            "min": 2838,
+            "p95": 4387
+          },
+          "bsonSha256": "9f0f49feeb2b5fae0b130488dcf659e6192f90a4bd87b8129b89efafac64e806",
+          "bsonTypesByField": {
+            "_id": {
+              "INT64": 50000
+            },
+            "b0": {
+              "BOOLEAN": 47520,
+              "NULL": 2480
+            },
+            "b1": {
+              "BOOLEAN": 47523,
+              "NULL": 2477
+            },
+            "b2": {
+              "BOOLEAN": 47489,
+              "NULL": 2511
+            },
+            "b3": {
+              "BOOLEAN": 47536,
+              "NULL": 2464
+            },
+            "b4": {
+              "BOOLEAN": 47546,
+              "NULL": 2454
+            },
+            "d0": {
+              "DECIMAL128": 47576,
+              "NULL": 2424
+            },
+            "d1": {
+              "DECIMAL128": 47535,
+              "NULL": 2465
+            },
+            "d2": {
+              "DECIMAL128": 47504,
+              "NULL": 2496
+            },
+            "d3": {
+              "DECIMAL128": 47522,
+              "NULL": 2478
+            },
+            "d4": {
+              "DECIMAL128": 47632,
+              "NULL": 2368
+            },
+            "dimension_id": {
+              "INT64": 50000
+            },
+            "i0": {
+              "INT32": 47583,
+              "NULL": 2417
+            },
+            "i1": {
+              "INT32": 47539,
+              "NULL": 2461
+            },
+            "i2": {
+              "INT32": 47467,
+              "NULL": 2533
+            },
+            "i3": {
+              "INT32": 47505,
+              "NULL": 2495
+            },
+            "i4": {
+              "INT32": 47447,
+              "NULL": 2553
+            },
+            "i5": {
+              "INT32": 47448,
+              "NULL": 2552
+            },
+            "i6": {
+              "INT32": 47566,
+              "NULL": 2434
+            },
+            "i7": {
+              "INT32": 47504,
+              "NULL": 2496
+            },
+            "payload": {
+              "STRING": 50000
+            },
+            "s0": {
+              "NULL": 2465,
+              "STRING": 47535
+            },
+            "s1": {
+              "NULL": 2544,
+              "STRING": 47456
+            },
+            "s10": {
+              "NULL": 2502,
+              "STRING": 47498
+            },
+            "s11": {
+              "NULL": 2478,
+              "STRING": 47522
+            },
+            "s12": {
+              "NULL": 2518,
+              "STRING": 47482
+            },
+            "s13": {
+              "NULL": 2498,
+              "STRING": 47502
+            },
+            "s14": {
+              "NULL": 2583,
+              "STRING": 47417
+            },
+            "s15": {
+              "NULL": 2482,
+              "STRING": 47518
+            },
+            "s16": {
+              "NULL": 2510,
+              "STRING": 47490
+            },
+            "s17": {
+              "NULL": 2536,
+              "STRING": 47464
+            },
+            "s18": {
+              "NULL": 2552,
+              "STRING": 47448
+            },
+            "s19": {
+              "NULL": 2568,
+              "STRING": 47432
+            },
+            "s2": {
+              "NULL": 2486,
+              "STRING": 47514
+            },
+            "s20": {
+              "NULL": 2480,
+              "STRING": 47520
+            },
+            "s21": {
+              "NULL": 2484,
+              "STRING": 47516
+            },
+            "s22": {
+              "NULL": 2510,
+              "STRING": 47490
+            },
+            "s23": {
+              "NULL": 2475,
+              "STRING": 47525
+            },
+            "s3": {
+              "NULL": 2509,
+              "STRING": 47491
+            },
+            "s4": {
+              "NULL": 2532,
+              "STRING": 47468
+            },
+            "s5": {
+              "NULL": 2583,
+              "STRING": 47417
+            },
+            "s6": {
+              "NULL": 2483,
+              "STRING": 47517
+            },
+            "s7": {
+              "NULL": 2450,
+              "STRING": 47550
+            },
+            "s8": {
+              "NULL": 2473,
+              "STRING": 47527
+            },
+            "s9": {
+              "NULL": 2508,
+              "STRING": 47492
+            },
+            "t0": {
+              "DATE_TIME": 47467,
+              "NULL": 2533
+            },
+            "t1": {
+              "DATE_TIME": 47478,
+              "NULL": 2522
+            },
+            "t2": {
+              "DATE_TIME": 47571,
+              "NULL": 2429
+            },
+            "t3": {
+              "DATE_TIME": 47547,
+              "NULL": 2453
+            },
+            "t4": {
+              "DATE_TIME": 47455,
+              "NULL": 2545
+            }
+          },
+          "falseValues": 119246,
+          "fields": 50,
+          "firstKey": 1099511627777,
+          "lastKey": 1099511677776,
+          "logicalBytes": {
+            "count": 50000,
+            "max": 5142,
+            "mean": 4093.62482,
+            "min": 2984,
+            "p95": 4505
+          },
+          "matchedReferences": 45000,
+          "missingReferences": 5000,
+          "nullValues": 117249,
+          "nullableValues": 2350000,
+          "rowWidthWithinTolerance": true,
+          "rows": 50000,
+          "stringLengths": {
+            "count": 1189791,
+            "max": 217,
+            "mean": 145.00676001079182,
+            "min": 73,
+            "p95": 210
+          },
+          "trueValues": 118368
+        }
+      },
+      "measurement_status": "insufficient-event-correlation",
+      "memory": {
+        "external_oom_attribution": "unavailable",
+        "gc_member": "run/join.live.hot-update.wide/2/uniform/gc.log",
+        "op_heap_limit_mib": 768,
+        "rss_member": "run/join.live.hot-update.wide/2/uniform/op-resource.jsonl",
+        "scope": "OP process",
+        "windows": {
+          "drain": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582214390,
+            "median_kib": 1120534.0,
+            "peak_bytes": 1147514880,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 10,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582209298
+          },
+          "idle": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582216593,
+            "median_kib": 1120620.0,
+            "peak_bytes": 1147514880,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 4,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582214581
+          },
+          "load": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795581874405,
+            "median_kib": 1201712.0,
+            "peak_bytes": 1241714688,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 719,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795581514445
+          },
+          "measurement": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582209298,
+            "median_kib": 1119078.0,
+            "peak_bytes": 1171525632,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 600,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795581909189
+          },
+          "readback": {
+            "availability": "unavailable",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795582214581,
+            "median_kib": 1120620.0,
+            "peak_bytes": 1147514880,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 1,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795582214390
+          },
+          "startup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795581514445,
+            "median_kib": 446052.0,
+            "peak_bytes": 474578944,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 5,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795581512111
+          },
+          "warmup": {
+            "availability": "measured",
+            "coverage": 1.0,
+            "ended_epoch_ms": 1795581909189,
+            "median_kib": 1203872.0,
+            "peak_bytes": 1258819584,
+            "raw_gc_consistent": true,
+            "raw_rss_consistent": true,
+            "samples": 69,
+            "scope": "OP process",
+            "source": "procfs process status",
+            "started_epoch_ms": 1795581874405
+          }
+        }
+      },
+      "phase_nanos": {
+        "ack_wait_with_readback": 4898120109,
+        "cleanup": 201035634,
+        "initial_state": 359134729302,
+        "prepare": 7451126674,
+        "readback": 190043514,
+        "startup": 12610287112
+      },
+      "qualification": {
+        "availability": "recorded",
+        "metrics": {
+          "drain.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1120620
+          },
+          "endpoint_p95": {
+            "availability": "unavailable",
+            "reason": "insufficient-event-correlation",
+            "unit": "ns"
+          },
+          "idle.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1120620
+          },
+          "load.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1212612
+          },
+          "measurement.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1144068
+          },
+          "readback.rss_peak": {
+            "availability": "unavailable",
+            "reason": "Window coverage or attribution is incomplete",
+            "unit": "KiB"
+          },
+          "startup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 463456
+          },
+          "warmup.rss_peak": {
+            "availability": "measured",
+            "unit": "KiB",
+            "value": 1229316
+          }
+        }
+      },
+      "runtime": {
+        "connector_sha256": "7fbdbf1ef2965053c9c5e6d28c0c21c3aa2818938ab758b965cc278d61e0c7b4",
+        "database_conditions": {
+          "batch_size": 32,
+          "mongo_version": "7.0.48",
+          "pre_images": true,
+          "replica_set": "docker-rs",
+          "string_base_lengths": {
+            "dimensions": 145,
+            "facts": 145
+          },
+          "write_concern": "majority"
+        },
+        "environment": {
+          "arch": "amd64",
+          "cpu_count": 4,
+          "jdk": "21.0.13+9-LTS",
+          "os": "Linux"
+        },
+        "mongo_topology": "shared replica set",
+        "op_alive_before_teardown": true,
+        "op_boot_sha256": "eba2b4c61ad062295fae7b95fbf574e760032b5608fcfeaeb75e06c5506025e9",
+        "op_exit_code": 0
+      },
+      "source_phases": {
+        "source_window": {
+          "complete": true,
+          "expected_events": 1500,
+          "streams": {
+            "dimensions": {
+              "acknowledged": {
+                "deletes": 450,
+                "inserts": 0,
+                "updates": 1050
+              },
+              "clock_sequence_sha256": "95f15ed79fd3c7450ad4ae5ec22eac16ad313355b21255d392aa4464b8cdaa02",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 450,
+                "inserts": 0,
+                "updates": 1050
+              },
+              "planned": {
+                "deletes": 450,
+                "inserts": 0,
+                "updates": 1050
+              },
+              "sequence_sha256": "5c7e0e807b834aa025deb350ce2246ce22c49571aec5f214d7afb89d5a89687f",
+              "submitted": 1500
+            }
+          },
+          "write_nanos": 300000085250
+        },
+        "warmup": {
+          "complete": true,
+          "expected_events": 150,
+          "streams": {
+            "dimensions": {
+              "acknowledged": {
+                "deletes": 45,
+                "inserts": 0,
+                "updates": 105
+              },
+              "clock_sequence_sha256": "47571c535abd7d063ec8ed4e27360d7c9232cf0989e90d54c876d4808fb62224",
+              "error": null,
+              "hot_key_selections": 0,
+              "observed": {
+                "deletes": 45,
+                "inserts": 0,
+                "updates": 105
+              },
+              "planned": {
+                "deletes": 45,
+                "inserts": 0,
+                "updates": 105
+              },
+              "sequence_sha256": "b778592ff0b9ad4443ab1fe1d234d67f7c978caf436269c751a56ae4ec549230",
+              "submitted": 150
+            }
+          },
+          "write_nanos": 30000066322
+        }
+      },
+      "started_epoch_ms": 1795581494368,
+      "target": {
+        "source_captured_changes": {
+          "dimensions": 1500
+        },
+        "target_collections": [
+          "facts"
+        ],
+        "target_collections_expected": [
+          "facts"
+        ],
+        "target_readback_rows": 40560,
+        "target_settled_delta": 13673
+      }
+    }
+  },
+  "attachments": {
+    "hot": {
+      "gc_member": {
+        "gzip_sha256": "14d4ea4256d1df273a3e2aff58f8b99c8912ec7e0e4de1a35c267e85e8eeef49",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.live.hot-update.wide/2/hot-gc.log.gz",
+        "raw_sha256": "16211679684f0a7f84b77604a48234ef716de997f19b1e1a616d6952d6709a45",
+        "uncompressed_bytes": 86490
+      },
+      "rss_member": {
+        "gzip_sha256": "1bef5974d47ae32572ddb577100a41328baa5c5c31311482272c8dc079119f83",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.live.hot-update.wide/2/hot-op-resource.jsonl.gz",
+        "raw_sha256": "549cdde79c7f010ea736da8d43d17e52f0360912acdf157a91535ecf952def3f",
+        "uncompressed_bytes": 236688
+      }
+    },
+    "uniform": {
+      "gc_member": {
+        "gzip_sha256": "b00830a6ad6830c36385a8f3f992e88d6ad5e115c77bae767db4f2ed51107d60",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.live.hot-update.wide/2/uniform-gc.log.gz",
+        "raw_sha256": "c19c089ca45bc7414bf743c7229dc9a35073981bc4bfbbf6b237a290cf09d35e",
+        "uncompressed_bytes": 89386
+      },
+      "rss_member": {
+        "gzip_sha256": "ab511a8c35160598072da0e2802ea6df1bb889e3b95fb860d3b3e094f9c7ef89",
+        "path": "baselines/ubuntu-24.04-x64-op/sync-2026-11-25-v1/evidence/join.live.hot-update.wide/2/uniform-op-resource.jsonl.gz",
+        "raw_sha256": "918a73495bc93d8d5dc2a5fa11162f2fa7fc382448b11cb0273b5d3b2e430049",
+        "uncompressed_bytes": 236519
+      }
+    }
+  },
+  "case_id": "join.live.hot-update.wide",
+  "case_version": 2,
+  "measurement": {
+    "attempt": 1,
+    "code_sha": "e861698ed7dd419b9c16c7fd3012bf7c72e03765",
+    "manifest_sha256": "03e4bfb6710cc6ff666532c8592f032b9a849ebf00d738015b5bc63f873dbbef",
+    "measured_on": "2026-11-25",
+    "run_id": 45544961925
+  },
+  "original": {
+    "artifact_digest": "sha256:b56189e179f7d26a6ddd324377308d1ab44eaa665bd9689c44cef6f079292b08",
+    "artifact_id": 14995190655,
+    "batch": 1,
+    "result_path": "run/join.live.hot-update.wide/2/result.json"
+  },
+  "repeat": 2,
+  "runner": {
+    "available_disk": "88G",
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "cpu_count": "4",
+    "digest": "sha256:b56189e179f7d26a6ddd324377308d1ab44eaa665bd9689c44cef6f079292b08",
+    "id": 14995190655,
+    "java": "openjdk version \"21.0.13\" 2026-10-20 LTS",
+    "memory_mib": "15701",
+    "mongo_images": [
+      "mongo@sha256:41e8195b2791692695e1dc9bd21cd51d0a3af05fff8ace9304a5c1acf94f1ae1"
+    ],
+    "name": "performance-batch-1-1",
+    "runner_image": "ubuntu24 20261116.133.1"
+  },
+  "workload": {
+    "backlog_events": 30000,
+    "measurement_seconds": 300,
+    "mix": null,
+    "rate": 5,
+    "repeats": 3,
+    "rows": 5000,
+    "scale": "formal",
+    "timeout_seconds": 600,
+    "warmup_seconds": 30,
+    "workload_sha256": "48e619bedb0d72dd07d9ae72fecfc19d198fc15400864bb78f0f1a8c68d1f6c1",
+    "workload_version": 1
+  }
+}
